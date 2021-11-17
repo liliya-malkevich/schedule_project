@@ -1,3 +1,32 @@
-*{
-    margin: 0 auto;
+
+/* .d-inline-block{
+display: inline-block;
 }
+ .align-top{
+vertical-align: top;
+ } */
+
+body{
+    background-color: #EDF4FF;
+}
+.logo{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 48px;
+    line-height: 56px;
+    color: black;
+}
+.contacts{
+    font-family: Roboto;
+font-style: normal;
+font-weight: normal;
+font-size: 24px;
+line-height: 28px;
+color: black;
+}
+.form form {
+    width: 300px;
+    margin: 150px auto;
+    padding-top: 20px;
+  }
