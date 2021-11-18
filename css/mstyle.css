@@ -1,3 +1,71 @@
-*{
-    margin: 0 auto;
+/* .d-inline-block{
+display: inline-block;
+}
+ .align-top{
+vertical-align: top;
+ } */
+
+ body{
+  background-color: #EDF4FF;
+  text-align: center;
+}
+.logo{
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 48px;
+  line-height: 56px;
+  color: black;
+}
+.contacts{
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 28px;
+  color: black;
+  margin: 20px;
+}
+.notes-area{
+font-family: Roboto;
+font-style: normal;
+font-weight: normal;
+font-size: 35px;
+line-height: 41px;
+position: relative;
+width: 696px;
+left: 460px;
+top: 80px;
+filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+.rectangle{
+margin: 10px;
+background: #FFF8F8;
+border: 1px solid #FEEFEB;
+box-sizing: border-box;
+border-radius: 50px;
+}
+.buttons{
+  color:black;
+  position: absolute;
+  padding: 5px;
+  font-size: 25px;
+  line-height: 29px;
+  border-radius: 50px;
+  font-family: Roboto;
+  margin-bottom: 200px;
+}
+.button1{
+  left : 420px;
+  background:  #A1CDFF;
+}
+.button2{
+left: 550px;
+background: #D2E4F9;
+}
+.hint{
+  padding: 15px;
+}
+.text{
+  margin-top: 85px;
 }
