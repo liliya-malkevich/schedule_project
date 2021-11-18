@@ -4,10 +4,110 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="./css/lstyle.css" rel="stylesheet" type="text/css">
-    <title>Document</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+    <link href="../css/lstyle.css" rel="stylesheet" type="text/css">
+    <title>studentSchedule</title>
 </head>
 <body>
-    <p>jkgkjgkjd</p>
+    <nav class="navbar navbar-expand-sm" >
+        <div class="container">
+        <!-- Brand -->
+        <a class="navbar-brand logo" href="#">
+            <img src="../icon/schedule_stady.png" alt="" width="84.1" 
+            height="61">
+            Расписание
+        </a>
+      
+        <!-- Links -->
+        
+        <div class="justify-content-end">
+            <ul class="navbar-nav ">
+      
+                <!-- Dropdown -->
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle contacts" href="#" id="navbardrop" data-toggle="dropdown">
+                    
+                      <img src="../icon/phone-call.png" alt="" width="32" height="30">
+                    Контакты
+                  
+                  </a>
+                  <div class="dropdown-menu">
+                    <a class="dropdown-item" href="https://rfe.bsu.by/">rfe.bsu.by</a>
+                    <a class="dropdown-item" href="rfe@bsu.by">rfe@bsu.by</a>
+                    
+                  </div>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link contacts" href="../index.html">Выход</a>
+                </li>
+              </ul> 
+          </div>
+        </div>
+      </nav>
+
+      <div class="container">
+        <p class="d-flex justify-content-center fio">Добрый день, ФИО!</p>
+      </div>
+      <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-md-11 colorweek">
+        <div class="d-flex flex-row weekday">
+          <a class="block" href="#">Понедельник</a>
+          <a class="block" href="#">Вторник</a>
+          <a class="block" href="#">Среда</a>
+          <a class="block" href="#">Четверг</a>
+          <a class="block" href="#">Пятница</a>
+          <a class="block" href="#">Суббота</a>
+        </div>
+        </div>
+      </div>
+    </div>
+
+      <div class="container tabmarg">
+      <table class="table">
+        
+        <thead>
+          <tr>
+            <th scope="col">№</th>
+            <th scope="col">Время</th>
+            <th scope="col">Дисциплина</th>
+            <th scope="col">Преподаватель</th>
+            <th scope="col">Аудитория</th>
+            <th scope="col">Формат</th>
+            
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">1</th>
+            <td>9.00-10.20</td>
+            <td>Технологии программирования</td>
+            <td>Шпак К.С.</td>
+            <td>505</td>
+            <td>Лаб</td>
+          </tr>
+          <tr>
+            <th scope="row">2</th>
+            <td>10.30-11.50</td>
+            <td>Физика</td>
+            <td>Янукович Т.П</td>
+            <td>117</td>
+            <td>Лекция</td>
+          </tr>
+          <tr>
+            <th scope="row">3</th>
+            <td>12.00-13.20</td>
+            <td>Методы матфизики</td>
+            <td>Рыбаченко П.Е</td>
+            <td>119</td>
+            <td>ПЗ</td>
+          </tr>
+        </tbody>
+      
+      </table>
+    </div>
 </body>
 </html>

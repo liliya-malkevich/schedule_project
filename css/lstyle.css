@@ -7,6 +7,7 @@ vertical-align: top;
  } */
 
 body{
+    font-size: 1.7vw;
     background-color: #EDF4FF;
 }
 .logo{
@@ -21,7 +22,7 @@ body{
     font-family: Roboto;
 font-style: normal;
 font-weight: normal;
-font-size: 24px;
+font-size: 1.2em;
 line-height: 28px;
 color: black;
 }
@@ -30,3 +31,46 @@ color: black;
     margin: 150px auto;
     padding-top: 20px;
   }
+  .block{  
+    flex-grow:1;
+  }
+
+  .fio{
+    font-family: Roboto;
+font-style: normal;
+font-weight: normal;
+font-size: 1.2em;
+line-height: 28px;
+color: black; 
+margin-top: 20px;
+margin-bottom: 40px; 
+  }
+  a:active, /* активная/посещенная ссылка */
+a:hover,  /* при наведении */
+a {
+  text-decoration: none;
+  color: black;
+}
+.weekday{
+    margin-bottom: 20px;
+    margin-top: 20px;
+
+}
+.colorweek{
+    background: #A1CDFF;
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+border-radius: 50px;
+}
+.tabmarg{
+    margin-top: 35px;
+    font-size: 1.4vw;
+}
+tr{
+    /* background: #FEEFEB; */
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+border-radius: 48px;
+}
+table{
+  border-collapse: collapse;
+  border: 0;
+}
