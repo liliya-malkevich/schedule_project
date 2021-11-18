@@ -4,10 +4,60 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="./css/mstyle.css" rel="stylesheet" type="text/css">
-    <title>login</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+    <link href="../css/mstyle.css" rel="stylesheet">
+    <title>Nodes</title>
 </head>
 <body>
-   
+    <nav class="navbar navbar-expand-sm" >
+        <div class="container">
+        <!-- Brand -->
+        <a class="navbar-brand logo" href="#">
+            <img src="../icon/schedule_stady.png" alt="" width="84.1" 
+            height="61">
+            Расписание
+        </a>
+    
+        <!-- Links -->
+    
+        <div class="justify-content-end">
+            <ul class="navbar-nav ">
+    
+                <!-- Dropdown -->
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle contacts" href="#" id="navbardrop" data-toggle="dropdown">
+                      <img src="../icon/phone-call.png" alt="" width="32" height="30">
+                    Контакты
+                  </a>
+                  <div class="dropdown-menu">
+                    <a class="dropdown-item" href="https://rfe.bsu.by/">rfe.bsu.by</a>
+                    <a class="dropdown-item" href="rfe@bsu.by">rfe@bsu.by</a>
+                  </div>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link contacts" href="#">Выход</a>
+                </li>
+              </ul> 
+          </div>
+        </div>
+      </nav>
+    <div class="notes-area">
+      <form>
+        <div class="form-group">
+          <label for="formControlTextarea1">Создать новую заметку</label>
+          <textarea class="form-control rectangle hint" id="exampleFormControlTextarea1" rows="6" placeholder="Нажмите, чтобы создать заметку"></textarea>
+        </div>
+      </form>
+      <a href="#" class="buttons button1" role="button" aria-pressed="true">Сохранить</a>
+      <a href="#" class="buttons button2" role="button" aria-pressed="true">Отменить</a>
+      <form class="text">
+        <label for="formControlTextarea1 text">Предыдущие заметки</label>
+        <textarea class="form-control rectangle hint" id="exampleFormControlTextarea1" rows="6" placeholder="Заметок пока нет" readonly></textarea>
+      </form>
+    </div>
+
 </body>
 </html>
