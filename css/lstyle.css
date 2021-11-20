@@ -27,7 +27,7 @@ line-height: 28px;
 color: black;
 }
 .form form {
-    width: 300px;
+    width: 580px;
     margin: 150px auto;
     padding-top: 20px;
   }
@@ -65,12 +65,61 @@ border-radius: 50px;
     margin-top: 35px;
     font-size: 1.4vw;
 }
-tr{
-    /* background: #FEEFEB; */
-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-border-radius: 48px;
-}
 table{
+margin-top: 70px;
   border-collapse: collapse;
   border: 0;
+  
+}​
+
+
+
+.input-wrapper{
+  background: #FFFFFF;
+box-sizing: border-box;
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+border-radius: 50px;
+width: 330px;
+height: 58px;
+}
+.input-wrapper input{
+
+  border: none;
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+  text-indent: 20px;
+  color: #000000;
+  outline: 0;
+  background: #FFFFFF;
+  box-sizing: border-box;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 50px;
+  width: 330px;
+  height: 58px;
+}
+
+h1{
+  text-align: center;
+  margin-bottom: 65px;
+}
+.butt1{
+  width: 150px;
+height: 50px;
+filter: drop-shadow(5px 6px 7px rgba(0, 0, 0, 0.25));
+background: #A2CDFF;
+border-radius: 50px;
+font-size: 1.5vw;
+}
+.wrap-but{
+  margin-left: 180px;
+  margin-top: 40px;
+}
+
+.wrap-tr{
+  background: #FEEFEB; 
+  box-sizing: border-box;
+}
+tbody{
+  background-color: white;
 }
