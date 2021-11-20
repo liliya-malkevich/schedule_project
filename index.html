@@ -4,10 +4,85 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
     <link href="./css/lstyle.css" rel="stylesheet" type="text/css">
+    <script src="./js/lscript.js"></script>
     <title>login</title>
 </head>
 <body>
-    <a href="./html/schedule.html">tyk</a>
+    <nav class="navbar navbar-expand-sm" >
+        <div class="container">
+        <!-- Brand -->
+        <a class="navbar-brand logo" href="#">
+            <img src="./icon/schedule_stady.png" alt="" width="84.1" 
+            height="61">
+            Расписание
+        </a>
+      
+        <!-- Links -->
+        
+        <div class="justify-content-end">
+            <ul class="navbar-nav ">
+      
+                <!-- Dropdown -->
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle contacts" href="#" id="navbardrop" data-toggle="dropdown">
+                      <img src="./icon/phone-call.png" alt="" width="32" height="30">
+                    Контакты
+                  </a>
+                  <div class="dropdown-menu">
+                    <a class="dropdown-item" href="https://rfe.bsu.by/">rfe.bsu.by</a>
+                    <a class="dropdown-item" href="rfe@bsu.by">rfe@bsu.by</a>
+                    
+                  </div>
+                </li>
+              </ul> 
+          </div>
+        </div>
+      </nav>
+      <div class="form">
+        
+        <form class="form-horizontal" role="form" method="POST" action="./html/schedule.html" >
+            <h1>Вход в систему</h1>
+           
+          <div class="form-group ">
+            <div class="form-group row">
+            <label for="inputEmail3" class="col-sm-2 col-form-label">Логин</label>
+            <div class="col-sm-10">
+              <div class="input-wrapper">
+              <input type="text" class="form-control" id ="login" placeholder="Логин" name="login">
+            </div>
+          </div>
+          </div>
+          <div class="form-group row">
+            <label for="inputPassword3" class="col-sm-2 control-label">Пароль</label>
+            <div class="col-sm-10">
+              <div class="input-wrapper">
+             
+              <input type="password" class="form-control" id="password" placeholder="Пароль" name="password" >
+            
+            </div>
+          </div>
+        </div>
+          <div class="form-group">
+            <div class="col-sm-offset-2 col-sm-10">
+              <div class="checkbox">
+                
+              </div>
+            </div>
+          </div> 
+          <div class="form-group wrap-but">
+            <div class="col-sm-offset-2 col-sm-10">
+              <button type="submit" class="btn btn-default btn-sm butt1" id="log-button" onclick="loginSystem()">Войти</button>
+            </div>
+          </div>  
+        </form>
+        </div><!-- form  -->
+        
+     
+  
 </body>
 </html>
