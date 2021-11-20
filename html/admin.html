@@ -4,10 +4,1720 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="./css/mstyle.css" rel="stylesheet" type="text/css">
-    <title>login</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+    <link href="../css/mstyle.css" rel="stylesheet">
+    <title>Nodes</title>
 </head>
 <body>
-   
+    <nav class="navbar navbar-expand-sm" >
+        <div class="container">
+        <!-- Brand -->
+        <a class="navbar-brand logo" href="#">
+            <img src="../icon/schedule_stady.png" alt="" width="84.1" 
+            height="61">
+            Расписание
+        </a>
+    
+        <!-- Links -->
+    
+        <div class="justify-content-end">
+            <ul class="navbar-nav ">
+    
+                <!-- Dropdown -->
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle contacts" href="#" id="navbardrop" data-toggle="dropdown">
+                      <img src="../icon/phone-call.png" alt="" width="32" height="30">
+                    Контакты
+                  </a>
+                  <div class="dropdown-menu">
+                    <a class="dropdown-item" href="https://rfe.bsu.by/">rfe.bsu.by</a>
+                    <a class="dropdown-item" href="rfe@bsu.by">rfe@bsu.by</a>
+                  </div>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link contacts" href="#">Выход</a>
+                </li>
+              </ul> 
+          </div>
+        </div>
+    </nav>
+<div class="fieldAdmin">
+    <form class="form-inline">
+        <select class="custom-select my-1 mr-sm-2" id="inlineFormCustomSelectPref">
+          <option selected>Выберите курс</option>
+          <option value="1">1 курс</option>
+          <option value="2">2 курс</option>
+          <option value="3">3 курс</option>
+          <option value="4">4 курс</option>
+        </select>
+        <select class="custom-select my-1 mr-sm-2" id="inlineFormCustomSelectPref">
+            <option selected>Выберите группу</option>
+            <option value="1">1 группа</option>
+            <option value="2">2 группа</option>
+            <option value="3">3 группа</option>
+            <option value="4">4 группа</option>
+            <option value="5">5 группа</option>
+            <option value="6">6 группа</option>
+            <option value="7">7 группа</option>
+            <option value="8">8 группа</option>
+            <option value="9">9 группа</option>
+            <option value="10">10 группа</option>
+          </select>   
+          <a href="#" class="buttonConfirm" role="button" aria-pressed="true">Подтвердить</a>
+
+    </form>
+    <form class="table">
+        <table class="table">
+            <thead>
+              <tr>
+                <th class="header" scope="col"></th>
+                <th class="header" scope="col">№</th>
+                <th class="header" scope="col">Время</th>
+                <th class="header" scope="col">Дисциплина</th>
+                <th class="header" scope="col">Преподаватель</th>
+                <th class="header" scope="col">Аудитория</th>
+                <th class="header" scope="col">Формат пары</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row" rowspan="8" class="vertical-text">Понедельник</th>
+                <td>1</td>
+                <td>9:00-10:20</td>
+                <td><select class="custom-select my-1 mr-sm-2" id="inlineFormCustomSelectPref">
+                    <option selected>Выберите</option>
+                    <option value="1">Технологии программирования</option>
+                    <option value="2">Физика</option>
+                    <option value="3">Компьютерные сети</option>
+                    <option value="4">Операционные системы</option>
+                    <option value="5">Интегральная электронника</option>
+                    <option value="6">Архитектура компьтеров</option>
+                    <option value="7">Методы математической физики</option>
+                  </select>  
+                </td>
+                <td><select class="custom-select my-1 mr-sm-2" id="inlineFormCustomSelectPref">
+                    <option selected>Выберите</option>
+                    <option value="1">Шпак К.С.</option>
+                    <option value="2">Янукович Т.П.</option>
+                    <option value="3">Кочин В.П.</option>
+                    <option value="4">Соболь А. М.</option>
+                    <option value="5">Садов В.С.</option>
+                    <option value="6">Дрозд А. Н.</option>
+                    <option value="7">Рыбаченко И.В.</option>
+                  </select>  
+                </td>
+                <td>
+                    <div class="form-group">
+                        <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Введите">
+                      </div>
+                </td>
+                <td><select class="custom-select my-1 mr-sm-2" id="inlineFormCustomSelectPref">
+                    <option selected>Выберите</option>
+                    <option value="1">Лекция</option>
+                    <option value="2">Практическое занятие</option>
+                    <option value="3">Лабораторное занятие</option>
+                    <option value="4">Семинар</option>
+                  </select>  
+                </td>
+              </tr>
+              <tr>
+                <td>2</td>
+                <td>10:30-11:50</td>
+                <td><select class="custom-select my-1 mr-sm-2" id="inlineFormCustomSelectPref">
+                    <option selected>Выберите</option>
+                    <option value="1">Технологии программирования</option>
+                    <option value="2">Физика</option>
+                    <option value="3">Компьютерные сети</option>
+                    <option value="4">Операционные системы</option>
+                    <option value="5">Интегральная электронника</option>
+                    <option value="6">Архитектура компьтеров</option>
+                    <option value="7">Методы математической физики</option>
+                  </select>  
+                </td>
+                <td><select class="custom-select my-1 mr-sm-2" id="inlineFormCustomSelectPref">
+                    <option selected>Выберите</option>
+                    <option value="1">Шпак К.С.</option>
+                    <option value="2">Янукович Т.П.</option>
+                    <option value="3">Кочин В.П.</option>
+                    <option value="4">Соболь А. М.</option>
+                    <option value="5">Садов В.С.</option>
+                    <option value="6">Дрозд А. Н.</option>
+                    <option value="7">Рыбаченко И.В.</option>
+                  </select>  
+                </td>
+                <td>
+                    <div class="form-group">
+                        <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Введите">
+                      </div>
+                </td>
+                <td><select class="custom-select my-1 mr-sm-2" id="inlineFormCustomSelectPref">
+                    <option selected>Выберите</option>
+                    <option value="1">Лекция</option>
+                    <option value="2">Практическое занятие</option>
+                    <option value="3">Лабораторное занятие</option>
+                    <option value="4">Семинар</option>
+                  </select>  
+                </td>
+              </tr>
+              <td>3</td>
+                <td>12:00-13:20</td>
+                <td><select class="custom-select my-1 mr-sm-2" id="inlineFormCustomSelectPref">
+                    <option selected>Выберите</option>
+                    <option value="1">Технологии программирования</option>
+                    <option value="2">Физика</option>
+                    <option value="3">Компьютерные сети</option>
+                    <option value="4">Операционные системы</option>
+                    <option value="5">Интегральная электронника</option>
+                    <option value="6">Архитектура компьтеров</option>
+                    <option value="7">Методы математической физики</option>
+                  </select>  
+                </td>
+                <td><select class="custom-select my-1 mr-sm-2" id="inlineFormCustomSelectPref">
+                    <option selected>Выберите</option>
+                    <option value="1">Шпак К.С.</option>
+                    <option value="2">Янукович Т.П.</option>
+                    <option value="3">Кочин В.П.</option>
+                    <option value="4">Соболь А. М.</option>
+                    <option value="5">Садов В.С.</option>
+                    <option value="6">Дрозд А. Н.</option>
+                    <option value="7">Рыбаченко И.В.</option>
+                  </select>  
+                </td>
+                <td>
+                    <div class="form-group">
+                        <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Введите">
+                      </div>
+                </td>
+                <td><select class="custom-select my-1 mr-sm-2" id="inlineFormCustomSelectPref">
+                    <option selected>Выберите</option>
+                    <option value="1">Лекция</option>
+                    <option value="2">Практическое занятие</option>
+                    <option value="3">Лабораторное занятие</option>
+                    <option value="4">Семинар</option>
+                  </select>  
+                </td>
+              </tr>
+              <td>4</td>
+                <td>13:50-15:10</td>
+                <td><select class="custom-select my-1 mr-sm-2" id="inlineFormCustomSelectPref">
+                    <option selected>Выберите</option>
+                    <option value="1">Технологии программирования</option>
+                    <option value="2">Физика</option>
+                    <option value="3">Компьютерные сети</option>
+                    <option value="4">Операционные системы</option>
+                    <option value="5">Интегральная электронника</option>
+                    <option value="6">Архитектура компьтеров</option>
+                    <option value="7">Методы математической физики</option>
+                  </select>  
+                </td>
+                <td><select class="custom-select my-1 mr-sm-2" id="inlineFormCustomSelectPref">
+                    <option selected>Выберите</option>
+                    <option value="1">Шпак К.С.</option>
+                    <option value="2">Янукович Т.П.</option>
+                    <option value="3">Кочин В.П.</option>
+                    <option value="4">Соболь А. М.</option>
+                    <option value="5">Садов В.С.</option>
+                    <option value="6">Дрозд А. Н.</option>
+                    <option value="7">Рыбаченко И.В.</option>
+                  </select>  
+                </td>
+                <td>
+                    <div class="form-group">
+                        <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Введите">
+                      </div>
+                </td>
+                <td><select class="custom-select my-1 mr-sm-2" id="inlineFormCustomSelectPref">
+                    <option selected>Выберите</option>
+                    <option value="1">Лекция</option>
+                    <option value="2">Практическое занятие</option>
+                    <option value="3">Лабораторное занятие</option>
+                    <option value="4">Семинар</option>
+                  </select>  
+                </td>
+              </tr>
+              <td>5</td>
+                <td>15:20-16:40</td>
+                <td><select class="custom-select my-1 mr-sm-2" id="inlineFormCustomSelectPref">
+                    <option selected>Выберите</option>
+                    <option value="1">Технологии программирования</option>
+                    <option value="2">Физика</option>
+                    <option value="3">Компьютерные сети</option>
+                    <option value="4">Операционные системы</option>
+                    <option value="5">Интегральная электронника</option>
+                    <option value="6">Архитектура компьтеров</option>
+                    <option value="7">Методы математической физики</option>
+                  </select>  
+                </td>
+                <td><select class="custom-select my-1 mr-sm-2" id="inlineFormCustomSelectPref">
+                    <option selected>Выберите</option>
+                    <option value="1">Шпак К.С.</option>
+                    <option value="2">Янукович Т.П.</option>
+                    <option value="3">Кочин В.П.</option>
+                    <option value="4">Соболь А. М.</option>
+                    <option value="5">Садов В.С.</option>
+                    <option value="6">Дрозд А. Н.</option>
+                    <option value="7">Рыбаченко И.В.</option>
+                  </select>  
+                </td>
+                <td>
+                    <div class="form-group">
+                        <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Введите">
+                      </div>
+                </td>
+                <td><select class="custom-select my-1 mr-sm-2" id="inlineFormCustomSelectPref">
+                    <option selected>Выберите</option>
+                    <option value="1">Лекция</option>
+                    <option value="2">Практическое занятие</option>
+                    <option value="3">Лабораторное занятие</option>
+                    <option value="4">Семинар</option>
+                  </select>  
+                </td>
+              </tr>
+              <td>6</td>
+                <td>16:50-18:10</td>
+                <td><select class="custom-select my-1 mr-sm-2" id="inlineFormCustomSelectPref">
+                    <option selected>Выберите</option>
+                    <option value="1">Технологии программирования</option>
+                    <option value="2">Физика</option>
+                    <option value="3">Компьютерные сети</option>
+                    <option value="4">Операционные системы</option>
+                    <option value="5">Интегральная электронника</option>
+                    <option value="6">Архитектура компьтеров</option>
+                    <option value="7">Методы математической физики</option>
+                  </select>  
+                </td>
+                <td><select class="custom-select my-1 mr-sm-2" id="inlineFormCustomSelectPref">
+                    <option selected>Выберите</option>
+                    <option value="1">Шпак К.С.</option>
+                    <option value="2">Янукович Т.П.</option>
+                    <option value="3">Кочин В.П.</option>
+                    <option value="4">Соболь А. М.</option>
+                    <option value="5">Садов В.С.</option>
+                    <option value="6">Дрозд А. Н.</option>
+                    <option value="7">Рыбаченко И.В.</option>
+                  </select>  
+                </td>
+                <td>
+                    <div class="form-group">
+                        <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Введите">
+                      </div>
+                </td>
+                <td><select class="custom-select my-1 mr-sm-2" id="inlineFormCustomSelectPref">
+                    <option selected>Выберите</option>
+                    <option value="1">Лекция</option>
+                    <option value="2">Практическое занятие</option>
+                    <option value="3">Лабораторное занятие</option>
+                    <option value="4">Семинар</option>
+                  </select>  
+                </td>
+              </tr>
+              <td>7</td>
+                <td>18:20-19:40</td>
+                <td><select class="custom-select my-1 mr-sm-2" id="inlineFormCustomSelectPref">
+                    <option selected>Выберите</option>
+                    <option value="1">Технологии программирования</option>
+                    <option value="2">Физика</option>
+                    <option value="3">Компьютерные сети</option>
+                    <option value="4">Операционные системы</option>
+                    <option value="5">Интегральная электронника</option>
+                    <option value="6">Архитектура компьтеров</option>
+                    <option value="7">Методы математической физики</option>
+                  </select>  
+                </td>
+                <td><select class="custom-select my-1 mr-sm-2" id="inlineFormCustomSelectPref">
+                    <option selected>Выберите</option>
+                    <option value="1">Шпак К.С.</option>
+                    <option value="2">Янукович Т.П.</option>
+                    <option value="3">Кочин В.П.</option>
+                    <option value="4">Соболь А. М.</option>
+                    <option value="5">Садов В.С.</option>
+                    <option value="6">Дрозд А. Н.</option>
+                    <option value="7">Рыбаченко И.В.</option>
+                  </select>  
+                </td>
+                <td>
+                    <div class="form-group">
+                        <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Введите">
+                      </div>
+                </td>
+                <td><select class="custom-select my-1 mr-sm-2" id="inlineFormCustomSelectPref">
+                    <option selected>Выберите</option>
+                    <option value="1">Лекция</option>
+                    <option value="2">Практическое занятие</option>
+                    <option value="3">Лабораторное занятие</option>
+                    <option value="4">Семинар</option>
+                  </select>  
+                </td>
+              </tr>
+            </tr>
+        </tbody>
+        <tbody>
+            <tr>
+              <th scope="row" rowspan="8" class="vertical-text">Вторник</th>
+              <td>1</td>
+              <td>9:00-10:20</td>
+              <td><select class="custom-select my-1 mr-sm-2" id="inlineFormCustomSelectPref">
+                  <option selected>Выберите</option>
+                  <option value="1">Технологии программирования</option>
+                  <option value="2">Физика</option>
+                  <option value="3">Компьютерные сети</option>
+                  <option value="4">Операционные системы</option>
+                  <option value="5">Интегральная электронника</option>
+                  <option value="6">Архитектура компьтеров</option>
+                  <option value="7">Методы математической физики</option>
+                </select>  
+              </td>
+              <td><select class="custom-select my-1 mr-sm-2" id="inlineFormCustomSelectPref">
+                  <option selected>Выберите</option>
+                  <option value="1">Шпак К.С.</option>
+                  <option value="2">Янукович Т.П.</option>
+                  <option value="3">Кочин В.П.</option>
+                  <option value="4">Соболь А. М.</option>
+                  <option value="5">Садов В.С.</option>
+                  <option value="6">Дрозд А. Н.</option>
+                  <option value="7">Рыбаченко И.В.</option>
+                </select>  
+              </td>
+              <td>
+                  <div class="form-group">
+                      <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Введите">
+                    </div>
+              </td>
+              <td><select class="custom-select my-1 mr-sm-2" id="inlineFormCustomSelectPref">
+                  <option selected>Выберите</option>
+                  <option value="1">Лекция</option>
+                  <option value="2">Практическое занятие</option>
+                  <option value="3">Лабораторное занятие</option>
+                  <option value="4">Семинар</option>
+                </select>  
+              </td>
+            </tr>
+            <tr>
+              <td>2</td>
+              <td>10:30-11:50</td>
+              <td><select class="custom-select my-1 mr-sm-2" id="inlineFormCustomSelectPref">
+                  <option selected>Выберите</option>
+                  <option value="1">Технологии программирования</option>
+                  <option value="2">Физика</option>
+                  <option value="3">Компьютерные сети</option>
+                  <option value="4">Операционные системы</option>
+                  <option value="5">Интегральная электронника</option>
+                  <option value="6">Архитектура компьтеров</option>
+                  <option value="7">Методы математической физики</option>
+                </select>  
+              </td>
+              <td><select class="custom-select my-1 mr-sm-2" id="inlineFormCustomSelectPref">
+                  <option selected>Выберите</option>
+                  <option value="1">Шпак К.С.</option>
+                  <option value="2">Янукович Т.П.</option>
+                  <option value="3">Кочин В.П.</option>
+                  <option value="4">Соболь А. М.</option>
+                  <option value="5">Садов В.С.</option>
+                  <option value="6">Дрозд А. Н.</option>
+                  <option value="7">Рыбаченко И.В.</option>
+                </select>  
+              </td>
+              <td>
+                  <div class="form-group">
+                      <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Введите">
+                    </div>
+              </td>
+              <td><select class="custom-select my-1 mr-sm-2" id="inlineFormCustomSelectPref">
+                  <option selected>Выберите</option>
+                  <option value="1">Лекция</option>
+                  <option value="2">Практическое занятие</option>
+                  <option value="3">Лабораторное занятие</option>
+                  <option value="4">Семинар</option>
+                </select>  
+              </td>
+            </tr>
+            <td>3</td>
+              <td>12:00-13:20</td>
+              <td><select class="custom-select my-1 mr-sm-2" id="inlineFormCustomSelectPref">
+                  <option selected>Выберите</option>
+                  <option value="1">Технологии программирования</option>
+                  <option value="2">Физика</option>
+                  <option value="3">Компьютерные сети</option>
+                  <option value="4">Операционные системы</option>
+                  <option value="5">Интегральная электронника</option>
+                  <option value="6">Архитектура компьтеров</option>
+                  <option value="7">Методы математической физики</option>
+                </select>  
+              </td>
+              <td><select class="custom-select my-1 mr-sm-2" id="inlineFormCustomSelectPref">
+                  <option selected>Выберите</option>
+                  <option value="1">Шпак К.С.</option>
+                  <option value="2">Янукович Т.П.</option>
+                  <option value="3">Кочин В.П.</option>
+                  <option value="4">Соболь А. М.</option>
+                  <option value="5">Садов В.С.</option>
+                  <option value="6">Дрозд А. Н.</option>
+                  <option value="7">Рыбаченко И.В.</option>
+                </select>  
+              </td>
+              <td>
+                  <div class="form-group">
+                      <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Введите">
+                    </div>
+              </td>
+              <td><select class="custom-select my-1 mr-sm-2" id="inlineFormCustomSelectPref">
+                  <option selected>Выберите</option>
+                  <option value="1">Лекция</option>
+                  <option value="2">Практическое занятие</option>
+                  <option value="3">Лабораторное занятие</option>
+                  <option value="4">Семинар</option>
+                </select>  
+              </td>
+            </tr>
+            <td>4</td>
+              <td>13:50-15:10</td>
+              <td><select class="custom-select my-1 mr-sm-2" id="inlineFormCustomSelectPref">
+                  <option selected>Выберите</option>
+                  <option value="1">Технологии программирования</option>
+                  <option value="2">Физика</option>
+                  <option value="3">Компьютерные сети</option>
+                  <option value="4">Операционные системы</option>
+                  <option value="5">Интегральная электронника</option>
+                  <option value="6">Архитектура компьтеров</option>
+                  <option value="7">Методы математической физики</option>
+                </select>  
+              </td>
+              <td><select class="custom-select my-1 mr-sm-2" id="inlineFormCustomSelectPref">
+                  <option selected>Выберите</option>
+                  <option value="1">Шпак К.С.</option>
+                  <option value="2">Янукович Т.П.</option>
+                  <option value="3">Кочин В.П.</option>
+                  <option value="4">Соболь А. М.</option>
+                  <option value="5">Садов В.С.</option>
+                  <option value="6">Дрозд А. Н.</option>
+                  <option value="7">Рыбаченко И.В.</option>
+                </select>  
+              </td>
+              <td>
+                  <div class="form-group">
+                      <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Введите">
+                    </div>
+              </td>
+              <td><select class="custom-select my-1 mr-sm-2" id="inlineFormCustomSelectPref">
+                  <option selected>Выберите</option>
+                  <option value="1">Лекция</option>
+                  <option value="2">Практическое занятие</option>
+                  <option value="3">Лабораторное занятие</option>
+                  <option value="4">Семинар</option>
+                </select>  
+              </td>
+            </tr>
+            <td>5</td>
+              <td>15:20-16:40</td>
+              <td><select class="custom-select my-1 mr-sm-2" id="inlineFormCustomSelectPref">
+                  <option selected>Выберите</option>
+                  <option value="1">Технологии программирования</option>
+                  <option value="2">Физика</option>
+                  <option value="3">Компьютерные сети</option>
+                  <option value="4">Операционные системы</option>
+                  <option value="5">Интегральная электронника</option>
+                  <option value="6">Архитектура компьтеров</option>
+                  <option value="7">Методы математической физики</option>
+                </select>  
+              </td>
+              <td><select class="custom-select my-1 mr-sm-2" id="inlineFormCustomSelectPref">
+                  <option selected>Выберите</option>
+                  <option value="1">Шпак К.С.</option>
+                  <option value="2">Янукович Т.П.</option>
+                  <option value="3">Кочин В.П.</option>
+                  <option value="4">Соболь А. М.</option>
+                  <option value="5">Садов В.С.</option>
+                  <option value="6">Дрозд А. Н.</option>
+                  <option value="7">Рыбаченко И.В.</option>
+                </select>  
+              </td>
+              <td>
+                  <div class="form-group">
+                      <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Введите">
+                    </div>
+              </td>
+              <td><select class="custom-select my-1 mr-sm-2" id="inlineFormCustomSelectPref">
+                  <option selected>Выберите</option>
+                  <option value="1">Лекция</option>
+                  <option value="2">Практическое занятие</option>
+                  <option value="3">Лабораторное занятие</option>
+                  <option value="4">Семинар</option>
+                </select>  
+              </td>
+            </tr>
+            <td>6</td>
+              <td>16:50-18:10</td>
+              <td><select class="custom-select my-1 mr-sm-2" id="inlineFormCustomSelectPref">
+                  <option selected>Выберите</option>
+                  <option value="1">Технологии программирования</option>
+                  <option value="2">Физика</option>
+                  <option value="3">Компьютерные сети</option>
+                  <option value="4">Операционные системы</option>
+                  <option value="5">Интегральная электронника</option>
+                  <option value="6">Архитектура компьтеров</option>
+                  <option value="7">Методы математической физики</option>
+                </select>  
+              </td>
+              <td><select class="custom-select my-1 mr-sm-2" id="inlineFormCustomSelectPref">
+                  <option selected>Выберите</option>
+                  <option value="1">Шпак К.С.</option>
+                  <option value="2">Янукович Т.П.</option>
+                  <option value="3">Кочин В.П.</option>
+                  <option value="4">Соболь А. М.</option>
+                  <option value="5">Садов В.С.</option>
+                  <option value="6">Дрозд А. Н.</option>
+                  <option value="7">Рыбаченко И.В.</option>
+                </select>  
+              </td>
+              <td>
+                  <div class="form-group">
+                      <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Введите">
+                    </div>
+              </td>
+              <td><select class="custom-select my-1 mr-sm-2" id="inlineFormCustomSelectPref">
+                  <option selected>Выберите</option>
+                  <option value="1">Лекция</option>
+                  <option value="2">Практическое занятие</option>
+                  <option value="3">Лабораторное занятие</option>
+                  <option value="4">Семинар</option>
+                </select>  
+              </td>
+            </tr>
+            <td>7</td>
+              <td>18:20-19:40</td>
+              <td><select class="custom-select my-1 mr-sm-2" id="inlineFormCustomSelectPref">
+                  <option selected>Выберите</option>
+                  <option value="1">Технологии программирования</option>
+                  <option value="2">Физика</option>
+                  <option value="3">Компьютерные сети</option>
+                  <option value="4">Операционные системы</option>
+                  <option value="5">Интегральная электронника</option>
+                  <option value="6">Архитектура компьтеров</option>
+                  <option value="7">Методы математической физики</option>
+                </select>  
+              </td>
+              <td><select class="custom-select my-1 mr-sm-2" id="inlineFormCustomSelectPref">
+                  <option selected>Выберите</option>
+                  <option value="1">Шпак К.С.</option>
+                  <option value="2">Янукович Т.П.</option>
+                  <option value="3">Кочин В.П.</option>
+                  <option value="4">Соболь А. М.</option>
+                  <option value="5">Садов В.С.</option>
+                  <option value="6">Дрозд А. Н.</option>
+                  <option value="7">Рыбаченко И.В.</option>
+                </select>  
+              </td>
+              <td>
+                  <div class="form-group">
+                      <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Введите">
+                    </div>
+              </td>
+              <td><select class="custom-select my-1 mr-sm-2" id="inlineFormCustomSelectPref">
+                  <option selected>Выберите</option>
+                  <option value="1">Лекция</option>
+                  <option value="2">Практическое занятие</option>
+                  <option value="3">Лабораторное занятие</option>
+                  <option value="4">Семинар</option>
+                </select>  
+              </td>
+            </tr>
+          </tr>
+      </tbody>
+      <tbody>
+        <tr>
+          <th scope="row" rowspan="8" class="vertical-text">Среда</th>
+          <td>1</td>
+          <td>9:00-10:20</td>
+          <td><select class="custom-select my-1 mr-sm-2" id="inlineFormCustomSelectPref">
+              <option selected>Выберите</option>
+              <option value="1">Технологии программирования</option>
+              <option value="2">Физика</option>
+              <option value="3">Компьютерные сети</option>
+              <option value="4">Операционные системы</option>
+              <option value="5">Интегральная электронника</option>
+              <option value="6">Архитектура компьтеров</option>
+              <option value="7">Методы математической физики</option>
+            </select>  
+          </td>
+          <td><select class="custom-select my-1 mr-sm-2" id="inlineFormCustomSelectPref">
+              <option selected>Выберите</option>
+              <option value="1">Шпак К.С.</option>
+              <option value="2">Янукович Т.П.</option>
+              <option value="3">Кочин В.П.</option>
+              <option value="4">Соболь А. М.</option>
+              <option value="5">Садов В.С.</option>
+              <option value="6">Дрозд А. Н.</option>
+              <option value="7">Рыбаченко И.В.</option>
+            </select>  
+          </td>
+          <td>
+              <div class="form-group">
+                  <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Введите">
+                </div>
+          </td>
+          <td><select class="custom-select my-1 mr-sm-2" id="inlineFormCustomSelectPref">
+              <option selected>Выберите</option>
+              <option value="1">Лекция</option>
+              <option value="2">Практическое занятие</option>
+              <option value="3">Лабораторное занятие</option>
+              <option value="4">Семинар</option>
+            </select>  
+          </td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>10:30-11:50</td>
+          <td><select class="custom-select my-1 mr-sm-2" id="inlineFormCustomSelectPref">
+              <option selected>Выберите</option>
+              <option value="1">Технологии программирования</option>
+              <option value="2">Физика</option>
+              <option value="3">Компьютерные сети</option>
+              <option value="4">Операционные системы</option>
+              <option value="5">Интегральная электронника</option>
+              <option value="6">Архитектура компьтеров</option>
+              <option value="7">Методы математической физики</option>
+            </select>  
+          </td>
+          <td><select class="custom-select my-1 mr-sm-2" id="inlineFormCustomSelectPref">
+              <option selected>Выберите</option>
+              <option value="1">Шпак К.С.</option>
+              <option value="2">Янукович Т.П.</option>
+              <option value="3">Кочин В.П.</option>
+              <option value="4">Соболь А. М.</option>
+              <option value="5">Садов В.С.</option>
+              <option value="6">Дрозд А. Н.</option>
+              <option value="7">Рыбаченко И.В.</option>
+            </select>  
+          </td>
+          <td>
+              <div class="form-group">
+                  <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Введите">
+                </div>
+          </td>
+          <td><select class="custom-select my-1 mr-sm-2" id="inlineFormCustomSelectPref">
+              <option selected>Выберите</option>
+              <option value="1">Лекция</option>
+              <option value="2">Практическое занятие</option>
+              <option value="3">Лабораторное занятие</option>
+              <option value="4">Семинар</option>
+            </select>  
+          </td>
+        </tr>
+        <td>3</td>
+          <td>12:00-13:20</td>
+          <td><select class="custom-select my-1 mr-sm-2" id="inlineFormCustomSelectPref">
+              <option selected>Выберите</option>
+              <option value="1">Технологии программирования</option>
+              <option value="2">Физика</option>
+              <option value="3">Компьютерные сети</option>
+              <option value="4">Операционные системы</option>
+              <option value="5">Интегральная электронника</option>
+              <option value="6">Архитектура компьтеров</option>
+              <option value="7">Методы математической физики</option>
+            </select>  
+          </td>
+          <td><select class="custom-select my-1 mr-sm-2" id="inlineFormCustomSelectPref">
+              <option selected>Выберите</option>
+              <option value="1">Шпак К.С.</option>
+              <option value="2">Янукович Т.П.</option>
+              <option value="3">Кочин В.П.</option>
+              <option value="4">Соболь А. М.</option>
+              <option value="5">Садов В.С.</option>
+              <option value="6">Дрозд А. Н.</option>
+              <option value="7">Рыбаченко И.В.</option>
+            </select>  
+          </td>
+          <td>
+              <div class="form-group">
+                  <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Введите">
+                </div>
+          </td>
+          <td><select class="custom-select my-1 mr-sm-2" id="inlineFormCustomSelectPref">
+              <option selected>Выберите</option>
+              <option value="1">Лекция</option>
+              <option value="2">Практическое занятие</option>
+              <option value="3">Лабораторное занятие</option>
+              <option value="4">Семинар</option>
+            </select>  
+          </td>
+        </tr>
+        <td>4</td>
+          <td>13:50-15:10</td>
+          <td><select class="custom-select my-1 mr-sm-2" id="inlineFormCustomSelectPref">
+              <option selected>Выберите</option>
+              <option value="1">Технологии программирования</option>
+              <option value="2">Физика</option>
+              <option value="3">Компьютерные сети</option>
+              <option value="4">Операционные системы</option>
+              <option value="5">Интегральная электронника</option>
+              <option value="6">Архитектура компьтеров</option>
+              <option value="7">Методы математической физики</option>
+            </select>  
+          </td>
+          <td><select class="custom-select my-1 mr-sm-2" id="inlineFormCustomSelectPref">
+              <option selected>Выберите</option>
+              <option value="1">Шпак К.С.</option>
+              <option value="2">Янукович Т.П.</option>
+              <option value="3">Кочин В.П.</option>
+              <option value="4">Соболь А. М.</option>
+              <option value="5">Садов В.С.</option>
+              <option value="6">Дрозд А. Н.</option>
+              <option value="7">Рыбаченко И.В.</option>
+            </select>  
+          </td>
+          <td>
+              <div class="form-group">
+                  <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Введите">
+                </div>
+          </td>
+          <td><select class="custom-select my-1 mr-sm-2" id="inlineFormCustomSelectPref">
+              <option selected>Выберите</option>
+              <option value="1">Лекция</option>
+              <option value="2">Практическое занятие</option>
+              <option value="3">Лабораторное занятие</option>
+              <option value="4">Семинар</option>
+            </select>  
+          </td>
+        </tr>
+        <td>5</td>
+          <td>15:20-16:40</td>
+          <td><select class="custom-select my-1 mr-sm-2" id="inlineFormCustomSelectPref">
+              <option selected>Выберите</option>
+              <option value="1">Технологии программирования</option>
+              <option value="2">Физика</option>
+              <option value="3">Компьютерные сети</option>
+              <option value="4">Операционные системы</option>
+              <option value="5">Интегральная электронника</option>
+              <option value="6">Архитектура компьтеров</option>
+              <option value="7">Методы математической физики</option>
+            </select>  
+          </td>
+          <td><select class="custom-select my-1 mr-sm-2" id="inlineFormCustomSelectPref">
+              <option selected>Выберите</option>
+              <option value="1">Шпак К.С.</option>
+              <option value="2">Янукович Т.П.</option>
+              <option value="3">Кочин В.П.</option>
+              <option value="4">Соболь А. М.</option>
+              <option value="5">Садов В.С.</option>
+              <option value="6">Дрозд А. Н.</option>
+              <option value="7">Рыбаченко И.В.</option>
+            </select>  
+          </td>
+          <td>
+              <div class="form-group">
+                  <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Введите">
+                </div>
+          </td>
+          <td><select class="custom-select my-1 mr-sm-2" id="inlineFormCustomSelectPref">
+              <option selected>Выберите</option>
+              <option value="1">Лекция</option>
+              <option value="2">Практическое занятие</option>
+              <option value="3">Лабораторное занятие</option>
+              <option value="4">Семинар</option>
+            </select>  
+          </td>
+        </tr>
+        <td>6</td>
+          <td>16:50-18:10</td>
+          <td><select class="custom-select my-1 mr-sm-2" id="inlineFormCustomSelectPref">
+              <option selected>Выберите</option>
+              <option value="1">Технологии программирования</option>
+              <option value="2">Физика</option>
+              <option value="3">Компьютерные сети</option>
+              <option value="4">Операционные системы</option>
+              <option value="5">Интегральная электронника</option>
+              <option value="6">Архитектура компьтеров</option>
+              <option value="7">Методы математической физики</option>
+            </select>  
+          </td>
+          <td><select class="custom-select my-1 mr-sm-2" id="inlineFormCustomSelectPref">
+              <option selected>Выберите</option>
+              <option value="1">Шпак К.С.</option>
+              <option value="2">Янукович Т.П.</option>
+              <option value="3">Кочин В.П.</option>
+              <option value="4">Соболь А. М.</option>
+              <option value="5">Садов В.С.</option>
+              <option value="6">Дрозд А. Н.</option>
+              <option value="7">Рыбаченко И.В.</option>
+            </select>  
+          </td>
+          <td>
+              <div class="form-group">
+                  <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Введите">
+                </div>
+          </td>
+          <td><select class="custom-select my-1 mr-sm-2" id="inlineFormCustomSelectPref">
+              <option selected>Выберите</option>
+              <option value="1">Лекция</option>
+              <option value="2">Практическое занятие</option>
+              <option value="3">Лабораторное занятие</option>
+              <option value="4">Семинар</option>
+            </select>  
+          </td>
+        </tr>
+        <td>7</td>
+          <td>18:20-19:40</td>
+          <td><select class="custom-select my-1 mr-sm-2" id="inlineFormCustomSelectPref">
+              <option selected>Выберите</option>
+              <option value="1">Технологии программирования</option>
+              <option value="2">Физика</option>
+              <option value="3">Компьютерные сети</option>
+              <option value="4">Операционные системы</option>
+              <option value="5">Интегральная электронника</option>
+              <option value="6">Архитектура компьтеров</option>
+              <option value="7">Методы математической физики</option>
+            </select>  
+          </td>
+          <td><select class="custom-select my-1 mr-sm-2" id="inlineFormCustomSelectPref">
+              <option selected>Выберите</option>
+              <option value="1">Шпак К.С.</option>
+              <option value="2">Янукович Т.П.</option>
+              <option value="3">Кочин В.П.</option>
+              <option value="4">Соболь А. М.</option>
+              <option value="5">Садов В.С.</option>
+              <option value="6">Дрозд А. Н.</option>
+              <option value="7">Рыбаченко И.В.</option>
+            </select>  
+          </td>
+          <td>
+              <div class="form-group">
+                  <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Введите">
+                </div>
+          </td>
+          <td><select class="custom-select my-1 mr-sm-2" id="inlineFormCustomSelectPref">
+              <option selected>Выберите</option>
+              <option value="1">Лекция</option>
+              <option value="2">Практическое занятие</option>
+              <option value="3">Лабораторное занятие</option>
+              <option value="4">Семинар</option>
+            </select>  
+          </td>
+        </tr>
+      </tr>
+  </tbody>
+  <tbody>
+    <tr>
+      <th scope="row" rowspan="8" class="vertical-text">Четверг</th>
+      <td>1</td>
+      <td>9:00-10:20</td>
+      <td><select class="custom-select my-1 mr-sm-2" id="inlineFormCustomSelectPref">
+          <option selected>Выберите</option>
+          <option value="1">Технологии программирования</option>
+          <option value="2">Физика</option>
+          <option value="3">Компьютерные сети</option>
+          <option value="4">Операционные системы</option>
+          <option value="5">Интегральная электронника</option>
+          <option value="6">Архитектура компьтеров</option>
+          <option value="7">Методы математической физики</option>
+        </select>  
+      </td>
+      <td><select class="custom-select my-1 mr-sm-2" id="inlineFormCustomSelectPref">
+          <option selected>Выберите</option>
+          <option value="1">Шпак К.С.</option>
+          <option value="2">Янукович Т.П.</option>
+          <option value="3">Кочин В.П.</option>
+          <option value="4">Соболь А. М.</option>
+          <option value="5">Садов В.С.</option>
+          <option value="6">Дрозд А. Н.</option>
+          <option value="7">Рыбаченко И.В.</option>
+        </select>  
+      </td>
+      <td>
+          <div class="form-group">
+              <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Введите">
+            </div>
+      </td>
+      <td><select class="custom-select my-1 mr-sm-2" id="inlineFormCustomSelectPref">
+          <option selected>Выберите</option>
+          <option value="1">Лекция</option>
+          <option value="2">Практическое занятие</option>
+          <option value="3">Лабораторное занятие</option>
+          <option value="4">Семинар</option>
+        </select>  
+      </td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>10:30-11:50</td>
+      <td><select class="custom-select my-1 mr-sm-2" id="inlineFormCustomSelectPref">
+          <option selected>Выберите</option>
+          <option value="1">Технологии программирования</option>
+          <option value="2">Физика</option>
+          <option value="3">Компьютерные сети</option>
+          <option value="4">Операционные системы</option>
+          <option value="5">Интегральная электронника</option>
+          <option value="6">Архитектура компьтеров</option>
+          <option value="7">Методы математической физики</option>
+        </select>  
+      </td>
+      <td><select class="custom-select my-1 mr-sm-2" id="inlineFormCustomSelectPref">
+          <option selected>Выберите</option>
+          <option value="1">Шпак К.С.</option>
+          <option value="2">Янукович Т.П.</option>
+          <option value="3">Кочин В.П.</option>
+          <option value="4">Соболь А. М.</option>
+          <option value="5">Садов В.С.</option>
+          <option value="6">Дрозд А. Н.</option>
+          <option value="7">Рыбаченко И.В.</option>
+        </select>  
+      </td>
+      <td>
+          <div class="form-group">
+              <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Введите">
+            </div>
+      </td>
+      <td><select class="custom-select my-1 mr-sm-2" id="inlineFormCustomSelectPref">
+          <option selected>Выберите</option>
+          <option value="1">Лекция</option>
+          <option value="2">Практическое занятие</option>
+          <option value="3">Лабораторное занятие</option>
+          <option value="4">Семинар</option>
+        </select>  
+      </td>
+    </tr>
+    <td>3</td>
+      <td>12:00-13:20</td>
+      <td><select class="custom-select my-1 mr-sm-2" id="inlineFormCustomSelectPref">
+          <option selected>Выберите</option>
+          <option value="1">Технологии программирования</option>
+          <option value="2">Физика</option>
+          <option value="3">Компьютерные сети</option>
+          <option value="4">Операционные системы</option>
+          <option value="5">Интегральная электронника</option>
+          <option value="6">Архитектура компьтеров</option>
+          <option value="7">Методы математической физики</option>
+        </select>  
+      </td>
+      <td><select class="custom-select my-1 mr-sm-2" id="inlineFormCustomSelectPref">
+          <option selected>Выберите</option>
+          <option value="1">Шпак К.С.</option>
+          <option value="2">Янукович Т.П.</option>
+          <option value="3">Кочин В.П.</option>
+          <option value="4">Соболь А. М.</option>
+          <option value="5">Садов В.С.</option>
+          <option value="6">Дрозд А. Н.</option>
+          <option value="7">Рыбаченко И.В.</option>
+        </select>  
+      </td>
+      <td>
+          <div class="form-group">
+              <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Введите">
+            </div>
+      </td>
+      <td><select class="custom-select my-1 mr-sm-2" id="inlineFormCustomSelectPref">
+          <option selected>Выберите</option>
+          <option value="1">Лекция</option>
+          <option value="2">Практическое занятие</option>
+          <option value="3">Лабораторное занятие</option>
+          <option value="4">Семинар</option>
+        </select>  
+      </td>
+    </tr>
+    <td>4</td>
+      <td>13:50-15:10</td>
+      <td><select class="custom-select my-1 mr-sm-2" id="inlineFormCustomSelectPref">
+          <option selected>Выберите</option>
+          <option value="1">Технологии программирования</option>
+          <option value="2">Физика</option>
+          <option value="3">Компьютерные сети</option>
+          <option value="4">Операционные системы</option>
+          <option value="5">Интегральная электронника</option>
+          <option value="6">Архитектура компьтеров</option>
+          <option value="7">Методы математической физики</option>
+        </select>  
+      </td>
+      <td><select class="custom-select my-1 mr-sm-2" id="inlineFormCustomSelectPref">
+          <option selected>Выберите</option>
+          <option value="1">Шпак К.С.</option>
+          <option value="2">Янукович Т.П.</option>
+          <option value="3">Кочин В.П.</option>
+          <option value="4">Соболь А. М.</option>
+          <option value="5">Садов В.С.</option>
+          <option value="6">Дрозд А. Н.</option>
+          <option value="7">Рыбаченко И.В.</option>
+        </select>  
+      </td>
+      <td>
+          <div class="form-group">
+              <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Введите">
+            </div>
+      </td>
+      <td><select class="custom-select my-1 mr-sm-2" id="inlineFormCustomSelectPref">
+          <option selected>Выберите</option>
+          <option value="1">Лекция</option>
+          <option value="2">Практическое занятие</option>
+          <option value="3">Лабораторное занятие</option>
+          <option value="4">Семинар</option>
+        </select>  
+      </td>
+    </tr>
+    <td>5</td>
+      <td>15:20-16:40</td>
+      <td><select class="custom-select my-1 mr-sm-2" id="inlineFormCustomSelectPref">
+          <option selected>Выберите</option>
+          <option value="1">Технологии программирования</option>
+          <option value="2">Физика</option>
+          <option value="3">Компьютерные сети</option>
+          <option value="4">Операционные системы</option>
+          <option value="5">Интегральная электронника</option>
+          <option value="6">Архитектура компьтеров</option>
+          <option value="7">Методы математической физики</option>
+        </select>  
+      </td>
+      <td><select class="custom-select my-1 mr-sm-2" id="inlineFormCustomSelectPref">
+          <option selected>Выберите</option>
+          <option value="1">Шпак К.С.</option>
+          <option value="2">Янукович Т.П.</option>
+          <option value="3">Кочин В.П.</option>
+          <option value="4">Соболь А. М.</option>
+          <option value="5">Садов В.С.</option>
+          <option value="6">Дрозд А. Н.</option>
+          <option value="7">Рыбаченко И.В.</option>
+        </select>  
+      </td>
+      <td>
+          <div class="form-group">
+              <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Введите">
+            </div>
+      </td>
+      <td><select class="custom-select my-1 mr-sm-2" id="inlineFormCustomSelectPref">
+          <option selected>Выберите</option>
+          <option value="1">Лекция</option>
+          <option value="2">Практическое занятие</option>
+          <option value="3">Лабораторное занятие</option>
+          <option value="4">Семинар</option>
+        </select>  
+      </td>
+    </tr>
+    <td>6</td>
+      <td>16:50-18:10</td>
+      <td><select class="custom-select my-1 mr-sm-2" id="inlineFormCustomSelectPref">
+          <option selected>Выберите</option>
+          <option value="1">Технологии программирования</option>
+          <option value="2">Физика</option>
+          <option value="3">Компьютерные сети</option>
+          <option value="4">Операционные системы</option>
+          <option value="5">Интегральная электронника</option>
+          <option value="6">Архитектура компьтеров</option>
+          <option value="7">Методы математической физики</option>
+        </select>  
+      </td>
+      <td><select class="custom-select my-1 mr-sm-2" id="inlineFormCustomSelectPref">
+          <option selected>Выберите</option>
+          <option value="1">Шпак К.С.</option>
+          <option value="2">Янукович Т.П.</option>
+          <option value="3">Кочин В.П.</option>
+          <option value="4">Соболь А. М.</option>
+          <option value="5">Садов В.С.</option>
+          <option value="6">Дрозд А. Н.</option>
+          <option value="7">Рыбаченко И.В.</option>
+        </select>  
+      </td>
+      <td>
+          <div class="form-group">
+              <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Введите">
+            </div>
+      </td>
+      <td><select class="custom-select my-1 mr-sm-2" id="inlineFormCustomSelectPref">
+          <option selected>Выберите</option>
+          <option value="1">Лекция</option>
+          <option value="2">Практическое занятие</option>
+          <option value="3">Лабораторное занятие</option>
+          <option value="4">Семинар</option>
+        </select>  
+      </td>
+    </tr>
+    <td>7</td>
+      <td>18:20-19:40</td>
+      <td><select class="custom-select my-1 mr-sm-2" id="inlineFormCustomSelectPref">
+          <option selected>Выберите</option>
+          <option value="1">Технологии программирования</option>
+          <option value="2">Физика</option>
+          <option value="3">Компьютерные сети</option>
+          <option value="4">Операционные системы</option>
+          <option value="5">Интегральная электронника</option>
+          <option value="6">Архитектура компьтеров</option>
+          <option value="7">Методы математической физики</option>
+        </select>  
+      </td>
+      <td><select class="custom-select my-1 mr-sm-2" id="inlineFormCustomSelectPref">
+          <option selected>Выберите</option>
+          <option value="1">Шпак К.С.</option>
+          <option value="2">Янукович Т.П.</option>
+          <option value="3">Кочин В.П.</option>
+          <option value="4">Соболь А. М.</option>
+          <option value="5">Садов В.С.</option>
+          <option value="6">Дрозд А. Н.</option>
+          <option value="7">Рыбаченко И.В.</option>
+        </select>  
+      </td>
+      <td>
+          <div class="form-group">
+              <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Введите">
+            </div>
+      </td>
+      <td><select class="custom-select my-1 mr-sm-2" id="inlineFormCustomSelectPref">
+          <option selected>Выберите</option>
+          <option value="1">Лекция</option>
+          <option value="2">Практическое занятие</option>
+          <option value="3">Лабораторное занятие</option>
+          <option value="4">Семинар</option>
+        </select>  
+      </td>
+    </tr>
+  </tr>
+</tbody>
+<tbody>
+    <tr>
+      <th scope="row" rowspan="8" class="vertical-text">Пятница</th>
+      <td>1</td>
+      <td>9:00-10:20</td>
+      <td><select class="custom-select my-1 mr-sm-2" id="inlineFormCustomSelectPref">
+          <option selected>Выберите</option>
+          <option value="1">Технологии программирования</option>
+          <option value="2">Физика</option>
+          <option value="3">Компьютерные сети</option>
+          <option value="4">Операционные системы</option>
+          <option value="5">Интегральная электронника</option>
+          <option value="6">Архитектура компьтеров</option>
+          <option value="7">Методы математической физики</option>
+        </select>  
+      </td>
+      <td><select class="custom-select my-1 mr-sm-2" id="inlineFormCustomSelectPref">
+          <option selected>Выберите</option>
+          <option value="1">Шпак К.С.</option>
+          <option value="2">Янукович Т.П.</option>
+          <option value="3">Кочин В.П.</option>
+          <option value="4">Соболь А. М.</option>
+          <option value="5">Садов В.С.</option>
+          <option value="6">Дрозд А. Н.</option>
+          <option value="7">Рыбаченко И.В.</option>
+        </select>  
+      </td>
+      <td>
+          <div class="form-group">
+              <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Введите">
+            </div>
+      </td>
+      <td><select class="custom-select my-1 mr-sm-2" id="inlineFormCustomSelectPref">
+          <option selected>Выберите</option>
+          <option value="1">Лекция</option>
+          <option value="2">Практическое занятие</option>
+          <option value="3">Лабораторное занятие</option>
+          <option value="4">Семинар</option>
+        </select>  
+      </td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>10:30-11:50</td>
+      <td><select class="custom-select my-1 mr-sm-2" id="inlineFormCustomSelectPref">
+          <option selected>Выберите</option>
+          <option value="1">Технологии программирования</option>
+          <option value="2">Физика</option>
+          <option value="3">Компьютерные сети</option>
+          <option value="4">Операционные системы</option>
+          <option value="5">Интегральная электронника</option>
+          <option value="6">Архитектура компьтеров</option>
+          <option value="7">Методы математической физики</option>
+        </select>  
+      </td>
+      <td><select class="custom-select my-1 mr-sm-2" id="inlineFormCustomSelectPref">
+          <option selected>Выберите</option>
+          <option value="1">Шпак К.С.</option>
+          <option value="2">Янукович Т.П.</option>
+          <option value="3">Кочин В.П.</option>
+          <option value="4">Соболь А. М.</option>
+          <option value="5">Садов В.С.</option>
+          <option value="6">Дрозд А. Н.</option>
+          <option value="7">Рыбаченко И.В.</option>
+        </select>  
+      </td>
+      <td>
+          <div class="form-group">
+              <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Введите">
+            </div>
+      </td>
+      <td><select class="custom-select my-1 mr-sm-2" id="inlineFormCustomSelectPref">
+          <option selected>Выберите</option>
+          <option value="1">Лекция</option>
+          <option value="2">Практическое занятие</option>
+          <option value="3">Лабораторное занятие</option>
+          <option value="4">Семинар</option>
+        </select>  
+      </td>
+    </tr>
+    <td>3</td>
+      <td>12:00-13:20</td>
+      <td><select class="custom-select my-1 mr-sm-2" id="inlineFormCustomSelectPref">
+          <option selected>Выберите</option>
+          <option value="1">Технологии программирования</option>
+          <option value="2">Физика</option>
+          <option value="3">Компьютерные сети</option>
+          <option value="4">Операционные системы</option>
+          <option value="5">Интегральная электронника</option>
+          <option value="6">Архитектура компьтеров</option>
+          <option value="7">Методы математической физики</option>
+        </select>  
+      </td>
+      <td><select class="custom-select my-1 mr-sm-2" id="inlineFormCustomSelectPref">
+          <option selected>Выберите</option>
+          <option value="1">Шпак К.С.</option>
+          <option value="2">Янукович Т.П.</option>
+          <option value="3">Кочин В.П.</option>
+          <option value="4">Соболь А. М.</option>
+          <option value="5">Садов В.С.</option>
+          <option value="6">Дрозд А. Н.</option>
+          <option value="7">Рыбаченко И.В.</option>
+        </select>  
+      </td>
+      <td>
+          <div class="form-group">
+              <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Введите">
+            </div>
+      </td>
+      <td><select class="custom-select my-1 mr-sm-2" id="inlineFormCustomSelectPref">
+          <option selected>Выберите</option>
+          <option value="1">Лекция</option>
+          <option value="2">Практическое занятие</option>
+          <option value="3">Лабораторное занятие</option>
+          <option value="4">Семинар</option>
+        </select>  
+      </td>
+    </tr>
+    <td>4</td>
+      <td>13:50-15:10</td>
+      <td><select class="custom-select my-1 mr-sm-2" id="inlineFormCustomSelectPref">
+          <option selected>Выберите</option>
+          <option value="1">Технологии программирования</option>
+          <option value="2">Физика</option>
+          <option value="3">Компьютерные сети</option>
+          <option value="4">Операционные системы</option>
+          <option value="5">Интегральная электронника</option>
+          <option value="6">Архитектура компьтеров</option>
+          <option value="7">Методы математической физики</option>
+        </select>  
+      </td>
+      <td><select class="custom-select my-1 mr-sm-2" id="inlineFormCustomSelectPref">
+          <option selected>Выберите</option>
+          <option value="1">Шпак К.С.</option>
+          <option value="2">Янукович Т.П.</option>
+          <option value="3">Кочин В.П.</option>
+          <option value="4">Соболь А. М.</option>
+          <option value="5">Садов В.С.</option>
+          <option value="6">Дрозд А. Н.</option>
+          <option value="7">Рыбаченко И.В.</option>
+        </select>  
+      </td>
+      <td>
+          <div class="form-group">
+              <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Введите">
+            </div>
+      </td>
+      <td><select class="custom-select my-1 mr-sm-2" id="inlineFormCustomSelectPref">
+          <option selected>Выберите</option>
+          <option value="1">Лекция</option>
+          <option value="2">Практическое занятие</option>
+          <option value="3">Лабораторное занятие</option>
+          <option value="4">Семинар</option>
+        </select>  
+      </td>
+    </tr>
+    <td>5</td>
+      <td>15:20-16:40</td>
+      <td><select class="custom-select my-1 mr-sm-2" id="inlineFormCustomSelectPref">
+          <option selected>Выберите</option>
+          <option value="1">Технологии программирования</option>
+          <option value="2">Физика</option>
+          <option value="3">Компьютерные сети</option>
+          <option value="4">Операционные системы</option>
+          <option value="5">Интегральная электронника</option>
+          <option value="6">Архитектура компьтеров</option>
+          <option value="7">Методы математической физики</option>
+        </select>  
+      </td>
+      <td><select class="custom-select my-1 mr-sm-2" id="inlineFormCustomSelectPref">
+          <option selected>Выберите</option>
+          <option value="1">Шпак К.С.</option>
+          <option value="2">Янукович Т.П.</option>
+          <option value="3">Кочин В.П.</option>
+          <option value="4">Соболь А. М.</option>
+          <option value="5">Садов В.С.</option>
+          <option value="6">Дрозд А. Н.</option>
+          <option value="7">Рыбаченко И.В.</option>
+        </select>  
+      </td>
+      <td>
+          <div class="form-group">
+              <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Введите">
+            </div>
+      </td>
+      <td><select class="custom-select my-1 mr-sm-2" id="inlineFormCustomSelectPref">
+          <option selected>Выберите</option>
+          <option value="1">Лекция</option>
+          <option value="2">Практическое занятие</option>
+          <option value="3">Лабораторное занятие</option>
+          <option value="4">Семинар</option>
+        </select>  
+      </td>
+    </tr>
+    <td>6</td>
+      <td>16:50-18:10</td>
+      <td><select class="custom-select my-1 mr-sm-2" id="inlineFormCustomSelectPref">
+          <option selected>Выберите</option>
+          <option value="1">Технологии программирования</option>
+          <option value="2">Физика</option>
+          <option value="3">Компьютерные сети</option>
+          <option value="4">Операционные системы</option>
+          <option value="5">Интегральная электронника</option>
+          <option value="6">Архитектура компьтеров</option>
+          <option value="7">Методы математической физики</option>
+        </select>  
+      </td>
+      <td><select class="custom-select my-1 mr-sm-2" id="inlineFormCustomSelectPref">
+          <option selected>Выберите</option>
+          <option value="1">Шпак К.С.</option>
+          <option value="2">Янукович Т.П.</option>
+          <option value="3">Кочин В.П.</option>
+          <option value="4">Соболь А. М.</option>
+          <option value="5">Садов В.С.</option>
+          <option value="6">Дрозд А. Н.</option>
+          <option value="7">Рыбаченко И.В.</option>
+        </select>  
+      </td>
+      <td>
+          <div class="form-group">
+              <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Введите">
+            </div>
+      </td>
+      <td><select class="custom-select my-1 mr-sm-2" id="inlineFormCustomSelectPref">
+          <option selected>Выберите</option>
+          <option value="1">Лекция</option>
+          <option value="2">Практическое занятие</option>
+          <option value="3">Лабораторное занятие</option>
+          <option value="4">Семинар</option>
+        </select>  
+      </td>
+    </tr>
+    <td>7</td>
+      <td>18:20-19:40</td>
+      <td><select class="custom-select my-1 mr-sm-2" id="inlineFormCustomSelectPref">
+          <option selected>Выберите</option>
+          <option value="1">Технологии программирования</option>
+          <option value="2">Физика</option>
+          <option value="3">Компьютерные сети</option>
+          <option value="4">Операционные системы</option>
+          <option value="5">Интегральная электронника</option>
+          <option value="6">Архитектура компьтеров</option>
+          <option value="7">Методы математической физики</option>
+        </select>  
+      </td>
+      <td><select class="custom-select my-1 mr-sm-2" id="inlineFormCustomSelectPref">
+          <option selected>Выберите</option>
+          <option value="1">Шпак К.С.</option>
+          <option value="2">Янукович Т.П.</option>
+          <option value="3">Кочин В.П.</option>
+          <option value="4">Соболь А. М.</option>
+          <option value="5">Садов В.С.</option>
+          <option value="6">Дрозд А. Н.</option>
+          <option value="7">Рыбаченко И.В.</option>
+        </select>  
+      </td>
+      <td>
+          <div class="form-group">
+              <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Введите">
+            </div>
+      </td>
+      <td><select class="custom-select my-1 mr-sm-2" id="inlineFormCustomSelectPref">
+          <option selected>Выберите</option>
+          <option value="1">Лекция</option>
+          <option value="2">Практическое занятие</option>
+          <option value="3">Лабораторное занятие</option>
+          <option value="4">Семинар</option>
+        </select>  
+      </td>
+    </tr>
+  </tr>
+</tbody>
+<tbody>
+    <tr>
+      <th scope="row" rowspan="8" class="vertical-text">Суббота</th>
+      <td>1</td>
+      <td>9:00-10:20</td>
+      <td><select class="custom-select my-1 mr-sm-2" id="inlineFormCustomSelectPref">
+          <option selected>Выберите</option>
+          <option value="1">Технологии программирования</option>
+          <option value="2">Физика</option>
+          <option value="3">Компьютерные сети</option>
+          <option value="4">Операционные системы</option>
+          <option value="5">Интегральная электронника</option>
+          <option value="6">Архитектура компьтеров</option>
+          <option value="7">Методы математической физики</option>
+        </select>  
+      </td>
+      <td><select class="custom-select my-1 mr-sm-2" id="inlineFormCustomSelectPref">
+          <option selected>Выберите</option>
+          <option value="1">Шпак К.С.</option>
+          <option value="2">Янукович Т.П.</option>
+          <option value="3">Кочин В.П.</option>
+          <option value="4">Соболь А. М.</option>
+          <option value="5">Садов В.С.</option>
+          <option value="6">Дрозд А. Н.</option>
+          <option value="7">Рыбаченко И.В.</option>
+        </select>  
+      </td>
+      <td>
+          <div class="form-group">
+              <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Введите">
+            </div>
+      </td>
+      <td><select class="custom-select my-1 mr-sm-2" id="inlineFormCustomSelectPref">
+          <option selected>Выберите</option>
+          <option value="1">Лекция</option>
+          <option value="2">Практическое занятие</option>
+          <option value="3">Лабораторное занятие</option>
+          <option value="4">Семинар</option>
+        </select>  
+      </td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>10:30-11:50</td>
+      <td><select class="custom-select my-1 mr-sm-2" id="inlineFormCustomSelectPref">
+          <option selected>Выберите</option>
+          <option value="1">Технологии программирования</option>
+          <option value="2">Физика</option>
+          <option value="3">Компьютерные сети</option>
+          <option value="4">Операционные системы</option>
+          <option value="5">Интегральная электронника</option>
+          <option value="6">Архитектура компьтеров</option>
+          <option value="7">Методы математической физики</option>
+        </select>  
+      </td>
+      <td><select class="custom-select my-1 mr-sm-2" id="inlineFormCustomSelectPref">
+          <option selected>Выберите</option>
+          <option value="1">Шпак К.С.</option>
+          <option value="2">Янукович Т.П.</option>
+          <option value="3">Кочин В.П.</option>
+          <option value="4">Соболь А. М.</option>
+          <option value="5">Садов В.С.</option>
+          <option value="6">Дрозд А. Н.</option>
+          <option value="7">Рыбаченко И.В.</option>
+        </select>  
+      </td>
+      <td>
+          <div class="form-group">
+              <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Введите">
+            </div>
+      </td>
+      <td><select class="custom-select my-1 mr-sm-2" id="inlineFormCustomSelectPref">
+          <option selected>Выберите</option>
+          <option value="1">Лекция</option>
+          <option value="2">Практическое занятие</option>
+          <option value="3">Лабораторное занятие</option>
+          <option value="4">Семинар</option>
+        </select>  
+      </td>
+    </tr>
+    <td>3</td>
+      <td>12:00-13:20</td>
+      <td><select class="custom-select my-1 mr-sm-2" id="inlineFormCustomSelectPref">
+          <option selected>Выберите</option>
+          <option value="1">Технологии программирования</option>
+          <option value="2">Физика</option>
+          <option value="3">Компьютерные сети</option>
+          <option value="4">Операционные системы</option>
+          <option value="5">Интегральная электронника</option>
+          <option value="6">Архитектура компьтеров</option>
+          <option value="7">Методы математической физики</option>
+        </select>  
+      </td>
+      <td><select class="custom-select my-1 mr-sm-2" id="inlineFormCustomSelectPref">
+          <option selected>Выберите</option>
+          <option value="1">Шпак К.С.</option>
+          <option value="2">Янукович Т.П.</option>
+          <option value="3">Кочин В.П.</option>
+          <option value="4">Соболь А. М.</option>
+          <option value="5">Садов В.С.</option>
+          <option value="6">Дрозд А. Н.</option>
+          <option value="7">Рыбаченко И.В.</option>
+        </select>  
+      </td>
+      <td>
+          <div class="form-group">
+              <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Введите">
+            </div>
+      </td>
+      <td><select class="custom-select my-1 mr-sm-2" id="inlineFormCustomSelectPref">
+          <option selected>Выберите</option>
+          <option value="1">Лекция</option>
+          <option value="2">Практическое занятие</option>
+          <option value="3">Лабораторное занятие</option>
+          <option value="4">Семинар</option>
+        </select>  
+      </td>
+    </tr>
+    <td>4</td>
+      <td>13:50-15:10</td>
+      <td><select class="custom-select my-1 mr-sm-2" id="inlineFormCustomSelectPref">
+          <option selected>Выберите</option>
+          <option value="1">Технологии программирования</option>
+          <option value="2">Физика</option>
+          <option value="3">Компьютерные сети</option>
+          <option value="4">Операционные системы</option>
+          <option value="5">Интегральная электронника</option>
+          <option value="6">Архитектура компьтеров</option>
+          <option value="7">Методы математической физики</option>
+        </select>  
+      </td>
+      <td><select class="custom-select my-1 mr-sm-2" id="inlineFormCustomSelectPref">
+          <option selected>Выберите</option>
+          <option value="1">Шпак К.С.</option>
+          <option value="2">Янукович Т.П.</option>
+          <option value="3">Кочин В.П.</option>
+          <option value="4">Соболь А. М.</option>
+          <option value="5">Садов В.С.</option>
+          <option value="6">Дрозд А. Н.</option>
+          <option value="7">Рыбаченко И.В.</option>
+        </select>  
+      </td>
+      <td>
+          <div class="form-group">
+              <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Введите">
+            </div>
+      </td>
+      <td><select class="custom-select my-1 mr-sm-2" id="inlineFormCustomSelectPref">
+          <option selected>Выберите</option>
+          <option value="1">Лекция</option>
+          <option value="2">Практическое занятие</option>
+          <option value="3">Лабораторное занятие</option>
+          <option value="4">Семинар</option>
+        </select>  
+      </td>
+    </tr>
+    <td>5</td>
+      <td>15:20-16:40</td>
+      <td><select class="custom-select my-1 mr-sm-2" id="inlineFormCustomSelectPref">
+          <option selected>Выберите</option>
+          <option value="1">Технологии программирования</option>
+          <option value="2">Физика</option>
+          <option value="3">Компьютерные сети</option>
+          <option value="4">Операционные системы</option>
+          <option value="5">Интегральная электронника</option>
+          <option value="6">Архитектура компьтеров</option>
+          <option value="7">Методы математической физики</option>
+        </select>  
+      </td>
+      <td><select class="custom-select my-1 mr-sm-2" id="inlineFormCustomSelectPref">
+          <option selected>Выберите</option>
+          <option value="1">Шпак К.С.</option>
+          <option value="2">Янукович Т.П.</option>
+          <option value="3">Кочин В.П.</option>
+          <option value="4">Соболь А. М.</option>
+          <option value="5">Садов В.С.</option>
+          <option value="6">Дрозд А. Н.</option>
+          <option value="7">Рыбаченко И.В.</option>
+        </select>  
+      </td>
+      <td>
+          <div class="form-group">
+              <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Введите">
+            </div>
+      </td>
+      <td><select class="custom-select my-1 mr-sm-2" id="inlineFormCustomSelectPref">
+          <option selected>Выберите</option>
+          <option value="1">Лекция</option>
+          <option value="2">Практическое занятие</option>
+          <option value="3">Лабораторное занятие</option>
+          <option value="4">Семинар</option>
+        </select>  
+      </td>
+    </tr>
+    <td>6</td>
+      <td>16:50-18:10</td>
+      <td><select class="custom-select my-1 mr-sm-2" id="inlineFormCustomSelectPref">
+          <option selected>Выберите</option>
+          <option value="1">Технологии программирования</option>
+          <option value="2">Физика</option>
+          <option value="3">Компьютерные сети</option>
+          <option value="4">Операционные системы</option>
+          <option value="5">Интегральная электронника</option>
+          <option value="6">Архитектура компьтеров</option>
+          <option value="7">Методы математической физики</option>
+        </select>  
+      </td>
+      <td><select class="custom-select my-1 mr-sm-2" id="inlineFormCustomSelectPref">
+          <option selected>Выберите</option>
+          <option value="1">Шпак К.С.</option>
+          <option value="2">Янукович Т.П.</option>
+          <option value="3">Кочин В.П.</option>
+          <option value="4">Соболь А. М.</option>
+          <option value="5">Садов В.С.</option>
+          <option value="6">Дрозд А. Н.</option>
+          <option value="7">Рыбаченко И.В.</option>
+        </select>  
+      </td>
+      <td>
+          <div class="form-group">
+              <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Введите">
+            </div>
+      </td>
+      <td><select class="custom-select my-1 mr-sm-2" id="inlineFormCustomSelectPref">
+          <option selected>Выберите</option>
+          <option value="1">Лекция</option>
+          <option value="2">Практическое занятие</option>
+          <option value="3">Лабораторное занятие</option>
+          <option value="4">Семинар</option>
+        </select>  
+      </td>
+    </tr>
+    <td>7</td>
+      <td>18:20-19:40</td>
+      <td><select class="custom-select my-1 mr-sm-2" id="inlineFormCustomSelectPref">
+          <option selected>Выберите</option>
+          <option value="1">Технологии программирования</option>
+          <option value="2">Физика</option>
+          <option value="3">Компьютерные сети</option>
+          <option value="4">Операционные системы</option>
+          <option value="5">Интегральная электронника</option>
+          <option value="6">Архитектура компьтеров</option>
+          <option value="7">Методы математической физики</option>
+        </select>  
+      </td>
+      <td><select class="custom-select my-1 mr-sm-2" id="inlineFormCustomSelectPref">
+          <option selected>Выберите</option>
+          <option value="1">Шпак К.С.</option>
+          <option value="2">Янукович Т.П.</option>
+          <option value="3">Кочин В.П.</option>
+          <option value="4">Соболь А. М.</option>
+          <option value="5">Садов В.С.</option>
+          <option value="6">Дрозд А. Н.</option>
+          <option value="7">Рыбаченко И.В.</option>
+        </select>  
+      </td>
+      <td>
+          <div class="form-group">
+              <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Введите">
+            </div>
+      </td>
+      <td><select class="custom-select my-1 mr-sm-2" id="inlineFormCustomSelectPref">
+          <option selected>Выберите</option>
+          <option value="1">Лекция</option>
+          <option value="2">Практическое занятие</option>
+          <option value="3">Лабораторное занятие</option>
+          <option value="4">Семинар</option>
+        </select>  
+      </td>
+    </tr>
+  </tr>
+</tbody>
+</form>
+</div>
+<div>
+<a href="#" class="buttonss button11" role="button" aria-pressed="true">Сохранить</a>
+<a href="#" class="buttonss button22" role="button" aria-pressed="true">Отменить</a></div>
 </body>
 </html>
