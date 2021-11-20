@@ -1,11 +1,4 @@
-/* .d-inline-block{
-display: inline-block;
-}
- .align-top{
-vertical-align: top;
- } */
-
- body{
+body{
   background-color: #EDF4FF;
   text-align: center;
 }
@@ -68,4 +61,64 @@ background: #D2E4F9;
 }
 .text{
   margin-top: 85px;
+}
+/*admin*/
+.fieldAdmin{
+  margin-left: 217px;
+  margin-top: 100px;
+  width: 1230px;
+  margin-bottom: 100px;
+}
+.table{
+  text-align: center;
+  margin-top: 15px;
+  height: 600px;      
+  overflow-y: auto;   
+  overflow-x: hidden;  
+}
+th{
+  border: 2px solid #A1CDFF;
+}
+.header{
+  position: sticky;
+  top: 0;
+  background-color: #A1CDFF;
+}
+.vertical-text {   
+  writing-mode:vertical-rl;
+  filter:flipH flipV;
+  height:60px;
+  direction: rtl;
+  transform: scale(-1, -1);
+  font-size: 30px;
+ }
+ .buttonss{
+  color:black;
+  position:absolute;
+  padding: 5px;
+  font-size: 25px;
+  line-height: 29px;
+  border-radius: 50px;
+  font-family: Roboto;
+}
+.button11{
+  top: 900px;
+  left : 1150px;
+  background:  #A1CDFF;
+}
+.button22{
+  top: 900px;
+  left: 1280px;
+  background: #D2E4F9;
+}
+.buttonConfirm{
+  color:black;
+  position:absolute;
+  padding: 5px;
+  font-size: 20px;
+  line-height: 29px;
+  border-radius: 50px;
+  font-family: Roboto;
+  background:  #D2E4F9;
+  left: 550px;
 }
