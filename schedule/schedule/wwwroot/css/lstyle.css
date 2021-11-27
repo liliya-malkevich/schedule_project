@@ -1,0 +1,125 @@
+
+/* .d-inline-block{
+display: inline-block;
+}
+ .align-top{
+vertical-align: top;
+ } */
+
+body{
+    font-size: 1.7vw;
+    background-color: #EDF4FF;
+}
+.logo{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 48px;
+    line-height: 56px;
+    color: black;
+}
+.contacts{
+    font-family: Roboto;
+font-style: normal;
+font-weight: normal;
+font-size: 1.2em;
+line-height: 28px;
+color: black;
+}
+.form form {
+    width: 580px;
+    margin: 150px auto;
+    padding-top: 20px;
+  }
+  .block{  
+    flex-grow:1;
+  }
+
+  .fio{
+    font-family: Roboto;
+font-style: normal;
+font-weight: normal;
+font-size: 1.2em;
+line-height: 28px;
+color: black; 
+margin-top: 20px;
+margin-bottom: 40px; 
+  }
+  a:active, /* активная/посещенная ссылка */
+a:hover,  /* при наведении */
+a {
+  text-decoration: none;
+  color: black;
+}
+.weekday{
+    margin-bottom: 20px;
+    margin-top: 20px;
+
+}
+.colorweek{
+    background: #A1CDFF;
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+border-radius: 50px;
+}
+.tabmarg{
+    margin-top: 35px;
+    font-size: 1.4vw;
+}
+table{
+margin-top: 70px;
+  border-collapse: collapse;
+  border: 0;
+  
+}​
+
+
+
+.input-wrapper{
+  background: #FFFFFF;
+box-sizing: border-box;
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+border-radius: 50px;
+width: 330px;
+height: 58px;
+}
+.input-wrapper input{
+
+  border: none;
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+  text-indent: 20px;
+  color: #000000;
+  outline: 0;
+  background: #FFFFFF;
+  box-sizing: border-box;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 50px;
+  width: 330px;
+  height: 58px;
+}
+
+h1{
+  text-align: center;
+  margin-bottom: 65px;
+}
+.butt1{
+  width: 150px;
+height: 50px;
+filter: drop-shadow(5px 6px 7px rgba(0, 0, 0, 0.25));
+background: #A2CDFF;
+border-radius: 50px;
+font-size: 1.5vw;
+}
+.wrap-but{
+  margin-left: 180px;
+  margin-top: 40px;
+}
+
+.wrap-tr{
+  background: #FEEFEB; 
+  box-sizing: border-box;
+}
+tbody{
+  background-color: white;
+}
