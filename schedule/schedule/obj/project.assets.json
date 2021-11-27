@@ -8373,11 +8373,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\kanis\\source\\repos\\schedule\\schedule\\schedule.csproj",
+      "projectUniqueName": "C:\\Users\\kanis\\Desktop\\schedule_project\\schedule\\schedule\\schedule.csproj",
       "projectName": "schedule",
-      "projectPath": "C:\\Users\\kanis\\source\\repos\\schedule\\schedule\\schedule.csproj",
+      "projectPath": "C:\\Users\\kanis\\Desktop\\schedule_project\\schedule\\schedule\\schedule.csproj",
       "packagesPath": "C:\\Users\\kanis\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\kanis\\source\\repos\\schedule\\schedule\\obj\\",
+      "outputPath": "C:\\Users\\kanis\\Desktop\\schedule_project\\schedule\\schedule\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\kanis\\AppData\\Roaming\\NuGet\\NuGet.Config",

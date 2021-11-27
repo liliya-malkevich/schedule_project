@@ -11,7 +11,7 @@
         <div class="container">
             <!-- Brand -->
             <a class="navbar-brand logo" href="#">
-                <img src="./icon/schedule_stady.png" alt="" width="84.1"
+                <img src="~/images/schedule_stady.png" alt="" width="84.1"
                      height="61">
                 Расписание
             </a>
@@ -24,7 +24,7 @@
                     <!-- Dropdown -->
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle contacts" href="#" id="navbardrop" data-toggle="dropdown">
-                            <img src="./icon/phone-call.png" alt="" width="32" height="30">
+                            <img src="~/images/phone-call.png" alt="" width="32" height="30">
                             Контакты
                         </a>
                         <div class="dropdown-menu">
@@ -37,6 +37,7 @@
             </div>
         </div>
     </nav>
+    @RenderBody()
     <div class="form">
 
         <form class="form-horizontal" role="form" method="POST" action="./html/schedule.html">
