@@ -145,8 +145,9 @@ C:\Users\kanis\source\repos\schedule\schedule\obj\Debug\netcoreapp3.1\schedule.c
 C:\Users\kanis\source\repos\schedule\schedule\obj\Debug\netcoreapp3.1\schedule.MvcApplicationPartsAssemblyInfo.cache
 C:\Users\kanis\source\repos\schedule\schedule\obj\Debug\netcoreapp3.1\schedule.Views.pdb
 C:\Users\kanis\source\repos\schedule\schedule\obj\Debug\netcoreapp3.1\Razor\Views\Shared\Index.cshtml.g.cs
-C:\Users\kanis\Desktop\schedule_project\schedule\schedule\bin\Debug\netcoreapp3.1\appsettings.Development.json
 C:\Users\kanis\Desktop\schedule_project\schedule\schedule\bin\Debug\netcoreapp3.1\appsettings.json
+C:\Users\kanis\Desktop\schedule_project\schedule\schedule\bin\Debug\netcoreapp3.1\appsettings.prodaction.json
+C:\Users\kanis\Desktop\schedule_project\schedule\schedule\bin\Debug\netcoreapp3.1\appsettings.staging.json
 C:\Users\kanis\Desktop\schedule_project\schedule\schedule\bin\Debug\netcoreapp3.1\Properties\launchSettings.json
 C:\Users\kanis\Desktop\schedule_project\schedule\schedule\bin\Debug\netcoreapp3.1\schedule.exe
 C:\Users\kanis\Desktop\schedule_project\schedule\schedule\bin\Debug\netcoreapp3.1\schedule.deps.json
