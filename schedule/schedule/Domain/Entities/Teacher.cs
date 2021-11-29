@@ -6,15 +6,8 @@ using System.Threading.Tasks;
 
 namespace schedule.Domain.Entities
 {
-    public class Teacher : EntityBase
+    public class Teacher : User
     {
-        [Display(Name = "Имя")]
-        public virtual string Name { get; set; }
 
-        [Display(Name = "Фамилия")]
-        public virtual string Surname { get; set; }
-
-        [Display(Name = "Отчество")]
-        public virtual string Patronimic { get; set; }
     }
 }
