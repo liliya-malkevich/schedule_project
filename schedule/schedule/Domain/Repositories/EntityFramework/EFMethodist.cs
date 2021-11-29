@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 
 namespace schedule.Domain.Repositories.EntityFramework
 {
-    public class EFMethodist : IM
+    public class EFMethodist
     {
     }
 }

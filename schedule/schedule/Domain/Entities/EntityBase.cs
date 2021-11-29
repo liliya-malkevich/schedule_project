@@ -9,16 +9,16 @@ namespace schedule.Domain.Entities
     public abstract class EntityBase
     {
         [Required]
-        public String Id { get; set; }
+        public Guid Id { get; set; }
 
-        [Display(Name = "Имя")]
-        public virtual string Name { get; set; }
+        //[Display(Name = "Имя")]
+        //public virtual string Name { get; set; }
 
-        [Display(Name = "Фамилия")]
-        public virtual string Surname { get; set; }
+        //[Display(Name = "Фамилия")]
+        //public virtual string Surname { get; set; }
 
-        [Display(Name = "Отчество")]
-        public virtual string Patronimic { get; set; }
+        //[Display(Name = "Отчество")]
+        //public virtual string Patronimic { get; set; }
 
     }
 }
