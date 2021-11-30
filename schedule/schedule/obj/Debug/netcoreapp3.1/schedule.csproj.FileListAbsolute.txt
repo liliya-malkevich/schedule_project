@@ -442,3 +442,12 @@ C:\Users\Маша\Desktop\schedule_project\schedule\schedule\obj\Debug\netcoreap
 C:\Users\Маша\Desktop\schedule_project\schedule\schedule\obj\Debug\netcoreapp3.1\schedule.dll
 C:\Users\Маша\Desktop\schedule_project\schedule\schedule\obj\Debug\netcoreapp3.1\schedule.pdb
 C:\Users\Маша\Desktop\schedule_project\schedule\schedule\obj\Debug\netcoreapp3.1\schedule.genruntimeconfig.cache
+C:\Users\kanis\Desktop\schedule_project\schedule\schedule\bin\Debug\netcoreapp3.1\ClassLibrary2.dll
+C:\Users\kanis\Desktop\schedule_project\schedule\schedule\bin\Debug\netcoreapp3.1\Service.dll
+C:\Users\kanis\Desktop\schedule_project\schedule\schedule\bin\Debug\netcoreapp3.1\ClassLibrary2.pdb
+C:\Users\kanis\Desktop\schedule_project\schedule\schedule\bin\Debug\netcoreapp3.1\Service.pdb
+C:\Users\kanis\Desktop\schedule_project\schedule\schedule\bin\Debug\netcoreapp3.1\Domain.dll
+C:\Users\kanis\Desktop\schedule_project\schedule\schedule\bin\Debug\netcoreapp3.1\Models.dll
+C:\Users\kanis\Desktop\schedule_project\schedule\schedule\bin\Debug\netcoreapp3.1\Domain.pdb
+C:\Users\kanis\Desktop\schedule_project\schedule\schedule\bin\Debug\netcoreapp3.1\Domain.dll.config
+C:\Users\kanis\Desktop\schedule_project\schedule\schedule\bin\Debug\netcoreapp3.1\Models.pdb

@@ -1,0 +1,6 @@
+C:\Users\kanis\Desktop\schedule_project\schedule\Service\bin\Debug\Service.dll
+C:\Users\kanis\Desktop\schedule_project\schedule\Service\bin\Debug\Service.pdb
+C:\Users\kanis\Desktop\schedule_project\schedule\Service\obj\Debug\Service.csprojAssemblyReference.cache
+C:\Users\kanis\Desktop\schedule_project\schedule\Service\obj\Debug\Service.csproj.CoreCompileInputs.cache
+C:\Users\kanis\Desktop\schedule_project\schedule\Service\obj\Debug\Service.dll
+C:\Users\kanis\Desktop\schedule_project\schedule\Service\obj\Debug\Service.pdb

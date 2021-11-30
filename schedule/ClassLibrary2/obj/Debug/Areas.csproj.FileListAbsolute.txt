@@ -1,0 +1,6 @@
+C:\Users\kanis\Desktop\schedule_project\schedule\ClassLibrary2\bin\Debug\ClassLibrary2.dll
+C:\Users\kanis\Desktop\schedule_project\schedule\ClassLibrary2\bin\Debug\ClassLibrary2.pdb
+C:\Users\kanis\Desktop\schedule_project\schedule\ClassLibrary2\obj\Debug\Areas.csprojAssemblyReference.cache
+C:\Users\kanis\Desktop\schedule_project\schedule\ClassLibrary2\obj\Debug\Areas.csproj.CoreCompileInputs.cache
+C:\Users\kanis\Desktop\schedule_project\schedule\ClassLibrary2\obj\Debug\ClassLibrary2.dll
+C:\Users\kanis\Desktop\schedule_project\schedule\ClassLibrary2\obj\Debug\ClassLibrary2.pdb

@@ -8,14 +8,14 @@ using Microsoft.AspNetCore.Http;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
-using schedule.Service;
-using schedule.Domain.Repositories.Abstract;
-using schedule.Domain.Repositories.EntityFramework;
+using Domain.Repositories.Abstract;
+using Domain.Repositories.EntityFramework;
 using schedule.Domain;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
-
+using Service;
+using Domain;
 
 namespace schedule
 {
@@ -30,7 +30,7 @@ namespace schedule
             //связываем конфиг с json
             Configuration.Bind("Project", new Config());
 
-            //подключаем нужный функционал в качесте сервисов
+            //подключаем нужный функционал в качесте сервисов bind i with realization i
             services.AddTransient<ICourseRepository, EFCourse>();
             services.AddTransient<IGroupRepository, EFGroup>();
             services.AddTransient<ITeacherRepository, EFTeacher>();
