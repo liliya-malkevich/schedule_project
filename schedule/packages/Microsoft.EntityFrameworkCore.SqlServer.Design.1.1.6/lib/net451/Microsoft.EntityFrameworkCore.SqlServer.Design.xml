@@ -1,0 +1,455 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Microsoft.EntityFrameworkCore.SqlServer.Design</name>
+    </assembly>
+    <members>
+        <member name="T:Microsoft.EntityFrameworkCore.Infrastructure.SqlServerDesignEventId">
+            <summary>
+                Values that are used as the eventId when logging messages from the SQL Server Design Entity Framework Core
+                components.
+            </summary>
+        </member>
+        <member name="F:Microsoft.EntityFrameworkCore.Infrastructure.SqlServerDesignEventId.FoundDefaultSchema">
+            <summary>
+                Found default schema.
+            </summary>
+        </member>
+        <member name="F:Microsoft.EntityFrameworkCore.Infrastructure.SqlServerDesignEventId.FoundTypeAlias">
+            <summary>
+                Found type alias.
+            </summary>
+        </member>
+        <member name="F:Microsoft.EntityFrameworkCore.Infrastructure.SqlServerDesignEventId.ColumnMustBeNamedWarning">
+            <summary>
+                Column name empty on table.
+            </summary>
+        </member>
+        <member name="F:Microsoft.EntityFrameworkCore.Infrastructure.SqlServerDesignEventId.IndexMustBeNamedWarning">
+            <summary>
+                Index name empty.
+            </summary>
+        </member>
+        <member name="F:Microsoft.EntityFrameworkCore.Infrastructure.SqlServerDesignEventId.IndexTableMissingWarning">
+            <summary>
+                Unable to find table for index.
+            </summary>
+        </member>
+        <member name="F:Microsoft.EntityFrameworkCore.Infrastructure.SqlServerDesignEventId.IndexColumnMustBeNamedWarning">
+            <summary>
+                Column name empty on index.
+            </summary>
+        </member>
+        <member name="F:Microsoft.EntityFrameworkCore.Infrastructure.SqlServerDesignEventId.ForeignKeyMustBeNamedWarning">
+            <summary>
+                Foreign key name empty.
+            </summary>
+        </member>
+        <member name="F:Microsoft.EntityFrameworkCore.Infrastructure.SqlServerDesignEventId.ForeignKeyColumnSkipped">
+            <summary>
+                Foreign key column not in selection set.
+            </summary>
+        </member>
+        <member name="F:Microsoft.EntityFrameworkCore.Infrastructure.SqlServerDesignEventId.ColumnNameEmptyOnForeignKey">
+            <summary>
+                Column name empty on foreign key.
+            </summary>
+        </member>
+        <member name="F:Microsoft.EntityFrameworkCore.Infrastructure.SqlServerDesignEventId.DataTypeDoesNotAllowSqlServerIdentityStrategyWarning">
+            <summary>
+                Data type does not allow SQL Server identity strategy.
+            </summary>
+        </member>
+        <member name="F:Microsoft.EntityFrameworkCore.Infrastructure.SqlServerDesignEventId.CannotInterpretDefaultValueWarning">
+            <summary>
+                Cannot interpret default value.
+            </summary>
+        </member>
+        <member name="F:Microsoft.EntityFrameworkCore.Infrastructure.SqlServerDesignEventId.CannotInterpretComputedValueWarning">
+            <summary>
+                Cannot interpret computed value.
+            </summary>
+        </member>
+        <member name="T:Microsoft.EntityFrameworkCore.Scaffolding.Internal.SqlDataReaderExtension">
+            <summary>
+                This API supports the Entity Framework Core infrastructure and is not intended to be used
+                directly from your code. This API may change or be removed in future releases.
+            </summary>
+        </member>
+        <member name="M:Microsoft.EntityFrameworkCore.Scaffolding.Internal.SqlDataReaderExtension.GetValueOrDefault``1(System.Data.SqlClient.SqlDataReader,System.String)">
+            <summary>
+                This API supports the Entity Framework Core infrastructure and is not intended to be used
+                directly from your code. This API may change or be removed in future releases.
+            </summary>
+        </member>
+        <member name="T:Microsoft.EntityFrameworkCore.Scaffolding.Internal.SqlServerDatabaseModelFactory">
+            <summary>
+                This API supports the Entity Framework Core infrastructure and is not intended to be used
+                directly from your code. This API may change or be removed in future releases.
+            </summary>
+        </member>
+        <member name="M:Microsoft.EntityFrameworkCore.Scaffolding.Internal.SqlServerDatabaseModelFactory.#ctor(Microsoft.Extensions.Logging.ILogger{Microsoft.EntityFrameworkCore.Scaffolding.Internal.SqlServerDatabaseModelFactory})">
+            <summary>
+                This API supports the Entity Framework Core infrastructure and is not intended to be used
+                directly from your code. This API may change or be removed in future releases.
+            </summary>
+        </member>
+        <member name="P:Microsoft.EntityFrameworkCore.Scaffolding.Internal.SqlServerDatabaseModelFactory.Logger">
+            <summary>
+                This API supports the Entity Framework Core infrastructure and is not intended to be used
+                directly from your code. This API may change or be removed in future releases.
+            </summary>
+        </member>
+        <member name="M:Microsoft.EntityFrameworkCore.Scaffolding.Internal.SqlServerDatabaseModelFactory.Create(System.String,Microsoft.EntityFrameworkCore.Scaffolding.TableSelectionSet)">
+            <summary>
+                This API supports the Entity Framework Core infrastructure and is not intended to be used
+                directly from your code. This API may change or be removed in future releases.
+            </summary>
+        </member>
+        <member name="M:Microsoft.EntityFrameworkCore.Scaffolding.Internal.SqlServerDatabaseModelFactory.Create(System.Data.Common.DbConnection,Microsoft.EntityFrameworkCore.Scaffolding.TableSelectionSet)">
+            <summary>
+                This API supports the Entity Framework Core infrastructure and is not intended to be used
+                directly from your code. This API may change or be removed in future releases.
+            </summary>
+        </member>
+        <member name="T:Microsoft.EntityFrameworkCore.Scaffolding.Internal.SqlServerDesignTimeServices">
+            <summary>
+                This API supports the Entity Framework Core infrastructure and is not intended to be used
+                directly from your code. This API may change or be removed in future releases.
+            </summary>
+        </member>
+        <member name="M:Microsoft.EntityFrameworkCore.Scaffolding.Internal.SqlServerDesignTimeServices.ConfigureDesignTimeServices(Microsoft.Extensions.DependencyInjection.IServiceCollection)">
+            <summary>
+                This API supports the Entity Framework Core infrastructure and is not intended to be used
+                directly from your code. This API may change or be removed in future releases.
+            </summary>
+        </member>
+        <member name="T:Microsoft.EntityFrameworkCore.Scaffolding.Internal.SqlServerScaffoldingModelFactory">
+            <summary>
+                This API supports the Entity Framework Core infrastructure and is not intended to be used
+                directly from your code. This API may change or be removed in future releases.
+            </summary>
+        </member>
+        <member name="M:Microsoft.EntityFrameworkCore.Scaffolding.Internal.SqlServerScaffoldingModelFactory.#ctor(Microsoft.Extensions.Logging.ILoggerFactory,Microsoft.EntityFrameworkCore.Storage.IRelationalTypeMapper,Microsoft.EntityFrameworkCore.Scaffolding.IDatabaseModelFactory,Microsoft.EntityFrameworkCore.Scaffolding.Internal.CandidateNamingService)">
+            <summary>
+                This API supports the Entity Framework Core infrastructure and is not intended to be used
+                directly from your code. This API may change or be removed in future releases.
+            </summary>
+        </member>
+        <member name="M:Microsoft.EntityFrameworkCore.Scaffolding.Internal.SqlServerScaffoldingModelFactory.Create(System.String,Microsoft.EntityFrameworkCore.Scaffolding.TableSelectionSet)">
+            <summary>
+                This API supports the Entity Framework Core infrastructure and is not intended to be used
+                directly from your code. This API may change or be removed in future releases.
+            </summary>
+        </member>
+        <member name="M:Microsoft.EntityFrameworkCore.Scaffolding.Internal.SqlServerScaffoldingModelFactory.VisitColumn(Microsoft.EntityFrameworkCore.Metadata.Builders.EntityTypeBuilder,Microsoft.EntityFrameworkCore.Scaffolding.Metadata.ColumnModel)">
+            <summary>
+                This API supports the Entity Framework Core infrastructure and is not intended to be used
+                directly from your code. This API may change or be removed in future releases.
+            </summary>
+        </member>
+        <member name="M:Microsoft.EntityFrameworkCore.Scaffolding.Internal.SqlServerScaffoldingModelFactory.GetTypeMapping(Microsoft.EntityFrameworkCore.Scaffolding.Metadata.ColumnModel)">
+            <summary>
+                This API supports the Entity Framework Core infrastructure and is not intended to be used
+                directly from your code. This API may change or be removed in future releases.
+            </summary>
+        </member>
+        <member name="M:Microsoft.EntityFrameworkCore.Scaffolding.Internal.SqlServerScaffoldingModelFactory.VisitPrimaryKey(Microsoft.EntityFrameworkCore.Metadata.Builders.EntityTypeBuilder,Microsoft.EntityFrameworkCore.Scaffolding.Metadata.TableModel)">
+            <summary>
+                This API supports the Entity Framework Core infrastructure and is not intended to be used
+                directly from your code. This API may change or be removed in future releases.
+            </summary>
+        </member>
+        <member name="M:Microsoft.EntityFrameworkCore.Scaffolding.Internal.SqlServerScaffoldingModelFactory.VisitIndex(Microsoft.EntityFrameworkCore.Metadata.Builders.EntityTypeBuilder,Microsoft.EntityFrameworkCore.Scaffolding.Metadata.IndexModel)">
+            <summary>
+                This API supports the Entity Framework Core infrastructure and is not intended to be used
+                directly from your code. This API may change or be removed in future releases.
+            </summary>
+        </member>
+        <member name="M:Microsoft.EntityFrameworkCore.Scaffolding.Internal.SqlServerTableSelectionSetExtensions.Allows(Microsoft.EntityFrameworkCore.Scaffolding.TableSelectionSet,System.String,System.String)">
+            <summary>
+                Tests whether the schema/table is allowed by the <see cref="T:Microsoft.EntityFrameworkCore.Scaffolding.TableSelectionSet" />
+                and updates the <see cref="T:Microsoft.EntityFrameworkCore.Scaffolding.TableSelectionSet" />'s <see cref="T:Microsoft.EntityFrameworkCore.Scaffolding.TableSelectionSet.Selection" />(s)
+                to mark that they have been matched.
+            </summary>
+            <param name="tableSelectionSet"> the <see cref="T:Microsoft.EntityFrameworkCore.Scaffolding.TableSelectionSet" /> to test </param>
+            <param name="schemaName"> name of the database schema to check </param>
+            <param name="tableName"> name of the database table to check </param>
+            <returns> whether or not the schema/table is allowed </returns>
+        </member>
+        <member name="T:Microsoft.EntityFrameworkCore.Scaffolding.Metadata.Internal.SqlServerColumnModelAnnotations">
+            <summary>
+                This API supports the Entity Framework Core infrastructure and is not intended to be used
+                directly from your code. This API may change or be removed in future releases.
+            </summary>
+        </member>
+        <member name="M:Microsoft.EntityFrameworkCore.Scaffolding.Metadata.Internal.SqlServerColumnModelAnnotations.#ctor(Microsoft.EntityFrameworkCore.Scaffolding.Metadata.ColumnModel)">
+            <summary>
+                This API supports the Entity Framework Core infrastructure and is not intended to be used
+                directly from your code. This API may change or be removed in future releases.
+            </summary>
+        </member>
+        <member name="P:Microsoft.EntityFrameworkCore.Scaffolding.Metadata.Internal.SqlServerColumnModelAnnotations.DateTimePrecision">
+            <summary>
+                This API supports the Entity Framework Core infrastructure and is not intended to be used
+                directly from your code. This API may change or be removed in future releases.
+            </summary>
+        </member>
+        <member name="P:Microsoft.EntityFrameworkCore.Scaffolding.Metadata.Internal.SqlServerColumnModelAnnotations.IsIdentity">
+            <summary>
+                This API supports the Entity Framework Core infrastructure and is not intended to be used
+                directly from your code. This API may change or be removed in future releases.
+            </summary>
+        </member>
+        <member name="T:Microsoft.EntityFrameworkCore.Scaffolding.Metadata.Internal.SqlServerDatabaseModelAnnotationNames">
+            <summary>
+                This API supports the Entity Framework Core infrastructure and is not intended to be used
+                directly from your code. This API may change or be removed in future releases.
+            </summary>
+        </member>
+        <member name="F:Microsoft.EntityFrameworkCore.Scaffolding.Metadata.Internal.SqlServerDatabaseModelAnnotationNames.Prefix">
+            <summary>
+                This API supports the Entity Framework Core infrastructure and is not intended to be used
+                directly from your code. This API may change or be removed in future releases.
+            </summary>
+        </member>
+        <member name="F:Microsoft.EntityFrameworkCore.Scaffolding.Metadata.Internal.SqlServerDatabaseModelAnnotationNames.TypeAliases">
+            <summary>
+                This API supports the Entity Framework Core infrastructure and is not intended to be used
+                directly from your code. This API may change or be removed in future releases.
+            </summary>
+        </member>
+        <member name="F:Microsoft.EntityFrameworkCore.Scaffolding.Metadata.Internal.SqlServerDatabaseModelAnnotationNames.IsIdentity">
+            <summary>
+                This API supports the Entity Framework Core infrastructure and is not intended to be used
+                directly from your code. This API may change or be removed in future releases.
+            </summary>
+        </member>
+        <member name="F:Microsoft.EntityFrameworkCore.Scaffolding.Metadata.Internal.SqlServerDatabaseModelAnnotationNames.IsClustered">
+            <summary>
+                This API supports the Entity Framework Core infrastructure and is not intended to be used
+                directly from your code. This API may change or be removed in future releases.
+            </summary>
+        </member>
+        <member name="F:Microsoft.EntityFrameworkCore.Scaffolding.Metadata.Internal.SqlServerDatabaseModelAnnotationNames.DateTimePrecision">
+            <summary>
+                This API supports the Entity Framework Core infrastructure and is not intended to be used
+                directly from your code. This API may change or be removed in future releases.
+            </summary>
+        </member>
+        <member name="T:Microsoft.EntityFrameworkCore.Scaffolding.Metadata.Internal.SqlServerDatabaseModelAnnotations">
+            <summary>
+                This API supports the Entity Framework Core infrastructure and is not intended to be used
+                directly from your code. This API may change or be removed in future releases.
+            </summary>
+        </member>
+        <member name="M:Microsoft.EntityFrameworkCore.Scaffolding.Metadata.Internal.SqlServerDatabaseModelAnnotations.#ctor(Microsoft.EntityFrameworkCore.Scaffolding.Metadata.DatabaseModel)">
+            <summary>
+                This API supports the Entity Framework Core infrastructure and is not intended to be used
+                directly from your code. This API may change or be removed in future releases.
+            </summary>
+        </member>
+        <member name="P:Microsoft.EntityFrameworkCore.Scaffolding.Metadata.Internal.SqlServerDatabaseModelAnnotations.TypeAliases">
+            <summary>
+                This API supports the Entity Framework Core infrastructure and is not intended to be used
+                directly from your code. This API may change or be removed in future releases.
+            </summary>
+        </member>
+        <member name="T:Microsoft.EntityFrameworkCore.Scaffolding.Metadata.Internal.SqlServerDatabaseModelExtensions">
+            <summary>
+                This API supports the Entity Framework Core infrastructure and is not intended to be used
+                directly from your code. This API may change or be removed in future releases.
+            </summary>
+        </member>
+        <member name="M:Microsoft.EntityFrameworkCore.Scaffolding.Metadata.Internal.SqlServerDatabaseModelExtensions.SqlServer(Microsoft.EntityFrameworkCore.Scaffolding.Metadata.ColumnModel)">
+            <summary>
+                This API supports the Entity Framework Core infrastructure and is not intended to be used
+                directly from your code. This API may change or be removed in future releases.
+            </summary>
+        </member>
+        <member name="M:Microsoft.EntityFrameworkCore.Scaffolding.Metadata.Internal.SqlServerDatabaseModelExtensions.SqlServer(Microsoft.EntityFrameworkCore.Scaffolding.Metadata.IndexModel)">
+            <summary>
+                This API supports the Entity Framework Core infrastructure and is not intended to be used
+                directly from your code. This API may change or be removed in future releases.
+            </summary>
+        </member>
+        <member name="M:Microsoft.EntityFrameworkCore.Scaffolding.Metadata.Internal.SqlServerDatabaseModelExtensions.SqlServer(Microsoft.EntityFrameworkCore.Scaffolding.Metadata.DatabaseModel)">
+            <summary>
+                This API supports the Entity Framework Core infrastructure and is not intended to be used
+                directly from your code. This API may change or be removed in future releases.
+            </summary>
+        </member>
+        <member name="T:Microsoft.EntityFrameworkCore.Scaffolding.Metadata.Internal.SqlServerIndexModelAnnotations">
+            <summary>
+                This API supports the Entity Framework Core infrastructure and is not intended to be used
+                directly from your code. This API may change or be removed in future releases.
+            </summary>
+        </member>
+        <member name="M:Microsoft.EntityFrameworkCore.Scaffolding.Metadata.Internal.SqlServerIndexModelAnnotations.#ctor(Microsoft.EntityFrameworkCore.Scaffolding.Metadata.IndexModel)">
+            <summary>
+                This API supports the Entity Framework Core infrastructure and is not intended to be used
+                directly from your code. This API may change or be removed in future releases.
+            </summary>
+        </member>
+        <member name="P:Microsoft.EntityFrameworkCore.Scaffolding.Metadata.Internal.SqlServerIndexModelAnnotations.IsClustered">
+            <summary>
+                This API supports the Entity Framework Core infrastructure and is not intended to be used
+                directly from your code. This API may change or be removed in future releases.
+            </summary>
+        </member>
+        <member name="T:Microsoft.EntityFrameworkCore.Internal.SqlServerDesignLoggerExtensions">
+            <summary>
+                This API supports the Entity Framework Core infrastructure and is not intended to be used
+                directly from your code. This API may change or be removed in future releases.
+            </summary>
+        </member>
+        <member name="M:Microsoft.EntityFrameworkCore.Internal.SqlServerDesignLoggerExtensions.LogWarning(Microsoft.Extensions.Logging.ILogger,Microsoft.EntityFrameworkCore.Infrastructure.SqlServerDesignEventId,System.Func{System.String})">
+            <summary>
+                This API supports the Entity Framework Core infrastructure and is not intended to be used
+                directly from your code. This API may change or be removed in future releases.
+            </summary>
+        </member>
+        <member name="M:Microsoft.EntityFrameworkCore.Internal.SqlServerDesignLoggerExtensions.LogDebug(Microsoft.Extensions.Logging.ILogger,Microsoft.EntityFrameworkCore.Infrastructure.SqlServerDesignEventId,System.Func{System.String})">
+            <summary>
+                This API supports the Entity Framework Core infrastructure and is not intended to be used
+                directly from your code. This API may change or be removed in future releases.
+            </summary>
+        </member>
+        <member name="T:Microsoft.EntityFrameworkCore.Internal.SqlServerDesignStrings">
+            <summary>
+            	This API supports the Entity Framework Core infrastructure and is not intended to be used
+                directly from your code. This API may change or be removed in future releases.
+            </summary>
+        </member>
+        <member name="M:Microsoft.EntityFrameworkCore.Internal.SqlServerDesignStrings.CannotInterpretComputedValue(System.Object,System.Object,System.Object,System.Object)">
+            <summary>
+            For column {columnId} unable to interpret computed value {computedValue}. Will not generate code setting a computed value for the property {propertyName} on entity type {entityTypeName}.
+            </summary>
+        </member>
+        <member name="M:Microsoft.EntityFrameworkCore.Internal.SqlServerDesignStrings.CannotInterpretDefaultValue(System.Object,System.Object,System.Object,System.Object)">
+            <summary>
+            For column {columnId} unable to interpret default value {defaultValue}. Will not generate code setting a default value for the property {propertyName} on entity type {entityTypeName}.
+            </summary>
+        </member>
+        <member name="M:Microsoft.EntityFrameworkCore.Internal.SqlServerDesignStrings.ColumnNameEmptyOnForeignKey(System.Object,System.Object,System.Object)">
+            <summary>
+            Found a column on foreign key [{schemaName}].[{tableName}].[{fkName}] with an empty or null name. Not including column in foreign key
+            </summary>
+        </member>
+        <member name="M:Microsoft.EntityFrameworkCore.Internal.SqlServerDesignStrings.ColumnNameEmptyOnIndex(System.Object,System.Object,System.Object)">
+            <summary>
+            Found a column on index [{schemaName}].[{tableName}].[{indexName}] with an empty or null name. Not including column in index.
+            </summary>
+        </member>
+        <member name="M:Microsoft.EntityFrameworkCore.Internal.SqlServerDesignStrings.ColumnNameEmptyOnTable(System.Object,System.Object)">
+            <summary>
+            Found a column on table [{schemaName}].[{tableName}] with an empty or null name. Skipping column.
+            </summary>
+        </member>
+        <member name="M:Microsoft.EntityFrameworkCore.Internal.SqlServerDesignStrings.ColumnNotInSelectionSet(System.Object,System.Object,System.Object)">
+            <summary>
+            Column {columnName} belongs to table [{schema}].[{tableName}] which is not included in the selection set. Skipping.
+            </summary>
+        </member>
+        <member name="M:Microsoft.EntityFrameworkCore.Internal.SqlServerDesignStrings.DataTypeDoesNotAllowSqlServerIdentityStrategy(System.Object,System.Object)">
+            <summary>
+            For column {columnId}. This column is set up as an Identity column, but the SQL Server data type is {sqlServerDataType}. This will be mapped to CLR type byte which does not allow the SqlServerValueGenerationStrategy.IdentityColumn setting. Generating a matching Property but ignoring the Identity setting.
+            </summary>
+        </member>
+        <member name="M:Microsoft.EntityFrameworkCore.Internal.SqlServerDesignStrings.ForeignKeyColumnNotInSelectionSet(System.Object,System.Object,System.Object,System.Object)">
+            <summary>
+            Foreign key column {columnName} belongs to foreign key {fkName} on table [{schema}].[{tableName}] which is not included in the selection set. Skipping.
+            </summary>
+        </member>
+        <member name="M:Microsoft.EntityFrameworkCore.Internal.SqlServerDesignStrings.ForeignKeyNameEmpty(System.Object,System.Object)">
+            <summary>
+            Found a foreign key on table [{schemaName}].[{tableName}] with an empty or null name. Skipping foreign key.
+            </summary>
+        </member>
+        <member name="M:Microsoft.EntityFrameworkCore.Internal.SqlServerDesignStrings.FoundColumn(System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object)">
+            <summary>
+            Found column with schema: {schema}, table: {tableName}, column name: {columnName}, data type: {dataType}, ordinal: {ordinal}, nullable: {isNullable}, primary key ordinal: {primaryKeyOrdinal}, default value: {defaultValue}, computed value: {computedValue}, precision: {precision}, scale: {scale}, maximum length: {maxLength}, identity: {isIdentity}, computed: {isComputed}.
+            </summary>
+        </member>
+        <member name="M:Microsoft.EntityFrameworkCore.Internal.SqlServerDesignStrings.FoundDefaultSchema(System.Object)">
+            <summary>
+            Found default schema {defaultSchema}.
+            </summary>
+        </member>
+        <member name="M:Microsoft.EntityFrameworkCore.Internal.SqlServerDesignStrings.FoundForeignKeyColumn(System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object)">
+            <summary>
+            Found foreign key column with schema: {schema}, table: {tableName}, foreign key name: {fkName}, principal table schema: {principalTableSchema}, principal table: {principalTableName}, column name: {columnName}, principal column name: {principalColumnName}, update action: {updateAction}, delete action: {deleteAction}, ordinal: {ordinal}.
+            </summary>
+        </member>
+        <member name="M:Microsoft.EntityFrameworkCore.Internal.SqlServerDesignStrings.FoundIndexColumn(System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object)">
+            <summary>
+            Found index column with schema: {schema}, table: {tableName}, index name: {indexName}, unique: {isUnique}, type description: {typeDesc}, column name: {columnName}, ordinal: {ordinal}.
+            </summary>
+        </member>
+        <member name="M:Microsoft.EntityFrameworkCore.Internal.SqlServerDesignStrings.FoundSequence(System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object)">
+            <summary>
+            Found sequence with schema: {schema}, name: {name}, data type: {dataType}, cyclic: {isCyclic}, increment: {increment}, start: {start}, minimum: {min}, maximum: {max}.
+            </summary>
+        </member>
+        <member name="M:Microsoft.EntityFrameworkCore.Internal.SqlServerDesignStrings.FoundTable(System.Object,System.Object)">
+            <summary>
+            Found table with schema: {schema}, name: {name}.
+            </summary>
+        </member>
+        <member name="M:Microsoft.EntityFrameworkCore.Internal.SqlServerDesignStrings.FoundTypeAlias(System.Object,System.Object)">
+            <summary>
+            Found type alias {alias} which maps to underlying data type {dataType}.
+            </summary>
+        </member>
+        <member name="M:Microsoft.EntityFrameworkCore.Internal.SqlServerDesignStrings.IndexColumnNotInSelectionSet(System.Object,System.Object,System.Object,System.Object)">
+            <summary>
+            Index column {columnName} belongs to index {indexName} on table [{schema}].[{tableName}] which is not included in the selection set. Skipping.
+            </summary>
+        </member>
+        <member name="M:Microsoft.EntityFrameworkCore.Internal.SqlServerDesignStrings.IndexNameEmpty(System.Object,System.Object)">
+            <summary>
+            Found an index on table [{schemaName}].[{tableName}] with an empty or null name. Skipping index.
+            </summary>
+        </member>
+        <member name="M:Microsoft.EntityFrameworkCore.Internal.SqlServerDesignStrings.PrincipalTableNotInSelectionSet(System.Object,System.Object,System.Object,System.Object,System.Object)">
+            <summary>
+            For foreign key {fkName} on table [{schema}].[{tableName}], unable to model the end of the foreign key on principal table [{principalTableSchema}].[{principalTableName}]. This is usually because the principal table was not included in the selection set.
+            </summary>
+        </member>
+        <member name="M:Microsoft.EntityFrameworkCore.Internal.SqlServerDesignStrings.SequenceNameEmpty(System.Object)">
+            <summary>
+            Found a sequence in schema [{schemaName}] with an empty or null name. Skipping sequence.
+            </summary>
+        </member>
+        <member name="M:Microsoft.EntityFrameworkCore.Internal.SqlServerDesignStrings.TableNotInSelectionSet(System.Object,System.Object)">
+            <summary>
+            Table [{schema}].[{tableName}] is not included in the selection set. Skipping.
+            </summary>
+        </member>
+        <member name="M:Microsoft.EntityFrameworkCore.Internal.SqlServerDesignStrings.UnableToConvertDefaultValue(System.Object,System.Object,System.Object,System.Object,System.Object)">
+            <summary>
+            For column {columnId} unable to convert default value {defaultValue} into type {propertyType}. Will not generate code setting a default value for the property {propertyName} on entity type {entityTypeName}.
+            </summary>
+        </member>
+        <member name="M:Microsoft.EntityFrameworkCore.Internal.SqlServerDesignStrings.UnableToFindColumnForForeignKey(System.Object,System.Object,System.Object,System.Object)">
+            <summary>
+            Foreign Key {fkName} contains a column named {columnName} which cannot be found on table [{schemaName}].[{tableName}]. Not including column in foreign key.
+            </summary>
+        </member>
+        <member name="M:Microsoft.EntityFrameworkCore.Internal.SqlServerDesignStrings.UnableToFindColumnForIndex(System.Object,System.Object,System.Object,System.Object)">
+            <summary>
+            Index {indexName} contains a column named {columnName} which cannot be found on table [{schemaName}].[{tableName}]. Not including column in index.
+            </summary>
+        </member>
+        <member name="M:Microsoft.EntityFrameworkCore.Internal.SqlServerDesignStrings.UnableToFindTableForColumn(System.Object,System.Object,System.Object)">
+            <summary>
+            For column {columnName}. Unable to find parent table [{schemaName}].[{tablename}]. Skipping column.
+            </summary>
+        </member>
+        <member name="M:Microsoft.EntityFrameworkCore.Internal.SqlServerDesignStrings.UnableToFindTableForIndex(System.Object,System.Object,System.Object)">
+            <summary>
+            For index {indexName}. Unable to find parent table [{schemaName}].[{tableName}]. Skipping index.
+            </summary>
+        </member>
+    </members>
+</doc>
