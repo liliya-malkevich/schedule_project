@@ -29,6 +29,7 @@ namespace Service
                 || controller.RouteValues.Any(r => r.Key.Equals("area", StringComparison.OrdinalIgnoreCase) 
                 && r.Value.Equals(area, StringComparison.OrdinalIgnoreCase)))
             {
+                //отправляем пользователя на авторизаию
                 controller.Filters.Add(new AuthorizeFilter(policy));
             }
         

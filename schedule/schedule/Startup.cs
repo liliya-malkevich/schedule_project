@@ -89,7 +89,7 @@ namespace schedule
 
             app.UseEndpoints(endpoints =>
             {
-                //endpoints.MapControllerRoute("admin", "{area:exist}/{controller=Home}/{action=Index}/{Id?}");
+                endpoints.MapControllerRoute("admin", "{area:exists}/{controller=Home}/{action=IndexAdmin}/{id?}");
                 endpoints.MapControllerRoute("default", "{controller=Home}/{action=Index}/{id?}");
             });
         }

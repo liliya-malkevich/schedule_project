@@ -35,7 +35,6 @@
 
   <ItemGroup>
     <ProjectReference Include="..\Areas\Areas.csproj" />
-    <ProjectReference Include="..\ClassLibrary2\Areas.csproj" />
     <ProjectReference Include="..\Domain\Domain.csproj" />
     <ProjectReference Include="..\Models\Models.csproj" />
     <ProjectReference Include="..\Service\Service.csproj" />

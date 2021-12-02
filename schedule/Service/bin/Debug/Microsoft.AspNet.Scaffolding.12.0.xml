@@ -290,23 +290,32 @@
         </member>
         <member name="T:Microsoft.AspNet.Scaffolding.CodeGeneratorFactory">
             <summary>
-            A factory for creating instances of an item template code generator. 
+            A factory for creating instances of a code generator.
+            For more details <see cref="T:Microsoft.AspNet.Scaffolding.CodeGenerator"/>.
             </summary>
         </member>
-        <member name="M:Microsoft.AspNet.Scaffolding.CodeGeneratorFactory.#ctor(System.String,Microsoft.AspNet.Scaffolding.CodeGeneratorInformation)">
+        <member name="M:Microsoft.AspNet.Scaffolding.CodeGeneratorFactory.#ctor(Microsoft.AspNet.Scaffolding.CodeGeneratorInformation)">
             <summary>
-            Contrstructor
+            Constructor.
             </summary>
-        </member>
-        <member name="P:Microsoft.AspNet.Scaffolding.CodeGeneratorFactory.FactoryConfigKey">
-            <summary>
-            Key required to identify the item tempalte scaffolder.
-            </summary>
+            <param name="codeGeneratorInformation"></param>
         </member>
         <member name="P:Microsoft.AspNet.Scaffolding.CodeGeneratorFactory.Information">
             <summary>
-            Holds information needed to populate the scaffolder dialog.
-            For more details <see cref="T:Microsoft.AspNet.Scaffolding.CodeGeneratorInformation"/>.
+            Code generator information.
+            </summary>
+        </member>
+        <member name="M:Microsoft.AspNet.Scaffolding.CodeGeneratorFactory.CreateInstance(Microsoft.AspNet.Scaffolding.CodeGenerationContext)">
+            <summary>
+            Method for creating the code generator instance.
+            </summary>
+            <param name="context"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Microsoft.AspNet.Scaffolding.CodeGeneratorFactory.IsSupported(Microsoft.AspNet.Scaffolding.CodeGenerationContext)">
+            <summary>
+            Determines whether this factory supports creating a code generator in
+            the supplied context.
             </summary>
         </member>
         <member name="T:Microsoft.AspNet.Scaffolding.CodeGeneratorFilesLocator">
@@ -361,12 +370,12 @@
             Constructor.
             </summary>
         </member>
-        <member name="M:Microsoft.AspNet.Scaffolding.CodeGeneratorInformation.#ctor(System.String,System.String,System.String,System.Version,System.String,Microsoft.VisualStudio.Imaging.Interop.ImageMoniker,System.Collections.Generic.IEnumerable{System.String},System.Collections.Generic.IEnumerable{System.String},System.Boolean)">
+        <member name="M:Microsoft.AspNet.Scaffolding.CodeGeneratorInformation.#ctor(System.String,System.String,System.String,System.Version,System.String,Microsoft.VisualStudio.Imaging.Interop.ImageMoniker,System.Collections.Generic.IEnumerable{System.String},System.Collections.Generic.IEnumerable{System.String})">
             <summary>
             Constructor
             </summary>
         </member>
-        <member name="M:Microsoft.AspNet.Scaffolding.CodeGeneratorInformation.#ctor(System.String,System.String,System.String,System.Version,System.String,Microsoft.VisualStudio.Imaging.Interop.ImageMoniker,System.Collections.Generic.IEnumerable{System.String},System.Collections.Generic.IEnumerable{System.String},System.Int32,System.Boolean)">
+        <member name="M:Microsoft.AspNet.Scaffolding.CodeGeneratorInformation.#ctor(System.String,System.String,System.String,System.Version,System.String,Microsoft.VisualStudio.Imaging.Interop.ImageMoniker,System.Collections.Generic.IEnumerable{System.String},System.Collections.Generic.IEnumerable{System.String},System.Int32)">
             <summary>
             Constructor.
             </summary>
@@ -433,11 +442,6 @@
         <member name="P:Microsoft.AspNet.Scaffolding.CodeGeneratorInformation.Moniker">
             <summary>
             Image moniker used for the codegenerator in the scaffolding menu
-            </summary>
-        </member>
-        <member name="P:Microsoft.AspNet.Scaffolding.CodeGeneratorInformation.IsLegacyFactory">
-            <summary>
-            Non Item Tempalte scaffolders are legacy scaffolders. Factories for such scaffolders should initialize this to true.
             </summary>
         </member>
         <member name="T:Microsoft.AspNet.Scaffolding.CodePropertyExtensions">
@@ -1276,36 +1280,6 @@
         <member name="P:Microsoft.AspNet.Scaffolding.IVisualStudioInformation.Version">
             <summary>
             Gets the version of Visual Studio.
-            </summary>
-        </member>
-        <member name="T:Microsoft.AspNet.Scaffolding.LegacyCodeGeneratorFactory">
-            <summary>
-            A factory for creating instances of a code generator.
-            For more details <see cref="T:Microsoft.AspNet.Scaffolding.CodeGenerator"/>.
-            </summary>
-        </member>
-        <member name="M:Microsoft.AspNet.Scaffolding.LegacyCodeGeneratorFactory.#ctor(Microsoft.AspNet.Scaffolding.CodeGeneratorInformation)">
-            <summary>
-            Constructor.
-            </summary>
-            <param name="codeGeneratorInformation"></param>
-        </member>
-        <member name="P:Microsoft.AspNet.Scaffolding.LegacyCodeGeneratorFactory.Information">
-            <summary>
-            Code generator information.
-            </summary>
-        </member>
-        <member name="M:Microsoft.AspNet.Scaffolding.LegacyCodeGeneratorFactory.CreateInstance(Microsoft.AspNet.Scaffolding.CodeGenerationContext)">
-            <summary>
-            Method for creating the code generator instance.
-            </summary>
-            <param name="context"></param>
-            <returns></returns>
-        </member>
-        <member name="M:Microsoft.AspNet.Scaffolding.LegacyCodeGeneratorFactory.IsSupported(Microsoft.AspNet.Scaffolding.CodeGenerationContext)">
-            <summary>
-            Determines whether this factory supports creating a code generator in
-            the supplied context.
             </summary>
         </member>
         <member name="T:Microsoft.AspNet.Scaffolding.NuGet.INuGetService">

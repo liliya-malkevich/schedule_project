@@ -4,13 +4,19 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
+using schedule.Domain;
 
 namespace Areas.Admin.Controllers
 {
     [Area("Admin")]
     public class HomeController : Controller
     {
-        public IActionResult Index()
+        private readonly DataManager dataManager;
+        public HomeController(DataManager dataManager)
+        {
+            this.dataManager = dataManager;
+        }
+        public IActionResult IndexAdmin()
         {
             return View();
         }
