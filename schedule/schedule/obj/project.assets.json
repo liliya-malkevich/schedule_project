@@ -2572,20 +2572,6 @@
           "lib/netstandard1.3/System.Xml.XmlSerializer.dll": {}
         }
       },
-      "Areas/1.0.0": {
-        "type": "project",
-        "dependencies": {
-          "Domain": "1.0.0",
-          "Models": "1.0.0",
-          "Service": "1.0.0"
-        },
-        "compile": {
-          "bin/placeholder/Areas.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/Areas.dll": {}
-        }
-      },
       "Domain/1.0.0": {
         "type": "project",
         "compile": {
@@ -8397,11 +8383,6 @@
         "system.xml.xmlserializer.nuspec"
       ]
     },
-    "Areas/1.0.0": {
-      "type": "project",
-      "path": "../Areas/Areas.csproj",
-      "msbuildProject": "../Areas/Areas.csproj"
-    },
     "Domain/1.0.0": {
       "type": "project",
       "path": "../Domain/Domain.csproj",
@@ -8420,7 +8401,6 @@
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v3.1": [
-      "Areas >= 1.0.0",
       "Domain >= 1.0.0",
       "Microsoft.AspNetCore.Identity.EntityFrameworkCore >= 3.1.1",
       "Microsoft.EntityFrameworkCore >= 3.1.1",
@@ -8458,9 +8438,6 @@
       "frameworks": {
         "netcoreapp3.1": {
           "projectReferences": {
-            "C:\\Users\\kanis\\Desktop\\schedule_project\\schedule\\Areas\\Areas.csproj": {
-              "projectPath": "C:\\Users\\kanis\\Desktop\\schedule_project\\schedule\\Areas\\Areas.csproj"
-            },
             "C:\\Users\\kanis\\Desktop\\schedule_project\\schedule\\Domain\\Domain.csproj": {
               "projectPath": "C:\\Users\\kanis\\Desktop\\schedule_project\\schedule\\Domain\\Domain.csproj"
             },

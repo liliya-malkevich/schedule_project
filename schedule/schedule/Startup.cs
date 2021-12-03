@@ -16,6 +16,7 @@ using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Service;
 using Domain;
+using System.Reflection;
 
 namespace schedule
 {
@@ -65,7 +66,8 @@ namespace schedule
                 x.Conventions.Add(new AdminAreaAuthorization("Admin", "AdminArea"));
             })
                 //выставляем совместимость с версией asp.net core
-                .SetCompatibilityVersion(Microsoft.AspNetCore.Mvc.CompatibilityVersion.Version_3_0).AddSessionStateTempDataProvider(); 
+                .SetCompatibilityVersion(Microsoft.AspNetCore.Mvc.CompatibilityVersion.Version_3_0).AddSessionStateTempDataProvider();
+         
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

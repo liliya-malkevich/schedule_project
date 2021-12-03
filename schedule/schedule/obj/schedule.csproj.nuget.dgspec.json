@@ -4,31 +4,6 @@
     "C:\\Users\\kanis\\Desktop\\schedule_project\\schedule\\schedule\\schedule.csproj": {}
   },
   "projects": {
-    "C:\\Users\\kanis\\Desktop\\schedule_project\\schedule\\Areas\\Areas.csproj": {
-      "restore": {
-        "projectUniqueName": "C:\\Users\\kanis\\Desktop\\schedule_project\\schedule\\Areas\\Areas.csproj",
-        "projectName": "Areas",
-        "projectPath": "C:\\Users\\kanis\\Desktop\\schedule_project\\schedule\\Areas\\Areas.csproj",
-        "frameworks": {
-          "net472": {
-            "projectReferences": {
-              "C:\\Users\\kanis\\Desktop\\schedule_project\\schedule\\Domain\\Domain.csproj": {
-                "projectPath": "C:\\Users\\kanis\\Desktop\\schedule_project\\schedule\\Domain\\Domain.csproj"
-              },
-              "C:\\Users\\kanis\\Desktop\\schedule_project\\schedule\\Models\\Models.csproj": {
-                "projectPath": "C:\\Users\\kanis\\Desktop\\schedule_project\\schedule\\Models\\Models.csproj"
-              },
-              "C:\\Users\\kanis\\Desktop\\schedule_project\\schedule\\Service\\Service.csproj": {
-                "projectPath": "C:\\Users\\kanis\\Desktop\\schedule_project\\schedule\\Service\\Service.csproj"
-              }
-            }
-          }
-        }
-      },
-      "frameworks": {
-        "net472": {}
-      }
-    },
     "C:\\Users\\kanis\\Desktop\\schedule_project\\schedule\\Domain\\Domain.csproj": {
       "restore": {
         "projectUniqueName": "C:\\Users\\kanis\\Desktop\\schedule_project\\schedule\\Domain\\Domain.csproj",
@@ -72,9 +47,6 @@
         "frameworks": {
           "netcoreapp3.1": {
             "projectReferences": {
-              "C:\\Users\\kanis\\Desktop\\schedule_project\\schedule\\Areas\\Areas.csproj": {
-                "projectPath": "C:\\Users\\kanis\\Desktop\\schedule_project\\schedule\\Areas\\Areas.csproj"
-              },
               "C:\\Users\\kanis\\Desktop\\schedule_project\\schedule\\Domain\\Domain.csproj": {
                 "projectPath": "C:\\Users\\kanis\\Desktop\\schedule_project\\schedule\\Domain\\Domain.csproj"
               },

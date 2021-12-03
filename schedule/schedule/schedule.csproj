@@ -6,13 +6,9 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Compile Remove="Areas\**" />
     <Compile Remove="Models\**" />
-    <Content Remove="Areas\**" />
     <Content Remove="Models\**" />
-    <EmbeddedResource Remove="Areas\**" />
     <EmbeddedResource Remove="Models\**" />
-    <None Remove="Areas\**" />
     <None Remove="Models\**" />
   </ItemGroup>
 
@@ -34,7 +30,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Areas\Areas.csproj" />
     <ProjectReference Include="..\Domain\Domain.csproj" />
     <ProjectReference Include="..\Models\Models.csproj" />
     <ProjectReference Include="..\Service\Service.csproj" />
