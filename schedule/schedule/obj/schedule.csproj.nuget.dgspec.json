@@ -1,37 +1,43 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\kanis\\Desktop\\schedule_project\\schedule\\schedule\\schedule.csproj": {}
+    "C:\\Users\\kanis\\desktop\\schedule_project\\schedule\\schedule\\schedule.csproj": {}
   },
   "projects": {
-    "C:\\Users\\kanis\\Desktop\\schedule_project\\schedule\\Domain\\Domain.csproj": {
+    "C:\\Users\\kanis\\desktop\\schedule_project\\schedule\\Models\\Models.csproj": {
       "restore": {
-        "projectUniqueName": "C:\\Users\\kanis\\Desktop\\schedule_project\\schedule\\Domain\\Domain.csproj",
-        "projectName": "Domain",
-        "projectPath": "C:\\Users\\kanis\\Desktop\\schedule_project\\schedule\\Domain\\Domain.csproj"
-      },
-      "frameworks": {
-        "net472": {}
-      }
-    },
-    "C:\\Users\\kanis\\Desktop\\schedule_project\\schedule\\Models\\Models.csproj": {
-      "restore": {
-        "projectUniqueName": "C:\\Users\\kanis\\Desktop\\schedule_project\\schedule\\Models\\Models.csproj",
+        "projectUniqueName": "C:\\Users\\kanis\\desktop\\schedule_project\\schedule\\Models\\Models.csproj",
         "projectName": "Models",
-        "projectPath": "C:\\Users\\kanis\\Desktop\\schedule_project\\schedule\\Models\\Models.csproj"
+        "projectPath": "C:\\Users\\kanis\\desktop\\schedule_project\\schedule\\Models\\Models.csproj",
+        "packagesPath": "C:\\Users\\kanis\\.nuget\\packages\\",
+        "projectStyle": "PackagesConfig",
+        "configFilePaths": [
+          "C:\\Users\\kanis\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net472": {
+            "projectReferences": {}
+          }
+        },
+        "packagesConfigPath": "C:\\Users\\kanis\\desktop\\schedule_project\\schedule\\Models\\packages.config"
       },
       "frameworks": {
         "net472": {}
       }
     },
-    "C:\\Users\\kanis\\Desktop\\schedule_project\\schedule\\schedule\\schedule.csproj": {
+    "C:\\Users\\kanis\\desktop\\schedule_project\\schedule\\schedule\\schedule.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\kanis\\Desktop\\schedule_project\\schedule\\schedule\\schedule.csproj",
+        "projectUniqueName": "C:\\Users\\kanis\\desktop\\schedule_project\\schedule\\schedule\\schedule.csproj",
         "projectName": "schedule",
-        "projectPath": "C:\\Users\\kanis\\Desktop\\schedule_project\\schedule\\schedule\\schedule.csproj",
+        "projectPath": "C:\\Users\\kanis\\desktop\\schedule_project\\schedule\\schedule\\schedule.csproj",
         "packagesPath": "C:\\Users\\kanis\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\kanis\\Desktop\\schedule_project\\schedule\\schedule\\obj\\",
+        "outputPath": "C:\\Users\\kanis\\desktop\\schedule_project\\schedule\\schedule\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\kanis\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -47,14 +53,11 @@
         "frameworks": {
           "netcoreapp3.1": {
             "projectReferences": {
-              "C:\\Users\\kanis\\Desktop\\schedule_project\\schedule\\Domain\\Domain.csproj": {
-                "projectPath": "C:\\Users\\kanis\\Desktop\\schedule_project\\schedule\\Domain\\Domain.csproj"
+              "C:\\Users\\kanis\\desktop\\schedule_project\\schedule\\Models\\Models.csproj": {
+                "projectPath": "C:\\Users\\kanis\\desktop\\schedule_project\\schedule\\Models\\Models.csproj"
               },
-              "C:\\Users\\kanis\\Desktop\\schedule_project\\schedule\\Models\\Models.csproj": {
-                "projectPath": "C:\\Users\\kanis\\Desktop\\schedule_project\\schedule\\Models\\Models.csproj"
-              },
-              "C:\\Users\\kanis\\Desktop\\schedule_project\\schedule\\Service\\Service.csproj": {
-                "projectPath": "C:\\Users\\kanis\\Desktop\\schedule_project\\schedule\\Service\\Service.csproj"
+              "C:\\Users\\kanis\\desktop\\schedule_project\\schedule\\Service\\Service.csproj": {
+                "projectPath": "C:\\Users\\kanis\\desktop\\schedule_project\\schedule\\Service\\Service.csproj"
               }
             }
           }
@@ -117,11 +120,27 @@
         }
       }
     },
-    "C:\\Users\\kanis\\Desktop\\schedule_project\\schedule\\Service\\Service.csproj": {
+    "C:\\Users\\kanis\\desktop\\schedule_project\\schedule\\Service\\Service.csproj": {
       "restore": {
-        "projectUniqueName": "C:\\Users\\kanis\\Desktop\\schedule_project\\schedule\\Service\\Service.csproj",
+        "projectUniqueName": "C:\\Users\\kanis\\desktop\\schedule_project\\schedule\\Service\\Service.csproj",
         "projectName": "Service",
-        "projectPath": "C:\\Users\\kanis\\Desktop\\schedule_project\\schedule\\Service\\Service.csproj"
+        "projectPath": "C:\\Users\\kanis\\desktop\\schedule_project\\schedule\\Service\\Service.csproj",
+        "packagesPath": "C:\\Users\\kanis\\.nuget\\packages\\",
+        "projectStyle": "PackagesConfig",
+        "configFilePaths": [
+          "C:\\Users\\kanis\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net472": {
+            "projectReferences": {}
+          }
+        },
+        "packagesConfigPath": "C:\\Users\\kanis\\desktop\\schedule_project\\schedule\\Service\\packages.config"
       },
       "frameworks": {
         "net472": {}
