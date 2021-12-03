@@ -1,35 +1,30 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Маша\\Downloads\\schedule_project\\schedule\\schedule\\schedule.csproj": {}
+    "C:\\Users\\kanis\\Desktop\\schedule_project\\schedule\\schedule\\schedule.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Маша\\Downloads\\schedule_project\\schedule\\Models\\Models.csproj": {
+    "C:\\Users\\kanis\\Desktop\\schedule_project\\schedule\\Models\\Models.csproj": {
       "restore": {
-        "projectUniqueName": "C:\\Users\\Маша\\Downloads\\schedule_project\\schedule\\Models\\Models.csproj",
+        "projectUniqueName": "C:\\Users\\kanis\\Desktop\\schedule_project\\schedule\\Models\\Models.csproj",
         "projectName": "Models",
-        "projectPath": "C:\\Users\\Маша\\Downloads\\schedule_project\\schedule\\Models\\Models.csproj",
-        "frameworks": {
-          "net472": {
-            "projectReferences": {}
-          }
-        }
+        "projectPath": "C:\\Users\\kanis\\Desktop\\schedule_project\\schedule\\Models\\Models.csproj"
       },
       "frameworks": {
         "net472": {}
       }
     },
-    "C:\\Users\\Маша\\Downloads\\schedule_project\\schedule\\schedule\\schedule.csproj": {
+    "C:\\Users\\kanis\\Desktop\\schedule_project\\schedule\\schedule\\schedule.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Маша\\Downloads\\schedule_project\\schedule\\schedule\\schedule.csproj",
+        "projectUniqueName": "C:\\Users\\kanis\\Desktop\\schedule_project\\schedule\\schedule\\schedule.csproj",
         "projectName": "schedule",
-        "projectPath": "C:\\Users\\Маша\\Downloads\\schedule_project\\schedule\\schedule\\schedule.csproj",
-        "packagesPath": "C:\\Users\\Маша\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Маша\\Downloads\\schedule_project\\schedule\\schedule\\obj\\",
+        "projectPath": "C:\\Users\\kanis\\Desktop\\schedule_project\\schedule\\schedule\\schedule.csproj",
+        "packagesPath": "C:\\Users\\kanis\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\kanis\\Desktop\\schedule_project\\schedule\\schedule\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Маша\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\kanis\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -41,13 +36,12 @@
         },
         "frameworks": {
           "netcoreapp3.1": {
-            "targetAlias": "netcoreapp3.1",
             "projectReferences": {
-              "C:\\Users\\Маша\\Downloads\\schedule_project\\schedule\\Models\\Models.csproj": {
-                "projectPath": "C:\\Users\\Маша\\Downloads\\schedule_project\\schedule\\Models\\Models.csproj"
+              "C:\\Users\\kanis\\Desktop\\schedule_project\\schedule\\Models\\Models.csproj": {
+                "projectPath": "C:\\Users\\kanis\\Desktop\\schedule_project\\schedule\\Models\\Models.csproj"
               },
-              "C:\\Users\\Маша\\Downloads\\schedule_project\\schedule\\Service\\Service.csproj": {
-                "projectPath": "C:\\Users\\Маша\\Downloads\\schedule_project\\schedule\\Service\\Service.csproj"
+              "C:\\Users\\kanis\\Desktop\\schedule_project\\schedule\\Service\\Service.csproj": {
+                "projectPath": "C:\\Users\\kanis\\Desktop\\schedule_project\\schedule\\Service\\Service.csproj"
               }
             }
           }
@@ -60,7 +54,6 @@
       },
       "frameworks": {
         "netcoreapp3.1": {
-          "targetAlias": "netcoreapp3.1",
           "dependencies": {
             "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
               "target": "Package",
@@ -107,20 +100,15 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.403\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.301\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\Маша\\Downloads\\schedule_project\\schedule\\Service\\Service.csproj": {
+    "C:\\Users\\kanis\\Desktop\\schedule_project\\schedule\\Service\\Service.csproj": {
       "restore": {
-        "projectUniqueName": "C:\\Users\\Маша\\Downloads\\schedule_project\\schedule\\Service\\Service.csproj",
+        "projectUniqueName": "C:\\Users\\kanis\\Desktop\\schedule_project\\schedule\\Service\\Service.csproj",
         "projectName": "Service",
-        "projectPath": "C:\\Users\\Маша\\Downloads\\schedule_project\\schedule\\Service\\Service.csproj",
-        "frameworks": {
-          "net472": {
-            "projectReferences": {}
-          }
-        }
+        "projectPath": "C:\\Users\\kanis\\Desktop\\schedule_project\\schedule\\Service\\Service.csproj"
       },
       "frameworks": {
         "net472": {}

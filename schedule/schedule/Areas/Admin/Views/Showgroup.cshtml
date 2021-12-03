@@ -1,0 +1,12 @@
+﻿@model IQueryable<Group>
+@if (Model.Any())
+{
+    @foreach (Group entity in Model)
+    {
+
+        <option asp-area="" asp-controller="Services" asp-action="Index" asp-route-id="@entity.Id">
+            @($"{entity.numGroup}")
+           
+        </option>
+    }
+}

@@ -48,9 +48,11 @@
                     @foreach (Teacher entity in Model)
                     {
 
-                        <option asp-area="" asp-controller="Services" asp-action="Index" asp-route-id="@entity.Id">
-                            @($"{entity.Surname}")
-                        </option>
+            <option asp-area="" asp-controller="Services" asp-action="Index" asp-route-id="@entity.Id">
+                @($"{entity.Surname}")
+                @($"{entity.Name}")
+                @($"{entity.Patronimic}")
+            </option>
                     }
                 }
             </select>
@@ -66,6 +68,7 @@
                 <option value="8">8 группа</option>
                 <option value="9">9 группа</option>
                 <option value="10">10 группа</option>
+             
             </select>
             <a href="#" class="buttonConfirm" role="button" aria-pressed="true">Подтвердить</a>
 

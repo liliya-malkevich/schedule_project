@@ -162,21 +162,21 @@ namespace schedule.Migrations
                         new
                         {
                             Id = "d297b366-b063-4ebf-b6c2-4d2a2c4a20d6",
-                            ConcurrencyStamp = "1a34599c-7b26-46c2-8bd3-4615fb40c292",
+                            ConcurrencyStamp = "5a365e0d-71a6-4ddf-8fbd-0a83c9c1ebcd",
                             Name = "admin",
                             NormalizedName = "ADMIN"
                         },
                         new
                         {
                             Id = "ab1d43f0-1ab6-4282-bb2f-d95cc94aef92",
-                            ConcurrencyStamp = "ecc19b1a-70c1-4acc-988e-f1c247babb14",
+                            ConcurrencyStamp = "905a2e34-8fd3-41e3-8107-546798b9df59",
                             Name = "student",
                             NormalizedName = "STUDENT"
                         },
                         new
                         {
                             Id = "43fa553a-294d-4eaf-bfab-8c3ed913c486",
-                            ConcurrencyStamp = "4ad44e5d-f78a-4f7f-851a-4a94e10170cf",
+                            ConcurrencyStamp = "bd4476b7-4bb8-4aa5-b72b-58cf7aac4ee6",
                             Name = "teacher",
                             NormalizedName = "TEACHER"
                         });
@@ -275,11 +275,11 @@ namespace schedule.Migrations
                         {
                             Id = "f8bed4de-81b4-4ece-86bc-d84bf1b9e98b",
                             AccessFailedCount = 0,
-                            ConcurrencyStamp = "62077187-9abf-4824-b3d1-10b9bf0c74ed",
+                            ConcurrencyStamp = "face3b9c-4e24-4c33-ba08-95e5f0423057",
                             EmailConfirmed = false,
                             LockoutEnabled = false,
                             NormalizedUserName = "ADMIN",
-                            PasswordHash = "AQAAAAEAACcQAAAAEAgz85RlGzCdR25sHz8ITwBTU5jamluxWb02SYEWM5l1zEXQs+vZgnaWrDUL5PSKkw==",
+                            PasswordHash = "AQAAAAEAACcQAAAAEPpCehnCOYdNKD44Cd1Tvfi11ujh6QFwztfjh7DYcLxLrtXiOhG7CDbAVZhuq2ENAw==",
                             PhoneNumberConfirmed = false,
                             SecurityStamp = "",
                             TwoFactorEnabled = false,
@@ -289,11 +289,11 @@ namespace schedule.Migrations
                         {
                             Id = "810ab629-9970-4f2a-9664-784024ce1744",
                             AccessFailedCount = 0,
-                            ConcurrencyStamp = "0d113a3e-9739-46ad-aa3c-9e781851867e",
+                            ConcurrencyStamp = "15208b4a-773a-4b8e-ab16-c10aa6fd8181",
                             EmailConfirmed = false,
                             LockoutEnabled = false,
                             NormalizedUserName = "STUDENT",
-                            PasswordHash = "AQAAAAEAACcQAAAAEPJmSdjFYvj4IDMCFT0qEEXj2E7/TjBuItf6kGZWqFD0GK1asohcOkqIuUU0da0pNA==",
+                            PasswordHash = "AQAAAAEAACcQAAAAEK5hOSxIfMSl90nV3EgSCYR0iGg8J1bpz9bwVWemNmZsNCwa213v33XdnOB4MDt0Ig==",
                             PhoneNumberConfirmed = false,
                             SecurityStamp = "",
                             TwoFactorEnabled = false,
@@ -303,11 +303,11 @@ namespace schedule.Migrations
                         {
                             Id = "df589529-387e-46e1-9c49-1a9388f1aa9d",
                             AccessFailedCount = 0,
-                            ConcurrencyStamp = "149dea29-2e99-4d47-a05c-a1d0b41a15b3",
+                            ConcurrencyStamp = "68427671-668d-4556-8293-d25e3e53317f",
                             EmailConfirmed = false,
                             LockoutEnabled = false,
                             NormalizedUserName = "TEACHER",
-                            PasswordHash = "AQAAAAEAACcQAAAAEHXGRo09+6zlzbkOypCYKhEoytJwaPJKXDIpT6wthqOFeH5ZyNQLaGcTmyENTlqaEg==",
+                            PasswordHash = "AQAAAAEAACcQAAAAELcLXOUgNOIY7cpc66hFPVh/N2FRwLts73S94vO/5WPeF25qdXTPFryGTWwpVphJ6w==",
                             PhoneNumberConfirmed = false,
                             SecurityStamp = "",
                             TwoFactorEnabled = false,

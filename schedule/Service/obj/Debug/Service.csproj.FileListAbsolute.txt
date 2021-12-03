@@ -344,7 +344,6 @@ C:\Users\kanis\Desktop\schedule_project\schedule\Service\bin\Debug\Microsoft.Vis
 C:\Users\kanis\Desktop\schedule_project\schedule\Service\bin\Debug\Microsoft.VisualStudio.Shell.Interop.8.0.dll
 C:\Users\kanis\Desktop\schedule_project\schedule\Service\bin\Debug\Microsoft.VisualStudio.VSHelp.dll
 C:\Users\kanis\Desktop\schedule_project\schedule\Service\bin\Debug\Microsoft.VisualStudio.Telemetry.dll
-C:\Users\kanis\Desktop\schedule_project\schedule\Service\bin\Debug\System.Threading.Tasks.Dataflow.dll
 C:\Users\kanis\Desktop\schedule_project\schedule\Service\bin\Debug\Microsoft.VisualStudio.Shell.Interop.9.0.dll
 C:\Users\kanis\Desktop\schedule_project\schedule\Service\bin\Debug\Microsoft.VisualStudio.TextManager.Interop.8.0.dll
 C:\Users\kanis\Desktop\schedule_project\schedule\Service\bin\Debug\Microsoft.VisualStudio.ProjectAggregator.dll
@@ -673,3 +672,6 @@ C:\Users\Маша\Downloads\schedule_project\schedule\Service\obj\Debug\Service.
 C:\Users\Маша\Downloads\schedule_project\schedule\Service\obj\Debug\Service.pdb
 C:\Users\Маша\Downloads\schedule_project\schedule\Service\bin\Debug\Microsoft.AspNet.Scaffolding.12.0.dll
 C:\Users\Маша\Downloads\schedule_project\schedule\Service\bin\Debug\Microsoft.AspNet.Scaffolding.EntityFramework.12.0.dll
+C:\Users\kanis\Desktop\schedule_project\schedule\Service\bin\Debug\Microsoft.AspNet.Scaffolding.12.0.dll
+C:\Users\kanis\Desktop\schedule_project\schedule\Service\bin\Debug\Microsoft.AspNet.Scaffolding.EntityFramework.12.0.dll
+C:\Users\kanis\Desktop\schedule_project\schedule\Service\bin\Debug\System.Threading.Tasks.Dataflow.dll

@@ -639,3 +639,10 @@ C:\Users\Маша\Downloads\schedule_project\schedule\schedule\obj\Debug\netcore
 C:\Users\Маша\Downloads\schedule_project\schedule\schedule\obj\Debug\netcoreapp3.1\schedule.dll
 C:\Users\Маша\Downloads\schedule_project\schedule\schedule\obj\Debug\netcoreapp3.1\schedule.pdb
 C:\Users\Маша\Downloads\schedule_project\schedule\schedule\obj\Debug\netcoreapp3.1\schedule.genruntimeconfig.cache
+C:\Users\kanis\desktop\schedule_project\schedule\schedule\obj\Debug\netcoreapp3.1\Razor\Areas\Student\Views\Home\IndexStudent.cshtml.g.cs
+C:\Users\kanis\desktop\schedule_project\schedule\schedule\obj\Debug\netcoreapp3.1\Razor\Areas\Student\Views\_ViewImports.cshtml.g.cs
+C:\Users\kanis\desktop\schedule_project\schedule\schedule\obj\Debug\netcoreapp3.1\Razor\Areas\Student\Views\_ViewStart.cshtml.g.cs
+C:\Users\kanis\desktop\schedule_project\schedule\schedule\obj\Debug\netcoreapp3.1\Razor\Areas\Teacher\Views\Home\IndexTeacher.cshtml.g.cs
+C:\Users\kanis\desktop\schedule_project\schedule\schedule\obj\Debug\netcoreapp3.1\Razor\Areas\Teacher\Views\_ViewImports.cshtml.g.cs
+C:\Users\kanis\desktop\schedule_project\schedule\schedule\obj\Debug\netcoreapp3.1\Razor\Areas\Teacher\Views\_ViewStart.cshtml.g.cs
+C:\Users\kanis\Desktop\schedule_project\schedule\schedule\obj\Debug\netcoreapp3.1\Razor\Areas\Admin\Views\Showgroup.cshtml.g.cs
