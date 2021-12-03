@@ -3,7 +3,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 
 namespace schedule.Migrations
 {
-    public partial class first : Migration
+    public partial class abc : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
@@ -207,12 +207,22 @@ namespace schedule.Migrations
             migrationBuilder.InsertData(
                 table: "AspNetRoles",
                 columns: new[] { "Id", "ConcurrencyStamp", "Name", "NormalizedName" },
-                values: new object[] { "d297b366-b063-4ebf-b6c2-4d2a2c4a20d6", "53d16ab4-57ba-46dd-869b-eae6a1a797dd", "admin", "ADMIN" });
+                values: new object[,]
+                {
+                    { "d297b366-b063-4ebf-b6c2-4d2a2c4a20d6", "1a34599c-7b26-46c2-8bd3-4615fb40c292", "admin", "ADMIN" },
+                    { "ab1d43f0-1ab6-4282-bb2f-d95cc94aef92", "ecc19b1a-70c1-4acc-988e-f1c247babb14", "student", "STUDENT" },
+                    { "43fa553a-294d-4eaf-bfab-8c3ed913c486", "4ad44e5d-f78a-4f7f-851a-4a94e10170cf", "teacher", "TEACHER" }
+                });
 
             migrationBuilder.InsertData(
                 table: "AspNetUsers",
                 columns: new[] { "Id", "AccessFailedCount", "ConcurrencyStamp", "Email", "EmailConfirmed", "LockoutEnabled", "LockoutEnd", "NormalizedEmail", "NormalizedUserName", "PasswordHash", "PhoneNumber", "PhoneNumberConfirmed", "SecurityStamp", "TwoFactorEnabled", "UserName" },
-                values: new object[] { "f8bed4de-81b4-4ece-86bc-d84bf1b9e98b", 0, "1fd19501-749c-4a60-91ca-9fc1746d5d7d", null, false, false, null, null, "ADMIN", "AQAAAAEAACcQAAAAEGk8LjK5xWdt2gF4hbKKiXsfH2Zch9WHCnjZdNkjLuEb3fyUOgzISHumNU61mo04tw==", null, false, "", false, "admin" });
+                values: new object[,]
+                {
+                    { "f8bed4de-81b4-4ece-86bc-d84bf1b9e98b", 0, "62077187-9abf-4824-b3d1-10b9bf0c74ed", null, false, false, null, null, "ADMIN", "AQAAAAEAACcQAAAAEAgz85RlGzCdR25sHz8ITwBTU5jamluxWb02SYEWM5l1zEXQs+vZgnaWrDUL5PSKkw==", null, false, "", false, "admin" },
+                    { "810ab629-9970-4f2a-9664-784024ce1744", 0, "0d113a3e-9739-46ad-aa3c-9e781851867e", null, false, false, null, null, "STUDENT", "AQAAAAEAACcQAAAAEPJmSdjFYvj4IDMCFT0qEEXj2E7/TjBuItf6kGZWqFD0GK1asohcOkqIuUU0da0pNA==", null, false, "", false, "student" },
+                    { "df589529-387e-46e1-9c49-1a9388f1aa9d", 0, "149dea29-2e99-4d47-a05c-a1d0b41a15b3", null, false, false, null, null, "TEACHER", "AQAAAAEAACcQAAAAEHXGRo09+6zlzbkOypCYKhEoytJwaPJKXDIpT6wthqOFeH5ZyNQLaGcTmyENTlqaEg==", null, false, "", false, "teacher" }
+                });
 
             migrationBuilder.InsertData(
                 table: "Course",
@@ -246,6 +256,16 @@ namespace schedule.Migrations
                 table: "AspNetUserRoles",
                 columns: new[] { "UserId", "RoleId" },
                 values: new object[] { "f8bed4de-81b4-4ece-86bc-d84bf1b9e98b", "d297b366-b063-4ebf-b6c2-4d2a2c4a20d6" });
+
+            migrationBuilder.InsertData(
+                table: "AspNetUserRoles",
+                columns: new[] { "UserId", "RoleId" },
+                values: new object[] { "810ab629-9970-4f2a-9664-784024ce1744", "ab1d43f0-1ab6-4282-bb2f-d95cc94aef92" });
+
+            migrationBuilder.InsertData(
+                table: "AspNetUserRoles",
+                columns: new[] { "UserId", "RoleId" },
+                values: new object[] { "df589529-387e-46e1-9c49-1a9388f1aa9d", "43fa553a-294d-4eaf-bfab-8c3ed913c486" });
 
             migrationBuilder.CreateIndex(
                 name: "IX_AspNetRoleClaims_RoleId",

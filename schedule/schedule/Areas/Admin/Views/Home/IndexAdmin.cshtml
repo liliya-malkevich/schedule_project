@@ -28,7 +28,13 @@
 
         </form>*@
 
-
+    <div class="nav-item">
+        <form asp-area="" asp-controller="Account" asp-action="Logout" class="nav-link contacts" method="post">
+            <a class="nav-link contacts logout buttonss" role="button" aria-pressed="true">
+                <input type="submit" value="Выход">
+            </a>
+        </form>
+    </div>
     <div class="fieldAdmin">
         <form class="form-inline">
             <select class="custom-select my-1 mr-sm-2" id="inlineFormCustomSelectPref">
@@ -1840,11 +1846,6 @@
     <div>
         <a href="#" class="buttonss button11" role="button" aria-pressed="true">Сохранить</a>
         <a href="#" class="buttonss button22" role="button" aria-pressed="true">Отменить</a>
-    </div>
-    <div class="nav-item">
-        <form asp-area="" asp-controller="Account" asp-action="Logout" class="nav-link contacts" method="post">
-            <input type="submit" value="Выйти">
-        </form>
     </div>
 </body>
 </html>

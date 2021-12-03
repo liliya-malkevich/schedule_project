@@ -468,6 +468,8 @@
     <Compile Include="AdminAreaAuthorization.cs" />
     <Compile Include="Config.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="StudentAreaAuthorization.cs" />
+    <Compile Include="TeacherAreaAuthorization.cs" />
   </ItemGroup>
   <ItemGroup>
     <WCFMetadata Include="Connected Services\" />

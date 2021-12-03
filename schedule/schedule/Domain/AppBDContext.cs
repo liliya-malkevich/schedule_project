@@ -18,7 +18,6 @@ namespace Domain
         public DbSet<Methodist> Methodist { get; set; }
         public DbSet<Course> Course { get; set; }
         public DbSet<Group> Group { get; set; }
-
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             base.OnModelCreating(modelBuilder);
@@ -30,7 +29,18 @@ namespace Domain
                 Name = "admin",
                 NormalizedName = "ADMIN"
             });
-
+            modelBuilder.Entity<IdentityRole>().HasData(new IdentityRole
+            {
+                Id = "ab1d43f0-1ab6-4282-bb2f-d95cc94aef92",
+                Name = "student",
+                NormalizedName = "STUDENT"
+            });
+            modelBuilder.Entity<IdentityRole>().HasData(new IdentityRole
+            {
+                Id = "43fa553a-294d-4eaf-bfab-8c3ed913c486",
+                Name = "teacher",
+                NormalizedName = "TEACHER"
+            });
             //если нет сущности, то создаем
             modelBuilder.Entity<IdentityUser>().HasData(new IdentityUser
             {
@@ -40,11 +50,37 @@ namespace Domain
                 PasswordHash = new PasswordHasher<IdentityUser>().HashPassword(null, "superpassword"),
                 SecurityStamp = string.Empty
             });
+            modelBuilder.Entity<IdentityUser>().HasData(new IdentityUser
+            {
+                Id = "810ab629-9970-4f2a-9664-784024ce1744",
+                UserName = "student",
+                NormalizedUserName = "STUDENT",
+                PasswordHash = new PasswordHasher<IdentityUser>().HashPassword(null, "studentpassword"),
+                SecurityStamp = string.Empty
+            });
+            modelBuilder.Entity<IdentityUser>().HasData(new IdentityUser
+            {
+                Id = "df589529-387e-46e1-9c49-1a9388f1aa9d",
+                UserName = "teacher",
+                NormalizedUserName = "TEACHER",
+                PasswordHash = new PasswordHasher<IdentityUser>().HashPassword(null, "teacherpassword"),
+                SecurityStamp = string.Empty
+            });
 
             modelBuilder.Entity<IdentityUserRole<string>>().HasData(new IdentityUserRole<string>
             {
                 RoleId = "d297b366-b063-4ebf-b6c2-4d2a2c4a20d6",
                 UserId = "f8bed4de-81b4-4ece-86bc-d84bf1b9e98b"
+            });
+            modelBuilder.Entity<IdentityUserRole<string>>().HasData(new IdentityUserRole<string>
+            {
+                RoleId = "ab1d43f0-1ab6-4282-bb2f-d95cc94aef92",
+                UserId = "810ab629-9970-4f2a-9664-784024ce1744"
+            });
+            modelBuilder.Entity<IdentityUserRole<string>>().HasData(new IdentityUserRole<string>
+            {
+                RoleId = "43fa553a-294d-4eaf-bfab-8c3ed913c486",
+                UserId = "df589529-387e-46e1-9c49-1a9388f1aa9d"
             });
 
             modelBuilder.Entity<Methodist>().HasData(new Methodist
@@ -64,21 +100,21 @@ namespace Domain
             modelBuilder.Entity<Course>().HasData(new Course
             {
                 Id = new Guid("1e23063e-2fb8-4a89-88b5-d64276fdd3d8"),
-                numCourse = 3
+                numCourse = 2
 
             });
             modelBuilder.Entity<Group>().HasData(new Group
             {
                 Id = new Guid("703d2975-31cf-4607-abaa-7488ad9b9c8f"),
                 numGroup = "1",
-             
+
             });
             modelBuilder.Entity<Teacher>().HasData(new Teacher
             {
                 Id = new Guid("66bd0fe7-4270-43b0-aaa9-f23487da064f"),
                 Name = "Кирилл",
                 Patronimic = "Сергеевич",
-                Surname = "Шпак"              
+                Surname = "Шпак"
 
             });
             modelBuilder.Entity<Teacher>().HasData(new Teacher
@@ -89,7 +125,6 @@ namespace Domain
                 Surname = "Янукович"
 
             });
-           
         }
     }
 }

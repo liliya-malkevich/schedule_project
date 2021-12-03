@@ -8398,19 +8398,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\kanis\\.nuget\\packages\\": {}
+    "C:\\Users\\Маша\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\kanis\\desktop\\schedule_project\\schedule\\schedule\\schedule.csproj",
+      "projectUniqueName": "C:\\Users\\Маша\\Downloads\\schedule_project\\schedule\\schedule\\schedule.csproj",
       "projectName": "schedule",
-      "projectPath": "C:\\Users\\kanis\\desktop\\schedule_project\\schedule\\schedule\\schedule.csproj",
-      "packagesPath": "C:\\Users\\kanis\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\kanis\\desktop\\schedule_project\\schedule\\schedule\\obj\\",
+      "projectPath": "C:\\Users\\Маша\\Downloads\\schedule_project\\schedule\\schedule\\schedule.csproj",
+      "packagesPath": "C:\\Users\\Маша\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Маша\\Downloads\\schedule_project\\schedule\\schedule\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\kanis\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Маша\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -8422,12 +8422,13 @@
       },
       "frameworks": {
         "netcoreapp3.1": {
+          "targetAlias": "netcoreapp3.1",
           "projectReferences": {
-            "C:\\Users\\kanis\\desktop\\schedule_project\\schedule\\Models\\Models.csproj": {
-              "projectPath": "C:\\Users\\kanis\\desktop\\schedule_project\\schedule\\Models\\Models.csproj"
+            "C:\\Users\\Маша\\Downloads\\schedule_project\\schedule\\Models\\Models.csproj": {
+              "projectPath": "C:\\Users\\Маша\\Downloads\\schedule_project\\schedule\\Models\\Models.csproj"
             },
-            "C:\\Users\\kanis\\desktop\\schedule_project\\schedule\\Service\\Service.csproj": {
-              "projectPath": "C:\\Users\\kanis\\desktop\\schedule_project\\schedule\\Service\\Service.csproj"
+            "C:\\Users\\Маша\\Downloads\\schedule_project\\schedule\\Service\\Service.csproj": {
+              "projectPath": "C:\\Users\\Маша\\Downloads\\schedule_project\\schedule\\Service\\Service.csproj"
             }
           }
         }
@@ -8440,6 +8441,7 @@
     },
     "frameworks": {
       "netcoreapp3.1": {
+        "targetAlias": "netcoreapp3.1",
         "dependencies": {
           "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
             "target": "Package",
@@ -8486,7 +8488,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.301\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.403\\RuntimeIdentifierGraph.json"
       }
     }
   }

@@ -60,14 +60,24 @@ namespace schedule
             {
                 x.AddPolicy("AdminArea", policy => { policy.RequireRole("admin"); });
             });
+            services.AddAuthorization(x =>
+            {
+                x.AddPolicy("StudentArea", policy => { policy.RequireRole("student"); });
+            });
+            services.AddAuthorization(x =>
+            {
+                x.AddPolicy("TeacherArea", policy => { policy.RequireRole("teacher"); });
+            });
             //добавляем сервисы для контроллеров и представлений(mvc)
-            services.AddControllersWithViews(x => 
+            services.AddControllersWithViews(x =>
             {
                 x.Conventions.Add(new AdminAreaAuthorization("Admin", "AdminArea"));
+                x.Conventions.Add(new StudentAreaAuthorization("Student", "StudentArea"));
+                x.Conventions.Add(new TeacherAreaAuthorization("Teacher", "TeacherArea"));
             })
                 //выставляем совместимость с версией asp.net core
                 .SetCompatibilityVersion(Microsoft.AspNetCore.Mvc.CompatibilityVersion.Version_3_0).AddSessionStateTempDataProvider();
-         
+
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -80,7 +90,7 @@ namespace schedule
 
             //поддержка статичных файлов 
             app.UseStaticFiles();
-            
+
             app.UseRouting();
 
             //подключаем футентификацию и авторизацию
@@ -91,6 +101,8 @@ namespace schedule
 
             app.UseEndpoints(endpoints =>
             {
+                endpoints.MapControllerRoute("student", "{area:exists}/{controller=Home}/{action=IndexStudent}/{id?}");
+                endpoints.MapControllerRoute("teacher", "{area:exists}/{controller=Home}/{action=IndexTeacher}/{id?}");
                 endpoints.MapControllerRoute("admin", "{area:exists}/{controller=Home}/{action=IndexAdmin}/{id?}");
                 endpoints.MapControllerRoute("default", "{controller=Home}/{action=Index}/{id?}");
             });
