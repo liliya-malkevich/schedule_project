@@ -17,7 +17,7 @@ namespace schedule.Areas.Admin.Controllers
         }
         public IActionResult IndexAdmin()
         {
-            return View(dataManager.Teacher.GetTeachers());
+            return View(dataManager.Lesson.GetLessons());
         }
     }
 }

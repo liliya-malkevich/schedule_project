@@ -67,6 +67,89 @@ namespace schedule.Migrations
                         });
                 });
 
+            modelBuilder.Entity("Domain.Entities.Lesson", b =>
+                {
+                    b.Property<Guid>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<string>("Format")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("TName")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("TPatronimic")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("TSurname")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("nameLesson")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<int>("numCourse")
+                        .HasColumnType("int");
+
+                    b.Property<string>("numGroup")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Lesson");
+
+                    b.HasData(
+                        new
+                        {
+                            Id = new Guid("1da51176-c1cc-400b-8847-68ef52c8c778"),
+                            Format = "Лекция",
+                            TName = "Поляков А.В",
+                            nameLesson = "Физика",
+                            numCourse = 1,
+                            numGroup = "1"
+                        },
+                        new
+                        {
+                            Id = new Guid("1da51173-c1cc-400b-8847-68ef52c8c779"),
+                            Format = "Практика",
+                            TName = "Чехменок Т.А",
+                            TPatronimic = "Александровна",
+                            TSurname = "Татьяна",
+                            nameLesson = "Мат.Анализ",
+                            numCourse = 2,
+                            numGroup = "2"
+                        },
+                        new
+                        {
+                            Id = new Guid("1da60173-c1cc-400b-8847-68ef52c8c779"),
+                            Format = "Лаб. занятие",
+                            TName = "Шпак К.С",
+                            TPatronimic = "Сергеевич",
+                            TSurname = "Кирилл",
+                            nameLesson = "Технологии программирования",
+                            numCourse = 3,
+                            numGroup = "6+7ПИ"
+                        },
+                        new
+                        {
+                            Id = new Guid("1da60173-c1cc-500b-8847-68ef52c8c779"),
+                            Format = "Семинар",
+                            TName = "Белый Н.М",
+                            nameLesson = "Физ.Культура",
+                            numCourse = 4,
+                            numGroup = "4+5КБ"
+                        },
+                        new
+                        {
+                            Id = new Guid("1da60142-c1cc-500b-8847-68ef52c8c779"),
+                            TName = "Соболь А.М",
+                            nameLesson = "Компьютерные сети",
+                            numCourse = 0,
+                            numGroup = "2+8АРИСТ"
+                        });
+                });
+
             modelBuilder.Entity("Domain.Entities.Methodist", b =>
                 {
                     b.Property<Guid>("Id")
@@ -162,21 +245,21 @@ namespace schedule.Migrations
                         new
                         {
                             Id = "d297b366-b063-4ebf-b6c2-4d2a2c4a20d6",
-                            ConcurrencyStamp = "5a365e0d-71a6-4ddf-8fbd-0a83c9c1ebcd",
+                            ConcurrencyStamp = "e4133f57-af9a-4328-947f-06a29dda809c",
                             Name = "admin",
                             NormalizedName = "ADMIN"
                         },
                         new
                         {
                             Id = "ab1d43f0-1ab6-4282-bb2f-d95cc94aef92",
-                            ConcurrencyStamp = "905a2e34-8fd3-41e3-8107-546798b9df59",
+                            ConcurrencyStamp = "b503c6ef-1b17-4bfb-aef2-487d36e97df3",
                             Name = "student",
                             NormalizedName = "STUDENT"
                         },
                         new
                         {
                             Id = "43fa553a-294d-4eaf-bfab-8c3ed913c486",
-                            ConcurrencyStamp = "bd4476b7-4bb8-4aa5-b72b-58cf7aac4ee6",
+                            ConcurrencyStamp = "86e312c3-47e3-470e-b402-48f9c59fd6df",
                             Name = "teacher",
                             NormalizedName = "TEACHER"
                         });
@@ -275,11 +358,11 @@ namespace schedule.Migrations
                         {
                             Id = "f8bed4de-81b4-4ece-86bc-d84bf1b9e98b",
                             AccessFailedCount = 0,
-                            ConcurrencyStamp = "face3b9c-4e24-4c33-ba08-95e5f0423057",
+                            ConcurrencyStamp = "19739836-6342-4c88-bb21-df102c4835d5",
                             EmailConfirmed = false,
                             LockoutEnabled = false,
                             NormalizedUserName = "ADMIN",
-                            PasswordHash = "AQAAAAEAACcQAAAAEPpCehnCOYdNKD44Cd1Tvfi11ujh6QFwztfjh7DYcLxLrtXiOhG7CDbAVZhuq2ENAw==",
+                            PasswordHash = "AQAAAAEAACcQAAAAEM99G1TBRNpYxtsX8vjNc5pXlzhdSNQjbJwXRExE0hGzvm8Cc1dxDFG/y2WgJ1VyWg==",
                             PhoneNumberConfirmed = false,
                             SecurityStamp = "",
                             TwoFactorEnabled = false,
@@ -289,11 +372,11 @@ namespace schedule.Migrations
                         {
                             Id = "810ab629-9970-4f2a-9664-784024ce1744",
                             AccessFailedCount = 0,
-                            ConcurrencyStamp = "15208b4a-773a-4b8e-ab16-c10aa6fd8181",
+                            ConcurrencyStamp = "58609a0a-4bc7-4f08-9bf2-947edd70a174",
                             EmailConfirmed = false,
                             LockoutEnabled = false,
                             NormalizedUserName = "STUDENT",
-                            PasswordHash = "AQAAAAEAACcQAAAAEK5hOSxIfMSl90nV3EgSCYR0iGg8J1bpz9bwVWemNmZsNCwa213v33XdnOB4MDt0Ig==",
+                            PasswordHash = "AQAAAAEAACcQAAAAEHRsBZsqOD7oHImN02xZQVDMAY8GDZThQCsinaGzT+MjQk+/z7jrM2MrqnZjvAu6Uw==",
                             PhoneNumberConfirmed = false,
                             SecurityStamp = "",
                             TwoFactorEnabled = false,
@@ -303,11 +386,11 @@ namespace schedule.Migrations
                         {
                             Id = "df589529-387e-46e1-9c49-1a9388f1aa9d",
                             AccessFailedCount = 0,
-                            ConcurrencyStamp = "68427671-668d-4556-8293-d25e3e53317f",
+                            ConcurrencyStamp = "80f7bc76-29f9-4203-b349-6120a47782c1",
                             EmailConfirmed = false,
                             LockoutEnabled = false,
                             NormalizedUserName = "TEACHER",
-                            PasswordHash = "AQAAAAEAACcQAAAAELcLXOUgNOIY7cpc66hFPVh/N2FRwLts73S94vO/5WPeF25qdXTPFryGTWwpVphJ6w==",
+                            PasswordHash = "AQAAAAEAACcQAAAAEJRHVOfF9v/ce5RiywMeKhtc9shUkh796UhnkqTikmmU3KJliHqry4qkwYOh16du6w==",
                             PhoneNumberConfirmed = false,
                             SecurityStamp = "",
                             TwoFactorEnabled = false,

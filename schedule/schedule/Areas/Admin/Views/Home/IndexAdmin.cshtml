@@ -1,4 +1,4 @@
-﻿@model IQueryable<Teacher>
+﻿@model IQueryable<Lesson>
  
 @{
     string strTitle = "AdminPanel";
@@ -20,13 +20,26 @@
 </head>
 <body>
 
-    @*<a asp-area="Admin" asp-controller="Teacher" asp-action="Edit" asp-route-id ="@entity.Id">edit</a>
 
-        <form id="form-@entity.Id" asp-area="Admin" asp-controller="Teacher" asp-action="Delete" method="post">
-            <input type="hidden" name="id" value="@entity.Id">
-            <a href="#" onclick="document.getElementById('form-@entity.Id').submit();">del</a>
+    @if (Model.Any())
+    {
+        @foreach (Lesson entity in Model)
+        {
 
-        </form>*@
+            <a asp-area="Admin" asp-controller="Lesson" asp-action="Edit" asp-route-id ="@entity.Id">edit</a>
+
+                <form id="form-@entity.Id" asp-area="Admin" asp-controller="Lesson" asp-action="Delete" method="post">
+                    <input type="hidden" name="id" value="@entity.Id">
+                    <a href="#" onclick="document.getElementById('form-@entity.Id').submit();">del</a>
+
+                </form>
+            <a asp-area="Admin" asp-controller="Services" asp-action="Index" asp-route-id="@entity.Id">
+
+                @($"{entity.nameLesson}")
+
+            </a>
+        }
+    }
 
     <div class="nav-item">
         <form asp-area="" asp-controller="Account" asp-action="Logout" class="nav-link contacts" method="post">
@@ -39,38 +52,37 @@
         <form class="form-inline">
             <select class="custom-select my-1 mr-sm-2" id="inlineFormCustomSelectPref">
                 <option selected>Выберите курс</option>
-                <option value="1">1 курс</option>
-                <option value="2">2 курс</option>
-                <option value="3">3 курс</option>
-                <option value="4">4 курс</option>
+
                 @if (Model.Any())
                 {
-                    @foreach (Teacher entity in Model)
+                    @foreach (Lesson entity in Model)
                     {
 
-            <option asp-area="" asp-controller="Services" asp-action="Index" asp-route-id="@entity.Id">
-                @($"{entity.Surname}")
-                @($"{entity.Name}")
-                @($"{entity.Patronimic}")
-            </option>
+                        <option asp-area="Admin" asp-controller="Services" asp-action="Index" asp-route-id="@entity.Id">
+
+                            @($"{entity.numCourse}")
+
+                        </option>
                     }
                 }
             </select>
             <select class="custom-select my-1 mr-sm-2" id="inlineFormCustomSelectPref">
                 <option selected>Выберите группу</option>
-                <option value="1">1 группа</option>
-                <option value="2">2 группа</option>
-                <option value="3">3 группа</option>
-                <option value="4">4 группа</option>
-                <option value="5">5 группа</option>
-                <option value="6">6 группа</option>
-                <option value="7">7 группа</option>
-                <option value="8">8 группа</option>
-                <option value="9">9 группа</option>
-                <option value="10">10 группа</option>
-             
+                @if (Model.Any())
+                {
+                    @foreach (Lesson entity in Model)
+                    {
+
+                        <option asp-area="" asp-controller="Services" asp-action="Index" asp-route-id="@entity.Id">
+
+                            @($"{entity.numGroup}")
+
+                        </option>
+                    }
+                }
+
             </select>
-            <a href="#" class="buttonConfirm" role="button" aria-pressed="true">Подтвердить</a>
+            <a asp-area="Admin" asp-controller="Lessons" class="buttonConfirm" role="button" aria-pressed="true" asp-action="Edit" asp-route-id="">Редактировать</a>
 
         </form>
         <form class="table">
@@ -94,25 +106,35 @@
                         <td>
                             <select class="custom-select my-1 mr-sm-2" id="inlineFormCustomSelectPref">
                                 <option selected>Выберите</option>
-                                <option value="1">Технологии программирования</option>
-                                <option value="2">Физика</option>
-                                <option value="3">Компьютерные сети</option>
-                                <option value="4">Операционные системы</option>
-                                <option value="5">Интегральная электронника</option>
-                                <option value="6">Архитектура компьтеров</option>
-                                <option value="7">Методы математической физики</option>
+                                @if (Model.Any())
+                                {
+                                    @foreach (Lesson entity in Model)
+                                    {
+
+                                        <option asp-area="" asp-controller="Services" asp-action="Index" asp-route-id="@entity.Id">
+
+                                            @($"{entity.nameLesson}")
+
+                                        </option>
+                                    }
+                                }
                             </select>
                         </td>
                         <td>
                             <select class="custom-select my-1 mr-sm-2" id="inlineFormCustomSelectPref">
                                 <option selected>Выберите</option>
-                                <option value="1">Шпак К.С.</option>
-                                <option value="2">Янукович Т.П.</option>
-                                <option value="3">Кочин В.П.</option>
-                                <option value="4">Соболь А. М.</option>
-                                <option value="5">Садов В.С.</option>
-                                <option value="6">Дрозд А. Н.</option>
-                                <option value="7">Рыбаченко И.В.</option>
+                                @if (Model.Any())
+                                {
+                                    @foreach (Lesson entity in Model)
+                                    {
+
+                                        <option asp-area="" asp-controller="Services" asp-action="Index" asp-route-id="@entity.Id">
+
+                                            @($"{entity.TName}")
+
+                                        </option>
+                                    }
+                                }
                             </select>
                         </td>
                         <td>
@@ -123,10 +145,18 @@
                         <td>
                             <select class="custom-select my-1 mr-sm-2" id="inlineFormCustomSelectPref">
                                 <option selected>Выберите</option>
-                                <option value="1">Лекция</option>
-                                <option value="2">Практическое занятие</option>
-                                <option value="3">Лабораторное занятие</option>
-                                <option value="4">Семинар</option>
+                                @if (Model.Any())
+                                {
+                                    @foreach (Lesson entity in Model)
+                                    {
+
+                                        <option asp-area="" asp-controller="Services" asp-action="Index" asp-route-id="@entity.Id">
+
+                                            @($"{entity.Format}")
+
+                                        </option>
+                                    }
+                                }
                             </select>
                         </td>
                     </tr>

@@ -3,7 +3,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 
 namespace schedule.Migrations
 {
-    public partial class first : Migration
+    public partial class migr : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
@@ -68,6 +68,24 @@ namespace schedule.Migrations
                 constraints: table =>
                 {
                     table.PrimaryKey("PK_Group", x => x.Id);
+                });
+
+            migrationBuilder.CreateTable(
+                name: "Lesson",
+                columns: table => new
+                {
+                    Id = table.Column<Guid>(nullable: false),
+                    nameLesson = table.Column<string>(nullable: false),
+                    numGroup = table.Column<string>(nullable: true),
+                    numCourse = table.Column<int>(nullable: false),
+                    TName = table.Column<string>(nullable: true),
+                    TSurname = table.Column<string>(nullable: true),
+                    TPatronimic = table.Column<string>(nullable: true),
+                    Format = table.Column<string>(nullable: true)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_Lesson", x => x.Id);
                 });
 
             migrationBuilder.CreateTable(
@@ -209,9 +227,9 @@ namespace schedule.Migrations
                 columns: new[] { "Id", "ConcurrencyStamp", "Name", "NormalizedName" },
                 values: new object[,]
                 {
-                    { "d297b366-b063-4ebf-b6c2-4d2a2c4a20d6", "5a365e0d-71a6-4ddf-8fbd-0a83c9c1ebcd", "admin", "ADMIN" },
-                    { "ab1d43f0-1ab6-4282-bb2f-d95cc94aef92", "905a2e34-8fd3-41e3-8107-546798b9df59", "student", "STUDENT" },
-                    { "43fa553a-294d-4eaf-bfab-8c3ed913c486", "bd4476b7-4bb8-4aa5-b72b-58cf7aac4ee6", "teacher", "TEACHER" }
+                    { "43fa553a-294d-4eaf-bfab-8c3ed913c486", "86e312c3-47e3-470e-b402-48f9c59fd6df", "teacher", "TEACHER" },
+                    { "ab1d43f0-1ab6-4282-bb2f-d95cc94aef92", "b503c6ef-1b17-4bfb-aef2-487d36e97df3", "student", "STUDENT" },
+                    { "d297b366-b063-4ebf-b6c2-4d2a2c4a20d6", "e4133f57-af9a-4328-947f-06a29dda809c", "admin", "ADMIN" }
                 });
 
             migrationBuilder.InsertData(
@@ -219,9 +237,9 @@ namespace schedule.Migrations
                 columns: new[] { "Id", "AccessFailedCount", "ConcurrencyStamp", "Email", "EmailConfirmed", "LockoutEnabled", "LockoutEnd", "NormalizedEmail", "NormalizedUserName", "PasswordHash", "PhoneNumber", "PhoneNumberConfirmed", "SecurityStamp", "TwoFactorEnabled", "UserName" },
                 values: new object[,]
                 {
-                    { "f8bed4de-81b4-4ece-86bc-d84bf1b9e98b", 0, "face3b9c-4e24-4c33-ba08-95e5f0423057", null, false, false, null, null, "ADMIN", "AQAAAAEAACcQAAAAEPpCehnCOYdNKD44Cd1Tvfi11ujh6QFwztfjh7DYcLxLrtXiOhG7CDbAVZhuq2ENAw==", null, false, "", false, "admin" },
-                    { "810ab629-9970-4f2a-9664-784024ce1744", 0, "15208b4a-773a-4b8e-ab16-c10aa6fd8181", null, false, false, null, null, "STUDENT", "AQAAAAEAACcQAAAAEK5hOSxIfMSl90nV3EgSCYR0iGg8J1bpz9bwVWemNmZsNCwa213v33XdnOB4MDt0Ig==", null, false, "", false, "student" },
-                    { "df589529-387e-46e1-9c49-1a9388f1aa9d", 0, "68427671-668d-4556-8293-d25e3e53317f", null, false, false, null, null, "TEACHER", "AQAAAAEAACcQAAAAELcLXOUgNOIY7cpc66hFPVh/N2FRwLts73S94vO/5WPeF25qdXTPFryGTWwpVphJ6w==", null, false, "", false, "teacher" }
+                    { "df589529-387e-46e1-9c49-1a9388f1aa9d", 0, "80f7bc76-29f9-4203-b349-6120a47782c1", null, false, false, null, null, "TEACHER", "AQAAAAEAACcQAAAAEJRHVOfF9v/ce5RiywMeKhtc9shUkh796UhnkqTikmmU3KJliHqry4qkwYOh16du6w==", null, false, "", false, "teacher" },
+                    { "f8bed4de-81b4-4ece-86bc-d84bf1b9e98b", 0, "19739836-6342-4c88-bb21-df102c4835d5", null, false, false, null, null, "ADMIN", "AQAAAAEAACcQAAAAEM99G1TBRNpYxtsX8vjNc5pXlzhdSNQjbJwXRExE0hGzvm8Cc1dxDFG/y2WgJ1VyWg==", null, false, "", false, "admin" },
+                    { "810ab629-9970-4f2a-9664-784024ce1744", 0, "58609a0a-4bc7-4f08-9bf2-947edd70a174", null, false, false, null, null, "STUDENT", "AQAAAAEAACcQAAAAEHRsBZsqOD7oHImN02xZQVDMAY8GDZThQCsinaGzT+MjQk+/z7jrM2MrqnZjvAu6Uw==", null, false, "", false, "student" }
                 });
 
             migrationBuilder.InsertData(
@@ -237,6 +255,18 @@ namespace schedule.Migrations
                 table: "Group",
                 columns: new[] { "Id", "numGroup" },
                 values: new object[] { new Guid("703d2975-31cf-4607-abaa-7488ad9b9c8f"), "1" });
+
+            migrationBuilder.InsertData(
+                table: "Lesson",
+                columns: new[] { "Id", "Format", "TName", "TPatronimic", "TSurname", "nameLesson", "numCourse", "numGroup" },
+                values: new object[,]
+                {
+                    { new Guid("1da60142-c1cc-500b-8847-68ef52c8c779"), null, "Соболь А.М", null, null, "Компьютерные сети", 0, "2+8АРИСТ" },
+                    { new Guid("1da60173-c1cc-400b-8847-68ef52c8c779"), "Лаб. занятие", "Шпак К.С", "Сергеевич", "Кирилл", "Технологии программирования", 3, "6+7ПИ" },
+                    { new Guid("1da51173-c1cc-400b-8847-68ef52c8c779"), "Практика", "Чехменок Т.А", "Александровна", "Татьяна", "Мат.Анализ", 2, "2" },
+                    { new Guid("1da51176-c1cc-400b-8847-68ef52c8c778"), "Лекция", "Поляков А.В", null, null, "Физика", 1, "1" },
+                    { new Guid("1da60173-c1cc-500b-8847-68ef52c8c779"), "Семинар", "Белый Н.М", null, null, "Физ.Культура", 4, "4+5КБ" }
+                });
 
             migrationBuilder.InsertData(
                 table: "Methodist",
@@ -329,6 +359,9 @@ namespace schedule.Migrations
 
             migrationBuilder.DropTable(
                 name: "Group");
+
+            migrationBuilder.DropTable(
+                name: "Lesson");
 
             migrationBuilder.DropTable(
                 name: "Methodist");

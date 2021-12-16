@@ -18,6 +18,7 @@ namespace Domain
         public DbSet<Methodist> Methodist { get; set; }
         public DbSet<Course> Course { get; set; }
         public DbSet<Group> Group { get; set; }
+        public DbSet<Lesson> Lesson { get; set; }
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             base.OnModelCreating(modelBuilder);
@@ -123,6 +124,60 @@ namespace Domain
                 Name = "Татьяна",
                 Patronimic = "Петровна",
                 Surname = "Янукович"
+
+            });
+            modelBuilder.Entity<Lesson>().HasData(new Lesson
+            {
+                Id = new Guid("1da51176-c1cc-400b-8847-68ef52c8c778"),
+                nameLesson="Физика",
+                numCourse = 1,
+                numGroup="1",
+                TName ="Поляков А.В",
+                Format ="Лекция"
+                
+
+            });
+            modelBuilder.Entity<Lesson>().HasData(new Lesson
+            {
+                Id = new Guid("1da51173-c1cc-400b-8847-68ef52c8c779"),
+                nameLesson = "Мат.Анализ",
+                numCourse = 2,
+                numGroup = "2",
+                TName = "Чехменок Т.А",
+                TSurname = "Татьяна",
+                TPatronimic = "Александровна",
+                Format ="Практика"
+
+            });
+            modelBuilder.Entity<Lesson>().HasData(new Lesson
+            {
+                Id = new Guid("1da60173-c1cc-400b-8847-68ef52c8c779"),
+                nameLesson = "Технологии программирования",
+                numCourse = 3,
+                numGroup = "6+7ПИ",
+                TName = "Шпак К.С",
+                TSurname = "Кирилл",
+                TPatronimic = "Сергеевич",
+                Format = "Лаб. занятие"
+
+            });
+            modelBuilder.Entity<Lesson>().HasData(new Lesson
+            {
+                Id = new Guid("1da60173-c1cc-500b-8847-68ef52c8c779"),
+                nameLesson = "Физ.Культура",
+                numCourse = 4,
+                numGroup = "4+5КБ",
+                TName = "Белый Н.М",
+                Format = "Семинар"
+
+            });
+            modelBuilder.Entity<Lesson>().HasData(new Lesson
+            {
+                Id = new Guid("1da60142-c1cc-500b-8847-68ef52c8c779"),
+                nameLesson = "Компьютерные сети",
+            
+                numGroup = "2+8АРИСТ",
+                TName = "Соболь А.М"
 
             });
         }

@@ -11,12 +11,14 @@ namespace schedule.Domain
         public ICourseRepository Course { get; set; }
         public IGroupRepository Group { get; set; }
         public ITeacherRepository Teacher { get; set; }
-         
-        public DataManager(ICourseRepository courseRepository, IGroupRepository groupRepository, ITeacherRepository teacherRepository)
+         public ILessonRepository Lesson { get; set; }
+
+        public DataManager(ICourseRepository courseRepository, IGroupRepository groupRepository, ITeacherRepository teacherRepository, ILessonRepository lessonRepository)
         {
             Course = courseRepository;
             Group = groupRepository;
             Teacher = teacherRepository;
+            Lesson = lessonRepository;
         }
     }
 }
