@@ -13,8 +13,6 @@ C:\Users\Маша\Desktop\schedule_project\schedule\Service\obj\Debug\Service.pd
 C:\Users\Маша\Desktop\schedule_project\schedule\Service\bin\Debug\Microsoft.DiaSymReader.Native.x86.dll
 C:\Users\Маша\Desktop\schedule_project\schedule\Service\bin\Debug\Microsoft.DiaSymReader.Native.amd64.dll
 C:\Users\Маша\Desktop\schedule_project\schedule\Service\bin\Debug\Service.dll.config
-C:\Users\Маша\Desktop\schedule_project\schedule\Service\bin\Debug\Microsoft.AspNet.Scaffolding.12.0.dll
-C:\Users\Маша\Desktop\schedule_project\schedule\Service\bin\Debug\Microsoft.AspNet.Scaffolding.EntityFramework.12.0.dll
 C:\Users\Маша\Desktop\schedule_project\schedule\Service\bin\Debug\Microsoft.AspNetCore.Antiforgery.dll
 C:\Users\Маша\Desktop\schedule_project\schedule\Service\bin\Debug\Microsoft.AspNetCore.Authentication.Abstractions.dll
 C:\Users\Маша\Desktop\schedule_project\schedule\Service\bin\Debug\Microsoft.AspNetCore.Authentication.Cookies.dll
@@ -898,3 +896,5 @@ E:\schedule_project\schedule\Service\obj\Debug\Service.dll
 E:\schedule_project\schedule\Service\obj\Debug\Service.pdb
 C:\Users\kanis\Desktop\schedule_project\schedule\Service\bin\Debug\Microsoft.AspNet.Scaffolding.12.0.dll
 C:\Users\kanis\Desktop\schedule_project\schedule\Service\bin\Debug\Microsoft.AspNet.Scaffolding.EntityFramework.12.0.dll
+C:\Users\Маша\Desktop\schedule_project\schedule\Service\bin\Debug\Microsoft.AspNet.Scaffolding.12.0.dll
+C:\Users\Маша\Desktop\schedule_project\schedule\Service\bin\Debug\Microsoft.AspNet.Scaffolding.EntityFramework.12.0.dll

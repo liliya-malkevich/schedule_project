@@ -74,7 +74,6 @@ body {
 /*admin*/
 .fieldAdmin {
     margin-left: 217px;
-    margin-top: 100px;
     width: 1230px;
     margin-bottom: 100px;
 }
@@ -108,36 +107,32 @@ th {
 
 .buttonss {
     color: black;
-    position: absolute;
     padding: 5px;
     font-size: 25px;
     line-height: 29px;
     border-radius: 50px;
     font-family: Roboto;
+    position:absolute;
+    top: 800px;
 }
 
 .button11 {
-    top: 900px;
-    left: 1150px;
     background: #A1CDFF;
 }
 
 .button22 {
-    top: 900px;
-    left: 1280px;
+    left: 1090px;
     background: #D2E4F9;
 }
 
 .buttonConfirm {
     color: black;
-    position: absolute;
     padding: 5px;
     font-size: 20px;
     line-height: 29px;
     border-radius: 50px;
     font-family: Roboto;
     background: #D2E4F9;
-    left: 550px;
 }
 
 .logout {

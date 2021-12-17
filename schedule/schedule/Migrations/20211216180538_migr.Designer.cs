@@ -10,7 +10,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace schedule.Migrations
 {
     [DbContext(typeof(AppBDContext))]
-    [Migration("20211216095205_migr")]
+    [Migration("20211216180538_migr")]
     partial class migr
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -247,21 +247,21 @@ namespace schedule.Migrations
                         new
                         {
                             Id = "d297b366-b063-4ebf-b6c2-4d2a2c4a20d6",
-                            ConcurrencyStamp = "e4133f57-af9a-4328-947f-06a29dda809c",
+                            ConcurrencyStamp = "54fd3b86-8610-4e58-af99-33be7d5de406",
                             Name = "admin",
                             NormalizedName = "ADMIN"
                         },
                         new
                         {
                             Id = "ab1d43f0-1ab6-4282-bb2f-d95cc94aef92",
-                            ConcurrencyStamp = "b503c6ef-1b17-4bfb-aef2-487d36e97df3",
+                            ConcurrencyStamp = "0895b331-143d-4881-b5c7-7ce53aca76a2",
                             Name = "student",
                             NormalizedName = "STUDENT"
                         },
                         new
                         {
                             Id = "43fa553a-294d-4eaf-bfab-8c3ed913c486",
-                            ConcurrencyStamp = "86e312c3-47e3-470e-b402-48f9c59fd6df",
+                            ConcurrencyStamp = "b6622cd0-c6b7-408f-9bd1-abe90821092a",
                             Name = "teacher",
                             NormalizedName = "TEACHER"
                         });
@@ -360,11 +360,11 @@ namespace schedule.Migrations
                         {
                             Id = "f8bed4de-81b4-4ece-86bc-d84bf1b9e98b",
                             AccessFailedCount = 0,
-                            ConcurrencyStamp = "19739836-6342-4c88-bb21-df102c4835d5",
+                            ConcurrencyStamp = "732b49bd-14d6-4d3a-8c27-897b6531f9da",
                             EmailConfirmed = false,
                             LockoutEnabled = false,
                             NormalizedUserName = "ADMIN",
-                            PasswordHash = "AQAAAAEAACcQAAAAEM99G1TBRNpYxtsX8vjNc5pXlzhdSNQjbJwXRExE0hGzvm8Cc1dxDFG/y2WgJ1VyWg==",
+                            PasswordHash = "AQAAAAEAACcQAAAAEENasGsklTl8w4K2orUGtD2eptkAIQuAZIN70mKq9HSmo1wfAjF99QoIrzLbJsiUqA==",
                             PhoneNumberConfirmed = false,
                             SecurityStamp = "",
                             TwoFactorEnabled = false,
@@ -374,11 +374,11 @@ namespace schedule.Migrations
                         {
                             Id = "810ab629-9970-4f2a-9664-784024ce1744",
                             AccessFailedCount = 0,
-                            ConcurrencyStamp = "58609a0a-4bc7-4f08-9bf2-947edd70a174",
+                            ConcurrencyStamp = "6f63859f-86f0-43b2-8a7b-b5b9da8013b5",
                             EmailConfirmed = false,
                             LockoutEnabled = false,
                             NormalizedUserName = "STUDENT",
-                            PasswordHash = "AQAAAAEAACcQAAAAEHRsBZsqOD7oHImN02xZQVDMAY8GDZThQCsinaGzT+MjQk+/z7jrM2MrqnZjvAu6Uw==",
+                            PasswordHash = "AQAAAAEAACcQAAAAEIxI7J/l/vuuVgymXOvbIVaoMFsnHyCGk1qAp+tRLGmEBioFBNMrD/cKIU5r62BwTA==",
                             PhoneNumberConfirmed = false,
                             SecurityStamp = "",
                             TwoFactorEnabled = false,
@@ -388,11 +388,11 @@ namespace schedule.Migrations
                         {
                             Id = "df589529-387e-46e1-9c49-1a9388f1aa9d",
                             AccessFailedCount = 0,
-                            ConcurrencyStamp = "80f7bc76-29f9-4203-b349-6120a47782c1",
+                            ConcurrencyStamp = "4d7f98fd-a4bf-4536-9b51-e905d3533060",
                             EmailConfirmed = false,
                             LockoutEnabled = false,
                             NormalizedUserName = "TEACHER",
-                            PasswordHash = "AQAAAAEAACcQAAAAEJRHVOfF9v/ce5RiywMeKhtc9shUkh796UhnkqTikmmU3KJliHqry4qkwYOh16du6w==",
+                            PasswordHash = "AQAAAAEAACcQAAAAEPpT/RA2q//vVf2AsFVcJvdsdHpFmCH4H5b+aZ7iYXwQtLtsDY0Eh2DmpSiKfMRpKg==",
                             PhoneNumberConfirmed = false,
                             SecurityStamp = "",
                             TwoFactorEnabled = false,

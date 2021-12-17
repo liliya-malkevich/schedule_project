@@ -110,22 +110,6 @@ namespace Domain
                 numGroup = "1",
 
             });
-            modelBuilder.Entity<Teacher>().HasData(new Teacher
-            {
-                Id = new Guid("66bd0fe7-4270-43b0-aaa9-f23487da064f"),
-                Name = "Кирилл",
-                Patronimic = "Сергеевич",
-                Surname = "Шпак"
-
-            });
-            modelBuilder.Entity<Teacher>().HasData(new Teacher
-            {
-                Id = new Guid("1da51176-c1cc-400b-8847-68ef52c8c776"),
-                Name = "Татьяна",
-                Patronimic = "Петровна",
-                Surname = "Янукович"
-
-            });
             modelBuilder.Entity<Lesson>().HasData(new Lesson
             {
                 Id = new Guid("1da51176-c1cc-400b-8847-68ef52c8c778"),
@@ -134,8 +118,6 @@ namespace Domain
                 numGroup="1",
                 TName ="Поляков А.В",
                 Format ="Лекция"
-                
-
             });
             modelBuilder.Entity<Lesson>().HasData(new Lesson
             {
@@ -151,7 +133,7 @@ namespace Domain
             });
             modelBuilder.Entity<Lesson>().HasData(new Lesson
             {
-                Id = new Guid("1da60173-c1cc-400b-8847-68ef52c8c779"),
+                Id = new Guid("1da60173-c1cc-400b-8847-68ef52c8c745"),
                 nameLesson = "Технологии программирования",
                 numCourse = 3,
                 numGroup = "6+7ПИ",
@@ -163,7 +145,7 @@ namespace Domain
             });
             modelBuilder.Entity<Lesson>().HasData(new Lesson
             {
-                Id = new Guid("1da60173-c1cc-500b-8847-68ef52c8c779"),
+                Id = new Guid("1da60173-c1cc-500b-8847-68ef52c8c789"),
                 nameLesson = "Физ.Культура",
                 numCourse = 4,
                 numGroup = "4+5КБ",
@@ -173,7 +155,7 @@ namespace Domain
             });
             modelBuilder.Entity<Lesson>().HasData(new Lesson
             {
-                Id = new Guid("1da60142-c1cc-500b-8847-68ef52c8c779"),
+                Id = new Guid("1da60142-c1cc-500b-8847-68ef52c8c712"),
                 nameLesson = "Компьютерные сети",
             
                 numGroup = "2+8АРИСТ",

@@ -227,9 +227,9 @@ namespace schedule.Migrations
                 columns: new[] { "Id", "ConcurrencyStamp", "Name", "NormalizedName" },
                 values: new object[,]
                 {
-                    { "43fa553a-294d-4eaf-bfab-8c3ed913c486", "86e312c3-47e3-470e-b402-48f9c59fd6df", "teacher", "TEACHER" },
-                    { "ab1d43f0-1ab6-4282-bb2f-d95cc94aef92", "b503c6ef-1b17-4bfb-aef2-487d36e97df3", "student", "STUDENT" },
-                    { "d297b366-b063-4ebf-b6c2-4d2a2c4a20d6", "e4133f57-af9a-4328-947f-06a29dda809c", "admin", "ADMIN" }
+                    { "43fa553a-294d-4eaf-bfab-8c3ed913c486", "b6622cd0-c6b7-408f-9bd1-abe90821092a", "teacher", "TEACHER" },
+                    { "ab1d43f0-1ab6-4282-bb2f-d95cc94aef92", "0895b331-143d-4881-b5c7-7ce53aca76a2", "student", "STUDENT" },
+                    { "d297b366-b063-4ebf-b6c2-4d2a2c4a20d6", "54fd3b86-8610-4e58-af99-33be7d5de406", "admin", "ADMIN" }
                 });
 
             migrationBuilder.InsertData(
@@ -237,9 +237,9 @@ namespace schedule.Migrations
                 columns: new[] { "Id", "AccessFailedCount", "ConcurrencyStamp", "Email", "EmailConfirmed", "LockoutEnabled", "LockoutEnd", "NormalizedEmail", "NormalizedUserName", "PasswordHash", "PhoneNumber", "PhoneNumberConfirmed", "SecurityStamp", "TwoFactorEnabled", "UserName" },
                 values: new object[,]
                 {
-                    { "df589529-387e-46e1-9c49-1a9388f1aa9d", 0, "80f7bc76-29f9-4203-b349-6120a47782c1", null, false, false, null, null, "TEACHER", "AQAAAAEAACcQAAAAEJRHVOfF9v/ce5RiywMeKhtc9shUkh796UhnkqTikmmU3KJliHqry4qkwYOh16du6w==", null, false, "", false, "teacher" },
-                    { "f8bed4de-81b4-4ece-86bc-d84bf1b9e98b", 0, "19739836-6342-4c88-bb21-df102c4835d5", null, false, false, null, null, "ADMIN", "AQAAAAEAACcQAAAAEM99G1TBRNpYxtsX8vjNc5pXlzhdSNQjbJwXRExE0hGzvm8Cc1dxDFG/y2WgJ1VyWg==", null, false, "", false, "admin" },
-                    { "810ab629-9970-4f2a-9664-784024ce1744", 0, "58609a0a-4bc7-4f08-9bf2-947edd70a174", null, false, false, null, null, "STUDENT", "AQAAAAEAACcQAAAAEHRsBZsqOD7oHImN02xZQVDMAY8GDZThQCsinaGzT+MjQk+/z7jrM2MrqnZjvAu6Uw==", null, false, "", false, "student" }
+                    { "df589529-387e-46e1-9c49-1a9388f1aa9d", 0, "4d7f98fd-a4bf-4536-9b51-e905d3533060", null, false, false, null, null, "TEACHER", "AQAAAAEAACcQAAAAEPpT/RA2q//vVf2AsFVcJvdsdHpFmCH4H5b+aZ7iYXwQtLtsDY0Eh2DmpSiKfMRpKg==", null, false, "", false, "teacher" },
+                    { "f8bed4de-81b4-4ece-86bc-d84bf1b9e98b", 0, "732b49bd-14d6-4d3a-8c27-897b6531f9da", null, false, false, null, null, "ADMIN", "AQAAAAEAACcQAAAAEENasGsklTl8w4K2orUGtD2eptkAIQuAZIN70mKq9HSmo1wfAjF99QoIrzLbJsiUqA==", null, false, "", false, "admin" },
+                    { "810ab629-9970-4f2a-9664-784024ce1744", 0, "6f63859f-86f0-43b2-8a7b-b5b9da8013b5", null, false, false, null, null, "STUDENT", "AQAAAAEAACcQAAAAEIxI7J/l/vuuVgymXOvbIVaoMFsnHyCGk1qAp+tRLGmEBioFBNMrD/cKIU5r62BwTA==", null, false, "", false, "student" }
                 });
 
             migrationBuilder.InsertData(

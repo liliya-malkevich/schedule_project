@@ -446,11 +446,8 @@ C:\Users\kanis\Desktop\schedule_project\schedule\schedule\bin\Debug\netcoreapp3.
 C:\Users\kanis\Desktop\schedule_project\schedule\schedule\bin\Debug\netcoreapp3.1\Service.pdb
 C:\Users\kanis\Desktop\schedule_project\schedule\schedule\bin\Debug\netcoreapp3.1\Models.dll
 C:\Users\kanis\Desktop\schedule_project\schedule\schedule\bin\Debug\netcoreapp3.1\Models.pdb
-C:\Users\Маша\Desktop\schedule_project\schedule\schedule\bin\Debug\netcoreapp3.1\Domain.dll
 C:\Users\Маша\Desktop\schedule_project\schedule\schedule\bin\Debug\netcoreapp3.1\Models.dll
 C:\Users\Маша\Desktop\schedule_project\schedule\schedule\bin\Debug\netcoreapp3.1\Service.dll
-C:\Users\Маша\Desktop\schedule_project\schedule\schedule\bin\Debug\netcoreapp3.1\Domain.pdb
-C:\Users\Маша\Desktop\schedule_project\schedule\schedule\bin\Debug\netcoreapp3.1\Domain.dll.config
 C:\Users\Маша\Desktop\schedule_project\schedule\schedule\bin\Debug\netcoreapp3.1\Models.pdb
 C:\Users\Маша\Desktop\schedule_project\schedule\schedule\bin\Debug\netcoreapp3.1\Service.pdb
 C:\Users\Маша\Desktop\schedule_project\schedule\schedule\bin\Debug\netcoreapp3.1\Microsoft.DiaSymReader.Native.x86.dll
@@ -459,9 +456,6 @@ C:\Users\Маша\Desktop\schedule_project\schedule\schedule\bin\Debug\netcoreap
 C:\Users\Маша\Desktop\schedule_project\schedule\schedule\bin\Debug\netcoreapp3.1\Service.dll.config
 C:\Users\Маша\Desktop\schedule_project\schedule\schedule\obj\Debug\netcoreapp3.1\schedule.MvcApplicationPartsAssemblyInfo.cs
 C:\Users\Маша\Desktop\schedule_project\schedule\schedule\obj\Debug\netcoreapp3.1\Razor\Views\Account\Login.cshtml.g.cs
-C:\Users\Маша\Desktop\schedule_project\schedule\schedule\bin\Debug\netcoreapp3.1\Areas.dll
-C:\Users\Маша\Desktop\schedule_project\schedule\schedule\bin\Debug\netcoreapp3.1\Areas.pdb
-C:\Users\Маша\Desktop\schedule_project\schedule\schedule\bin\Debug\netcoreapp3.1\Areas.dll.config
 C:\Users\kanis\Desktop\schedule_project\schedule\schedule\bin\Debug\netcoreapp3.1\Microsoft.DiaSymReader.Native.x86.dll
 C:\Users\kanis\Desktop\schedule_project\schedule\schedule\bin\Debug\netcoreapp3.1\Microsoft.DiaSymReader.Native.amd64.dll
 C:\Users\kanis\Desktop\schedule_project\schedule\schedule\bin\Debug\netcoreapp3.1\Models.dll.config
@@ -814,3 +808,15 @@ E:\schedule_project\schedule\schedule\obj\Debug\netcoreapp3.1\staticwebassets\sc
 E:\schedule_project\schedule\schedule\obj\Debug\netcoreapp3.1\schedule.dll
 E:\schedule_project\schedule\schedule\obj\Debug\netcoreapp3.1\schedule.pdb
 E:\schedule_project\schedule\schedule\obj\Debug\netcoreapp3.1\schedule.genruntimeconfig.cache
+C:\Users\Маша\Desktop\schedule_project\schedule\schedule\obj\Debug\netcoreapp3.1\Razor\Areas\Student\Views\Home\IndexStudent.cshtml.g.cs
+C:\Users\Маша\Desktop\schedule_project\schedule\schedule\obj\Debug\netcoreapp3.1\Razor\Areas\Student\Views\_ViewImports.cshtml.g.cs
+C:\Users\Маша\Desktop\schedule_project\schedule\schedule\obj\Debug\netcoreapp3.1\Razor\Areas\Student\Views\_ViewStart.cshtml.g.cs
+C:\Users\Маша\Desktop\schedule_project\schedule\schedule\obj\Debug\netcoreapp3.1\Razor\Areas\Teacher\Views\Home\IndexTeacher.cshtml.g.cs
+C:\Users\Маша\Desktop\schedule_project\schedule\schedule\obj\Debug\netcoreapp3.1\Razor\Areas\Teacher\Views\_ViewImports.cshtml.g.cs
+C:\Users\Маша\Desktop\schedule_project\schedule\schedule\obj\Debug\netcoreapp3.1\Razor\Areas\Teacher\Views\_ViewStart.cshtml.g.cs
+C:\Users\Маша\Desktop\schedule_project\schedule\schedule\obj\Debug\netcoreapp3.1\Razor\Areas\Admin\Views\Home\IndexAdmin.cshtml.g.cs
+C:\Users\Маша\Desktop\schedule_project\schedule\schedule\obj\Debug\netcoreapp3.1\Razor\Areas\Admin\_ViewImports.cshtml.g.cs
+C:\Users\Маша\Desktop\schedule_project\schedule\schedule\obj\Debug\netcoreapp3.1\Razor\Areas\Admin\_ViewStart.cshtml.g.cs
+C:\Users\Маша\Desktop\schedule_project\schedule\schedule\obj\Debug\netcoreapp3.1\Razor\Areas\Admin\Showgroup.cshtml.g.cs
+C:\Users\Маша\Desktop\schedule_project\schedule\schedule\obj\Debug\netcoreapp3.1\Razor\Areas\Admin\Views\Lessons\Edit.cshtml.g.cs
+C:\Users\Маша\Desktop\schedule_project\schedule\schedule\obj\Debug\netcoreapp3.1\Razor\Areas\Admin\Views\Sched\IndexSched.cshtml.g.cs

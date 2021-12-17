@@ -18,15 +18,13 @@ namespace schedule.Areas.Admin.Controllers
         {
             this.dataManager = dataManager;
             this.hostingEnvironment = hostingEnvironment;
-        }
+        } 
         public IActionResult Edit(Guid id)
         {
-            var entity = id == default ? new Lesson() : dataManager.Lesson.GetLessonById(id);
-            return View(entity);
-           
-            return View();
-        }
-       
-        
+            //var entity = id == default ? new Lesson() : dataManager.Lesson.GetLessonById(id);
+            //return View(entity);
+            return View(dataManager.Lesson.GetLessons());
+        }   
     }
 }
+

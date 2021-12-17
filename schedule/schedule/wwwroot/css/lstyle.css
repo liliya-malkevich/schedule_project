@@ -116,3 +116,29 @@ font-size: 1.5vw;
 tbody{
   background-color: white;
 }
+.mcontacts {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 28px;
+    color: black;
+    margin: 20px;
+}
+.mlogout {
+    position: absolute;
+    left: 1290px;
+    top: 5px;
+    font-family: Roboto;
+    font-size: 24px;
+    color: black;
+}
+.mbuttonss {
+    color: black;
+    padding: 5px;
+    font-size: 25px;
+    line-height: 29px;
+    border-radius: 50px;
+    font-family: Roboto;
+    position: absolute;
+}
