@@ -24,7 +24,7 @@
         </form>
     </div>
     <div class="fieldAdmin">
-        <form class="table">
+        <form class="table" asp-controller="Lessons" asp-action="Edit">
             <table class="table">
                 <thead>
                     <tr>
@@ -100,6 +100,7 @@
                         </td>
                     </tr>
                     <tr>
+                     
                         <td>2</td>
                         <td>10:30-11:50</td>
                         <td>
@@ -1317,10 +1318,15 @@
             <input type="submit" value="Сохранить изменения">
         </a>
     </form>
-    <form asp-area="Admin" asp-controller="Номе" asp-action="IndexAdmin">
+    <form asp-area="Admin" asp-controller="Номе" asp-action="IndexAdmin" method="post">
         <a role="button" aria-pressed="true">
             <input type="submit" value="Назад">
+
         </a>
     </form>
+
+
+  
+    <a asp-area="Admin" asp-controller="Home" class="buttonss button22" role="button" aria-pressed="true" asp-action="IndexAdmin" asp-route-id="">Назад2</a>
 </body>
 </html>

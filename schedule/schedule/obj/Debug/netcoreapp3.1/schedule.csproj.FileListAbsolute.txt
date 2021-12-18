@@ -463,8 +463,6 @@ C:\Users\kanis\Desktop\schedule_project\schedule\schedule\bin\Debug\netcoreapp3.
 C:\Users\kanis\Desktop\schedule_project\schedule\schedule\obj\Debug\netcoreapp3.1\schedule.MvcApplicationPartsAssemblyInfo.cs
 C:\Users\kanis\Desktop\schedule_project\schedule\schedule\obj\Debug\netcoreapp3.1\Razor\Views\Account\Login.cshtml.g.cs
 C:\Users\kanis\Desktop\schedule_project\schedule\schedule\obj\Debug\netcoreapp3.1\Razor\Areas\Admin\Views\Home\IndexAdmin.cshtml.g.cs
-C:\Users\kanis\Desktop\schedule_project\schedule\schedule\obj\Debug\netcoreapp3.1\Razor\Areas\Admin\Views\_ViewImports.cshtml.g.cs
-C:\Users\kanis\Desktop\schedule_project\schedule\schedule\obj\Debug\netcoreapp3.1\Razor\Areas\Admin\Views\_ViewStart.cshtml.g.cs
 C:\Users\Маша\Downloads\schedule_project\schedule\schedule\bin\Debug\netcoreapp3.1\Microsoft.DiaSymReader.Native.x86.dll
 C:\Users\Маша\Downloads\schedule_project\schedule\schedule\bin\Debug\netcoreapp3.1\Microsoft.DiaSymReader.Native.amd64.dll
 C:\Users\Маша\Downloads\schedule_project\schedule\schedule\bin\Debug\netcoreapp3.1\appsettings.json
@@ -639,7 +637,6 @@ C:\Users\kanis\desktop\schedule_project\schedule\schedule\obj\Debug\netcoreapp3.
 C:\Users\kanis\desktop\schedule_project\schedule\schedule\obj\Debug\netcoreapp3.1\Razor\Areas\Teacher\Views\Home\IndexTeacher.cshtml.g.cs
 C:\Users\kanis\desktop\schedule_project\schedule\schedule\obj\Debug\netcoreapp3.1\Razor\Areas\Teacher\Views\_ViewImports.cshtml.g.cs
 C:\Users\kanis\desktop\schedule_project\schedule\schedule\obj\Debug\netcoreapp3.1\Razor\Areas\Teacher\Views\_ViewStart.cshtml.g.cs
-C:\Users\kanis\Desktop\schedule_project\schedule\schedule\obj\Debug\netcoreapp3.1\Razor\Areas\Admin\Views\Showgroup.cshtml.g.cs
 E:\schedule_project\schedule\schedule\bin\Debug\netcoreapp3.1\Microsoft.DiaSymReader.Native.x86.dll
 E:\schedule_project\schedule\schedule\bin\Debug\netcoreapp3.1\Microsoft.DiaSymReader.Native.amd64.dll
 E:\schedule_project\schedule\schedule\bin\Debug\netcoreapp3.1\appsettings.json
@@ -820,3 +817,8 @@ C:\Users\Маша\Desktop\schedule_project\schedule\schedule\obj\Debug\netcoreap
 C:\Users\Маша\Desktop\schedule_project\schedule\schedule\obj\Debug\netcoreapp3.1\Razor\Areas\Admin\Showgroup.cshtml.g.cs
 C:\Users\Маша\Desktop\schedule_project\schedule\schedule\obj\Debug\netcoreapp3.1\Razor\Areas\Admin\Views\Lessons\Edit.cshtml.g.cs
 C:\Users\Маша\Desktop\schedule_project\schedule\schedule\obj\Debug\netcoreapp3.1\Razor\Areas\Admin\Views\Sched\IndexSched.cshtml.g.cs
+C:\Users\kanis\Desktop\schedule_project\schedule\schedule\obj\Debug\netcoreapp3.1\Razor\Areas\Admin\Showgroup.cshtml.g.cs
+C:\Users\kanis\Desktop\schedule_project\schedule\schedule\obj\Debug\netcoreapp3.1\Razor\Areas\Admin\Views\Lessons\Edit.cshtml.g.cs
+C:\Users\kanis\Desktop\schedule_project\schedule\schedule\obj\Debug\netcoreapp3.1\Razor\Areas\Admin\Views\Sched\IndexSched.cshtml.g.cs
+C:\Users\kanis\Desktop\schedule_project\schedule\schedule\obj\Debug\netcoreapp3.1\Razor\Areas\Admin\_ViewImports.cshtml.g.cs
+C:\Users\kanis\Desktop\schedule_project\schedule\schedule\obj\Debug\netcoreapp3.1\Razor\Areas\Admin\_ViewStart.cshtml.g.cs

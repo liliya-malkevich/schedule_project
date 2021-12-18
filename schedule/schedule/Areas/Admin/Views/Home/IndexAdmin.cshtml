@@ -27,9 +27,9 @@
     </div>
     <div class="fieldAdmin">
         <h>Пожалуйста, выберите курс и группу для взаимодействия с расписанием <p></h>
-        <form class="form-inline">
+        <form class="form-inline" asp-controller="Lessons" asp-action="Selected">
             <select class="custom-select my-1 mr-sm-2" id="inlineFormCustomSelectPref">
-                <option selected>Выберите курс</option>
+                <option  selected>Выберите курс</option>
 
                 @if (Model.Any())
                 {
