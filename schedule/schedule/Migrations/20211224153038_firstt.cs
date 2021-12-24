@@ -3,7 +3,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 
 namespace schedule.Migrations
 {
-    public partial class migrat : Migration
+    public partial class firstt : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
@@ -82,7 +82,9 @@ namespace schedule.Migrations
                     nameLesson = table.Column<string>(nullable: true),
                     TName = table.Column<string>(nullable: true),
                     lectureHall = table.Column<int>(nullable: false),
-                    Format = table.Column<string>(nullable: true)
+                    Format = table.Column<string>(nullable: true),
+                    nameNote = table.Column<string>(nullable: true),
+                    Text = table.Column<string>(nullable: true)
                 },
                 constraints: table =>
                 {
@@ -101,6 +103,19 @@ namespace schedule.Migrations
                 constraints: table =>
                 {
                     table.PrimaryKey("PK_Methodist", x => x.Id);
+                });
+
+            migrationBuilder.CreateTable(
+                name: "Note",
+                columns: table => new
+                {
+                    Id = table.Column<Guid>(nullable: false),
+                    nameNote = table.Column<string>(nullable: true),
+                    Text = table.Column<string>(nullable: true)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_Note", x => x.Id);
                 });
 
             migrationBuilder.CreateTable(
@@ -228,9 +243,9 @@ namespace schedule.Migrations
                 columns: new[] { "Id", "ConcurrencyStamp", "Name", "NormalizedName" },
                 values: new object[,]
                 {
-                    { "43fa553a-294d-4eaf-bfab-8c3ed913c486", "0cd55936-d431-4262-a5fe-8e9cf01cd5c7", "teacher", "TEACHER" },
-                    { "ab1d43f0-1ab6-4282-bb2f-d95cc94aef92", "35d63291-b511-463f-9ca2-db462888bbf5", "student", "STUDENT" },
-                    { "d297b366-b063-4ebf-b6c2-4d2a2c4a20d6", "c621beeb-2050-43b2-8e53-0273b53be85d", "admin", "ADMIN" }
+                    { "43fa553a-294d-4eaf-bfab-8c3ed913c486", "3382460f-ff0c-44e5-8d8b-c60e6fdaba9a", "teacher", "TEACHER" },
+                    { "ab1d43f0-1ab6-4282-bb2f-d95cc94aef92", "1125ce6d-9b42-428f-8646-206f79b79bf1", "student", "STUDENT" },
+                    { "d297b366-b063-4ebf-b6c2-4d2a2c4a20d6", "8e942ecd-33d5-4c8f-bb53-1e9c0f4cbdef", "admin", "ADMIN" }
                 });
 
             migrationBuilder.InsertData(
@@ -238,9 +253,9 @@ namespace schedule.Migrations
                 columns: new[] { "Id", "AccessFailedCount", "ConcurrencyStamp", "Email", "EmailConfirmed", "LockoutEnabled", "LockoutEnd", "NormalizedEmail", "NormalizedUserName", "PasswordHash", "PhoneNumber", "PhoneNumberConfirmed", "SecurityStamp", "TwoFactorEnabled", "UserName" },
                 values: new object[,]
                 {
-                    { "df589529-387e-46e1-9c49-1a9388f1aa9d", 0, "dc106043-6a66-4d1a-b6f5-bddb131ac4c7", null, false, false, null, null, "TEACHER", "AQAAAAEAACcQAAAAEAkLW4GbeV6em3Ood/dSbopuWuW1w3FOrQ5XzgWYOrzSWKnlaFKaOH/rfnHAt0FwyA==", null, false, "", false, "teacher" },
-                    { "f8bed4de-81b4-4ece-86bc-d84bf1b9e98b", 0, "3ca7a311-d533-4d81-a483-6f9af27ce021", null, false, false, null, null, "ADMIN", "AQAAAAEAACcQAAAAEIfI5gHzuszFiboxvqPOIVGFvE1w9ZFFrz7NJyQBCKjos/BsqM6bdyn0X8wleEVCpA==", null, false, "", false, "admin" },
-                    { "810ab629-9970-4f2a-9664-784024ce1744", 0, "a9027db2-8337-44ac-b8b5-1a4be180128f", null, false, false, null, null, "STUDENT", "AQAAAAEAACcQAAAAEC9C5LEUGfcLl8kVMyawfvWfpSdwgf3nQ7LHXeQbu1qQ9H9I6QXPZOd4yKGkZKcrQA==", null, false, "", false, "student" }
+                    { "df589529-387e-46e1-9c49-1a9388f1aa9d", 0, "843d553a-432d-455c-877a-f015628cb4bb", null, false, false, null, null, "TEACHER", "AQAAAAEAACcQAAAAEFhEuUzFCyC7TL15OjGj6ISGhx4j8sv8cs2LNyYF4JXN2OkQfxiODgTLS6RQOuEMUw==", null, false, "", false, "teacher" },
+                    { "f8bed4de-81b4-4ece-86bc-d84bf1b9e98b", 0, "3fe3a637-62b4-4517-b851-522f3f7ae65c", null, false, false, null, null, "ADMIN", "AQAAAAEAACcQAAAAENxulKtAESdIb/3SgpyYm47xLXD/74cU5LsvoQsi9oZV+BmOWNo06iWDrUEx3ApKUg==", null, false, "", false, "admin" },
+                    { "810ab629-9970-4f2a-9664-784024ce1744", 0, "2ab2bb3e-abc1-4213-887d-967fd0d9fe37", null, false, false, null, null, "STUDENT", "AQAAAAEAACcQAAAAELmeF12kHUJDlUPd8ClG292eD09U90eqdkMy1YAFOOEyHVfAW88EBBlcFRAxD0xvhw==", null, false, "", false, "student" }
                 });
 
             migrationBuilder.InsertData(
@@ -259,16 +274,16 @@ namespace schedule.Migrations
 
             migrationBuilder.InsertData(
                 table: "Lesson",
-                columns: new[] { "Id", "Format", "TName", "lectureHall", "nameLesson", "numCourse", "numGroup", "numLesson", "timeLesson" },
+                columns: new[] { "Id", "Format", "TName", "Text", "lectureHall", "nameLesson", "nameNote", "numCourse", "numGroup", "numLesson", "timeLesson" },
                 values: new object[,]
                 {
-                    { new Guid("1da60173-c1cc-500b-8847-68ef52c8c785"), null, null, 0, null, 0, null, 5, "15:20-16:40" },
-                    { new Guid("1da60173-c1cc-500b-8847-68ef52c8c783"), null, null, 0, null, 0, null, 3, "12:00-13:20" },
-                    { new Guid("1da60173-c1cc-500b-8847-68ef52c8c787"), null, null, 0, null, 0, null, 7, "18:20-19:40" },
-                    { new Guid("1da60173-c1cc-500b-8847-68ef52c8c782"), null, null, 0, null, 0, null, 2, "10:30-11:50" },
-                    { new Guid("1da51176-c1cc-400b-8847-68ef52c8c778"), "Лекция", "Поляков А.В", 117, "Физика", 1, "1", 1, "9:00-10:20" },
-                    { new Guid("1da60173-c1cc-500b-8847-68ef52c8c784"), null, null, 0, null, 0, null, 4, "13:50-15:10" },
-                    { new Guid("1da60173-c1cc-500b-8847-68ef52c8c786"), null, null, 0, null, 0, null, 6, "16:50-18:10" }
+                    { new Guid("1da60173-c1cc-500b-8847-68ef52c8c785"), null, null, null, 0, null, null, 4, "4+5 КБ", 5, "15:20-16:40" },
+                    { new Guid("1da60173-c1cc-500b-8847-68ef52c8c783"), null, null, null, 0, null, null, 0, null, 3, "12:00-13:20" },
+                    { new Guid("1da60173-c1cc-500b-8847-68ef52c8c787"), null, null, null, 0, null, null, 0, "1+5 ПИ", 7, "18:20-19:40" },
+                    { new Guid("1da60173-c1cc-500b-8847-68ef52c8c782"), null, null, null, 0, null, null, 2, "2", 2, "10:30-11:50" },
+                    { new Guid("1da51176-c1cc-400b-8847-68ef52c8c778"), "Лекция", "Поляков А.В", null, 117, "Физика", null, 1, "1", 1, "9:00-10:20" },
+                    { new Guid("1da60173-c1cc-500b-8847-68ef52c8c784"), null, null, null, 0, null, null, 3, "6+7 ПИ", 4, "13:50-15:10" },
+                    { new Guid("1da60173-c1cc-500b-8847-68ef52c8c786"), null, null, null, 0, null, null, 0, "2+8 АРИСТ", 6, "16:50-18:10" }
                 });
 
             migrationBuilder.InsertData(
@@ -359,6 +374,9 @@ namespace schedule.Migrations
 
             migrationBuilder.DropTable(
                 name: "Methodist");
+
+            migrationBuilder.DropTable(
+                name: "Note");
 
             migrationBuilder.DropTable(
                 name: "Teacher");

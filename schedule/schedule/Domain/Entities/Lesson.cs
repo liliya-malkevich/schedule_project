@@ -23,5 +23,10 @@ namespace Domain.Entities
         public int lectureHall { get; set; }
         [Display(Name = "Формат")]
         public String Format { get; set; }
+        [Display(Name = "Название заметки")]
+        public String nameNote { get; set; }
+        [Display(Name = "Текст")]
+        public String Text { get; set; }
+
     }
 }

@@ -635,8 +635,6 @@ C:\Users\kanis\desktop\schedule_project\schedule\schedule\obj\Debug\netcoreapp3.
 C:\Users\kanis\desktop\schedule_project\schedule\schedule\obj\Debug\netcoreapp3.1\Razor\Areas\Student\Views\_ViewImports.cshtml.g.cs
 C:\Users\kanis\desktop\schedule_project\schedule\schedule\obj\Debug\netcoreapp3.1\Razor\Areas\Student\Views\_ViewStart.cshtml.g.cs
 C:\Users\kanis\desktop\schedule_project\schedule\schedule\obj\Debug\netcoreapp3.1\Razor\Areas\Teacher\Views\Home\IndexTeacher.cshtml.g.cs
-C:\Users\kanis\desktop\schedule_project\schedule\schedule\obj\Debug\netcoreapp3.1\Razor\Areas\Teacher\Views\_ViewImports.cshtml.g.cs
-C:\Users\kanis\desktop\schedule_project\schedule\schedule\obj\Debug\netcoreapp3.1\Razor\Areas\Teacher\Views\_ViewStart.cshtml.g.cs
 E:\schedule_project\schedule\schedule\bin\Debug\netcoreapp3.1\Microsoft.DiaSymReader.Native.x86.dll
 E:\schedule_project\schedule\schedule\bin\Debug\netcoreapp3.1\Microsoft.DiaSymReader.Native.amd64.dll
 E:\schedule_project\schedule\schedule\bin\Debug\netcoreapp3.1\appsettings.json
@@ -818,6 +816,8 @@ C:\Users\Маша\Desktop\schedule_project\schedule\schedule\obj\Debug\netcoreap
 C:\Users\Маша\Desktop\schedule_project\schedule\schedule\obj\Debug\netcoreapp3.1\Razor\Areas\Admin\Views\Lessons\Edit.cshtml.g.cs
 C:\Users\kanis\Desktop\schedule_project\schedule\schedule\obj\Debug\netcoreapp3.1\Razor\Areas\Admin\Showgroup.cshtml.g.cs
 C:\Users\kanis\Desktop\schedule_project\schedule\schedule\obj\Debug\netcoreapp3.1\Razor\Areas\Admin\Views\Lessons\Edit.cshtml.g.cs
-C:\Users\kanis\Desktop\schedule_project\schedule\schedule\obj\Debug\netcoreapp3.1\Razor\Areas\Admin\Views\Sched\IndexSched.cshtml.g.cs
 C:\Users\kanis\Desktop\schedule_project\schedule\schedule\obj\Debug\netcoreapp3.1\Razor\Areas\Admin\_ViewImports.cshtml.g.cs
 C:\Users\kanis\Desktop\schedule_project\schedule\schedule\obj\Debug\netcoreapp3.1\Razor\Areas\Admin\_ViewStart.cshtml.g.cs
+C:\Users\kanis\Desktop\schedule_project\schedule\schedule\obj\Debug\netcoreapp3.1\Razor\Areas\Teacher\Views\Note\Edit.cshtml.g.cs
+C:\Users\kanis\Desktop\schedule_project\schedule\schedule\obj\Debug\netcoreapp3.1\Razor\Areas\Teacher\_ViewImports.cshtml.g.cs
+C:\Users\kanis\Desktop\schedule_project\schedule\schedule\obj\Debug\netcoreapp3.1\Razor\Areas\Teacher\_ViewStart.cshtml.g.cs

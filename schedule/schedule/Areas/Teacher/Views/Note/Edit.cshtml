@@ -1,0 +1,137 @@
+﻿@model Lesson
+
+@{
+    string strTitle = "TeacherPanel";
+    ViewBag.Title = strTitle;
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+    @await Html.PartialAsync("ScriptsPartial")
+    <link href="~/css/mstyle.css" rel="stylesheet">
+</head>
+
+@*<body>
+        <nav class="navbar navbar-expand-sm">
+            <div class="container">
+                 Brand
+                <a class="navbar-brand logo" href="#">
+                    <img src="../icon/schedule_stady.png" alt="" width="84.1"
+                         height="61">
+                    Расписание
+                </a>
+
+                 Links
+
+                <div class="justify-content-end">
+                    <ul class="navbar-nav ">
+
+                         Dropdown
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle contacts" href="#" id="navbardrop" data-toggle="dropdown">
+                                <img src="../icon/phone-call.png" alt="" width="32" height="30">
+                                Контакты
+                            </a>
+                            <div class="dropdown-menu">
+                                <a class="dropdown-item" href="https://rfe.bsu.by/">rfe.bsu.by</a>
+                                <a class="dropdown-item" href="rfe@bsu.by">rfe@bsu.by</a>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link contacts" href="../index.html">Выход</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <div class="notes-area">
+            <form>
+                <div class="form-group">
+                    <label for="formControlTextarea1">Создать новую заметку</label>
+                    <textarea class="form-control rectangle hint" id="exampleFormControlTextarea1" rows="6" placeholder="Нажмите, чтобы создать заметку"></textarea>
+                </div>
+            </form>
+            <a href="#" class="buttons button1" role="button" aria-pressed="true">Сохранить</a>
+            <a href="#" class="buttons button2" role="button" aria-pressed="true">Отменить</a>
+            <form class="text">
+                <label for="formControlTextarea1 text">Предыдущие заметки</label>
+                <textarea class="form-control rectangle hint" id="exampleFormControlTextarea1" rows="6" placeholder="Заметок пока нет" readonly></textarea>
+            </form>
+        </div>
+
+    </body>*@
+<body>
+    <div class="nav-item">
+        <form asp-area="" asp-controller="Account" asp-action="Logout" class="nav-link contacts" method="post">
+            <a class="nav-link contacts logout buttonss" role="button" aria-pressed="true">
+                <input type="submit" value="Выход">
+            </a>
+        </form>
+    </div>
+    <script src="~/js/ckeditor_4.17.1_standard/ckeditor/ckeditor.js"></script>
+
+    <div>
+        <form asp-area="Teacher" asp-controller="Note" asp-action="Edit" method="post" enctype="multipart/form-data">
+            <input type="hidden" asp-for="Id" />
+            <input type="hidden" asp-for="numLesson" />
+            <input type="hidden" asp-for="timeLesson" />
+            <input type="hidden" asp-for="lectureHall" />
+            <input type="hidden" asp-for="nameLesson" />
+            <input type="hidden" asp-for="TName" />
+            <input type="hidden" asp-for="Format" />
+
+            <div asp-validation-summary="All"></div>
+            @*<div class="div-box">
+                <label asp-for="numLesson"></label>
+                <input asp-for="numLesson" />
+                <span asp-validation-for="numLesson"></span>
+
+                <label asp-for="timeLesson"></label>
+                <input asp-for="timeLesson" />
+                <span asp-validation-for="timeLesson"></span>
+                <label asp-for="nameLesson"></label>
+                <input asp-for="nameLesson" />
+                <span asp-validation-for="nameLesson"></span>
+            </div>
+            <div class="div-box">
+                <label asp-for="TName"></label>
+                <input asp-for="TName" />
+                <span asp-validation-for="TName"></span>
+                <label asp-for="lectureHall"></label>
+                <input asp-for="lectureHall" />
+                <span asp-validation-for="lectureHall"></span>
+                <label asp-for="Format"></label>
+                <input asp-for="Format" />
+                <span asp-validation-for="Format"></span>
+            </div>*@
+            <div class="div-box">
+                <label asp-for="nameNote"></label>
+                <input asp-for="nameNote" />
+                <span asp-validation-for="nameNote"></span>
+            </div>
+            <div>
+                <label asp-for="Text"></label>
+                <input asp-for="Text" />
+                <span asp-validation-for="Text"></span>
+
+            </div>
+
+            <input type="submit" value="Сохранить" />
+        </form>
+    </div>
+
+    <script>
+            window.onload = function() {
+                var newCKEdit = CKEDITOR.replace('@Html.IdFor(x=>x.Text)');
+                newCKEdit.updateElement();
+            }
+        </script>
+</body>
+
+
+</html>

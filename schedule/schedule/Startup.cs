@@ -36,6 +36,7 @@ namespace schedule
             services.AddTransient<IGroupRepository, EFGroup>();
             services.AddTransient<ITeacherRepository, EFTeacher>();
             services.AddTransient<ILessonRepository, EFLesson>();
+            services.AddTransient<INoteRepository, EFNote>();
             services.AddTransient<DataManager>();
 
             //подключаем контекст БД

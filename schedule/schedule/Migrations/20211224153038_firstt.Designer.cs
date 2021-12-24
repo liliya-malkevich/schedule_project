@@ -10,8 +10,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace schedule.Migrations
 {
     [DbContext(typeof(AppBDContext))]
-    [Migration("20211223222701_migrat")]
-    partial class migrat
+    [Migration("20211224153038_firstt")]
+    partial class firstt
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -81,10 +81,16 @@ namespace schedule.Migrations
                     b.Property<string>("TName")
                         .HasColumnType("nvarchar(max)");
 
+                    b.Property<string>("Text")
+                        .HasColumnType("nvarchar(max)");
+
                     b.Property<int>("lectureHall")
                         .HasColumnType("int");
 
                     b.Property<string>("nameLesson")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("nameNote")
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<int>("numCourse")
@@ -120,7 +126,8 @@ namespace schedule.Migrations
                         {
                             Id = new Guid("1da60173-c1cc-500b-8847-68ef52c8c782"),
                             lectureHall = 0,
-                            numCourse = 0,
+                            numCourse = 2,
+                            numGroup = "2",
                             numLesson = 2,
                             timeLesson = "10:30-11:50"
                         },
@@ -136,7 +143,8 @@ namespace schedule.Migrations
                         {
                             Id = new Guid("1da60173-c1cc-500b-8847-68ef52c8c784"),
                             lectureHall = 0,
-                            numCourse = 0,
+                            numCourse = 3,
+                            numGroup = "6+7 ПИ",
                             numLesson = 4,
                             timeLesson = "13:50-15:10"
                         },
@@ -144,7 +152,8 @@ namespace schedule.Migrations
                         {
                             Id = new Guid("1da60173-c1cc-500b-8847-68ef52c8c785"),
                             lectureHall = 0,
-                            numCourse = 0,
+                            numCourse = 4,
+                            numGroup = "4+5 КБ",
                             numLesson = 5,
                             timeLesson = "15:20-16:40"
                         },
@@ -153,6 +162,7 @@ namespace schedule.Migrations
                             Id = new Guid("1da60173-c1cc-500b-8847-68ef52c8c786"),
                             lectureHall = 0,
                             numCourse = 0,
+                            numGroup = "2+8 АРИСТ",
                             numLesson = 6,
                             timeLesson = "16:50-18:10"
                         },
@@ -161,6 +171,7 @@ namespace schedule.Migrations
                             Id = new Guid("1da60173-c1cc-500b-8847-68ef52c8c787"),
                             lectureHall = 0,
                             numCourse = 0,
+                            numGroup = "1+5 ПИ",
                             numLesson = 7,
                             timeLesson = "18:20-19:40"
                         });
@@ -193,6 +204,23 @@ namespace schedule.Migrations
                             Patronimic = "Марьяновна",
                             Surname = "Синкевич"
                         });
+                });
+
+            modelBuilder.Entity("Domain.Entities.Note", b =>
+                {
+                    b.Property<Guid>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<string>("Text")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("nameNote")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Note");
                 });
 
             modelBuilder.Entity("Domain.Entities.Teacher", b =>
@@ -245,21 +273,21 @@ namespace schedule.Migrations
                         new
                         {
                             Id = "d297b366-b063-4ebf-b6c2-4d2a2c4a20d6",
-                            ConcurrencyStamp = "c621beeb-2050-43b2-8e53-0273b53be85d",
+                            ConcurrencyStamp = "8e942ecd-33d5-4c8f-bb53-1e9c0f4cbdef",
                             Name = "admin",
                             NormalizedName = "ADMIN"
                         },
                         new
                         {
                             Id = "ab1d43f0-1ab6-4282-bb2f-d95cc94aef92",
-                            ConcurrencyStamp = "35d63291-b511-463f-9ca2-db462888bbf5",
+                            ConcurrencyStamp = "1125ce6d-9b42-428f-8646-206f79b79bf1",
                             Name = "student",
                             NormalizedName = "STUDENT"
                         },
                         new
                         {
                             Id = "43fa553a-294d-4eaf-bfab-8c3ed913c486",
-                            ConcurrencyStamp = "0cd55936-d431-4262-a5fe-8e9cf01cd5c7",
+                            ConcurrencyStamp = "3382460f-ff0c-44e5-8d8b-c60e6fdaba9a",
                             Name = "teacher",
                             NormalizedName = "TEACHER"
                         });
@@ -358,11 +386,11 @@ namespace schedule.Migrations
                         {
                             Id = "f8bed4de-81b4-4ece-86bc-d84bf1b9e98b",
                             AccessFailedCount = 0,
-                            ConcurrencyStamp = "3ca7a311-d533-4d81-a483-6f9af27ce021",
+                            ConcurrencyStamp = "3fe3a637-62b4-4517-b851-522f3f7ae65c",
                             EmailConfirmed = false,
                             LockoutEnabled = false,
                             NormalizedUserName = "ADMIN",
-                            PasswordHash = "AQAAAAEAACcQAAAAEIfI5gHzuszFiboxvqPOIVGFvE1w9ZFFrz7NJyQBCKjos/BsqM6bdyn0X8wleEVCpA==",
+                            PasswordHash = "AQAAAAEAACcQAAAAENxulKtAESdIb/3SgpyYm47xLXD/74cU5LsvoQsi9oZV+BmOWNo06iWDrUEx3ApKUg==",
                             PhoneNumberConfirmed = false,
                             SecurityStamp = "",
                             TwoFactorEnabled = false,
@@ -372,11 +400,11 @@ namespace schedule.Migrations
                         {
                             Id = "810ab629-9970-4f2a-9664-784024ce1744",
                             AccessFailedCount = 0,
-                            ConcurrencyStamp = "a9027db2-8337-44ac-b8b5-1a4be180128f",
+                            ConcurrencyStamp = "2ab2bb3e-abc1-4213-887d-967fd0d9fe37",
                             EmailConfirmed = false,
                             LockoutEnabled = false,
                             NormalizedUserName = "STUDENT",
-                            PasswordHash = "AQAAAAEAACcQAAAAEC9C5LEUGfcLl8kVMyawfvWfpSdwgf3nQ7LHXeQbu1qQ9H9I6QXPZOd4yKGkZKcrQA==",
+                            PasswordHash = "AQAAAAEAACcQAAAAELmeF12kHUJDlUPd8ClG292eD09U90eqdkMy1YAFOOEyHVfAW88EBBlcFRAxD0xvhw==",
                             PhoneNumberConfirmed = false,
                             SecurityStamp = "",
                             TwoFactorEnabled = false,
@@ -386,11 +414,11 @@ namespace schedule.Migrations
                         {
                             Id = "df589529-387e-46e1-9c49-1a9388f1aa9d",
                             AccessFailedCount = 0,
-                            ConcurrencyStamp = "dc106043-6a66-4d1a-b6f5-bddb131ac4c7",
+                            ConcurrencyStamp = "843d553a-432d-455c-877a-f015628cb4bb",
                             EmailConfirmed = false,
                             LockoutEnabled = false,
                             NormalizedUserName = "TEACHER",
-                            PasswordHash = "AQAAAAEAACcQAAAAEAkLW4GbeV6em3Ood/dSbopuWuW1w3FOrQ5XzgWYOrzSWKnlaFKaOH/rfnHAt0FwyA==",
+                            PasswordHash = "AQAAAAEAACcQAAAAEFhEuUzFCyC7TL15OjGj6ISGhx4j8sv8cs2LNyYF4JXN2OkQfxiODgTLS6RQOuEMUw==",
                             PhoneNumberConfirmed = false,
                             SecurityStamp = "",
                             TwoFactorEnabled = false,

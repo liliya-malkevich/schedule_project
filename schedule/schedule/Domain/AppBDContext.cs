@@ -19,6 +19,7 @@ namespace Domain
         public DbSet<Course> Course { get; set; }
         public DbSet<Group> Group { get; set; }
         public DbSet<Lesson> Lesson { get; set; }
+        public DbSet<Note> Note { get; set; }
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             base.OnModelCreating(modelBuilder);
@@ -134,6 +135,8 @@ namespace Domain
             {
                 Id = new Guid("1da60173-c1cc-500b-8847-68ef52c8c783"),
                 numLesson = 3,
+                numCourse =3,
+                numGroup = "5",
                 timeLesson = "12:00-13:20",
 
             });
@@ -142,7 +145,7 @@ namespace Domain
                 Id = new Guid("1da60173-c1cc-500b-8847-68ef52c8c784"),
                 numLesson = 4,
                 timeLesson = "13:50-15:10",
-                numCourse = 3,
+                numCourse = 4,
                 numGroup = "6+7 ПИ"
             });
             modelBuilder.Entity<Lesson>().HasData(new Lesson
@@ -150,7 +153,7 @@ namespace Domain
                 Id = new Guid("1da60173-c1cc-500b-8847-68ef52c8c785"),
                 numLesson = 5,
                 timeLesson = "15:20-16:40",
-                numCourse = 4,
+               
                 numGroup = "4+5 КБ"
             });
             modelBuilder.Entity<Lesson>().HasData(new Lesson
