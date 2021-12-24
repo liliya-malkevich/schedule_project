@@ -816,7 +816,6 @@ C:\Users\Маша\Desktop\schedule_project\schedule\schedule\obj\Debug\netcoreap
 C:\Users\Маша\Desktop\schedule_project\schedule\schedule\obj\Debug\netcoreapp3.1\Razor\Areas\Admin\_ViewStart.cshtml.g.cs
 C:\Users\Маша\Desktop\schedule_project\schedule\schedule\obj\Debug\netcoreapp3.1\Razor\Areas\Admin\Showgroup.cshtml.g.cs
 C:\Users\Маша\Desktop\schedule_project\schedule\schedule\obj\Debug\netcoreapp3.1\Razor\Areas\Admin\Views\Lessons\Edit.cshtml.g.cs
-C:\Users\Маша\Desktop\schedule_project\schedule\schedule\obj\Debug\netcoreapp3.1\Razor\Areas\Admin\Views\Sched\IndexSched.cshtml.g.cs
 C:\Users\kanis\Desktop\schedule_project\schedule\schedule\obj\Debug\netcoreapp3.1\Razor\Areas\Admin\Showgroup.cshtml.g.cs
 C:\Users\kanis\Desktop\schedule_project\schedule\schedule\obj\Debug\netcoreapp3.1\Razor\Areas\Admin\Views\Lessons\Edit.cshtml.g.cs
 C:\Users\kanis\Desktop\schedule_project\schedule\schedule\obj\Debug\netcoreapp3.1\Razor\Areas\Admin\Views\Sched\IndexSched.cshtml.g.cs

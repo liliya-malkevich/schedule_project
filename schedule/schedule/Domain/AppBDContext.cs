@@ -112,56 +112,105 @@ namespace Domain
             });
             modelBuilder.Entity<Lesson>().HasData(new Lesson
             {
+                numLesson = 1,
+                timeLesson = "9:00-10:20",
                 Id = new Guid("1da51176-c1cc-400b-8847-68ef52c8c778"),
-                nameLesson="Физика",
+                nameLesson = "Физика",
                 numCourse = 1,
-                numGroup="1",
-                TName ="Поляков А.В",
-                Format ="Лекция"
+                numGroup = "1",
+                TName = "Поляков А.В",
+                Format = "Лекция",
+                lectureHall = 117
             });
             modelBuilder.Entity<Lesson>().HasData(new Lesson
             {
-                Id = new Guid("1da51173-c1cc-400b-8847-68ef52c8c779"),
-                nameLesson = "Мат.Анализ",
+                Id = new Guid("1da60173-c1cc-500b-8847-68ef52c8c782"),
+                numLesson = 2,
+                timeLesson = "10:30-11:50",
                 numCourse = 2,
-                numGroup = "2",
-                TName = "Чехменок Т.А",
-                TSurname = "Татьяна",
-                TPatronimic = "Александровна",
-                Format ="Практика"
+                numGroup = "2"
+            });
+            modelBuilder.Entity<Lesson>().HasData(new Lesson
+            {
+                Id = new Guid("1da60173-c1cc-500b-8847-68ef52c8c783"),
+                numLesson = 3,
+                timeLesson = "12:00-13:20",
 
             });
             modelBuilder.Entity<Lesson>().HasData(new Lesson
             {
-                Id = new Guid("1da60173-c1cc-400b-8847-68ef52c8c745"),
-                nameLesson = "Технологии программирования",
+                Id = new Guid("1da60173-c1cc-500b-8847-68ef52c8c784"),
+                numLesson = 4,
+                timeLesson = "13:50-15:10",
                 numCourse = 3,
-                numGroup = "6+7ПИ",
-                TName = "Шпак К.С",
-                TSurname = "Кирилл",
-                TPatronimic = "Сергеевич",
-                Format = "Лаб. занятие"
-
+                numGroup = "6+7 ПИ"
             });
             modelBuilder.Entity<Lesson>().HasData(new Lesson
             {
-                Id = new Guid("1da60173-c1cc-500b-8847-68ef52c8c789"),
-                nameLesson = "Физ.Культура",
+                Id = new Guid("1da60173-c1cc-500b-8847-68ef52c8c785"),
+                numLesson = 5,
+                timeLesson = "15:20-16:40",
                 numCourse = 4,
-                numGroup = "4+5КБ",
-                TName = "Белый Н.М",
-                Format = "Семинар"
-
+                numGroup = "4+5 КБ"
             });
             modelBuilder.Entity<Lesson>().HasData(new Lesson
             {
-                Id = new Guid("1da60142-c1cc-500b-8847-68ef52c8c712"),
-                nameLesson = "Компьютерные сети",
-            
-                numGroup = "2+8АРИСТ",
-                TName = "Соболь А.М"
-
+                Id = new Guid("1da60173-c1cc-500b-8847-68ef52c8c786"),
+                numLesson = 6,
+                timeLesson = "16:50-18:10",
+                numGroup = "2+8 АРИСТ"
             });
+            modelBuilder.Entity<Lesson>().HasData(new Lesson
+            {
+                Id = new Guid("1da60173-c1cc-500b-8847-68ef52c8c787"),
+                numLesson = 7,
+                timeLesson = "18:20-19:40",
+                numGroup = "1+5 ПИ"
+            });
+
+            //modelBuilder.Entity<Lesson>().HasData(new Lesson
+            //{
+            //    Id = new Guid("1da51176-c1cc-400b-8847-68ef52c8c778"),
+            //    nameLesson = "Физика",
+            //    numCourse = 1,
+            //    numGroup = "1",
+            //    TName = "Поляков А.В",
+            //    Format = "Лекция",
+            //    lectureHall = 117
+            //});
+            //modelBuilder.Entity<Lesson>().HasData(new Lesson
+            //{
+            //    Id = new Guid("1da51173-c1cc-400b-8847-68ef52c8c779"),
+            //    nameLesson = "Мат.Анализ",
+            //    numCourse = 2,
+            //    numGroup = "2",
+            //    TName = "Чехменок Т.А",
+            //    Format ="Практика", 
+            //    lectureHall = 615
+
+            //});
+            //modelBuilder.Entity<Lesson>().HasData(new Lesson
+            //{
+            //    Id = new Guid("1da60173-c1cc-400b-8847-68ef52c8c745"),
+            //    nameLesson = "Технологии программирования",
+            //    numCourse = 3,
+            //    numGroup = "6+7ПИ",
+            //    TName = "Шпак К.С",
+            //    Format = "Лаб. занятие",
+            //    lectureHall  = 505
+
+            //});
+            //modelBuilder.Entity<Lesson>().HasData(new Lesson
+            //{
+            //    Id = new Guid("1da60173-c1cc-500b-8847-68ef52c8c789"),
+            //    nameLesson = "Физ.Культура",
+            //    numCourse = 4,
+            //    numGroup = "4+5КБ",
+            //    TName = "Белый Н.М",
+            //    Format = "Семинар",
+            //    lectureHall = 1
+
+            //});
         }
     }
 }

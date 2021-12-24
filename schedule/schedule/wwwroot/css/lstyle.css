@@ -142,3 +142,20 @@ tbody{
     font-family: Roboto;
     position: absolute;
 }
+.plus {
+    padding: 30px;
+}
+.fieldSelect {
+    margin-left: 217px;
+    margin-bottom: 50px;
+    font-size: 18px;
+}
+.buttonConfirm {
+    color: black;
+    padding: 5px;
+    font-size: 20px;
+    line-height: 29px;
+    border-radius: 50px;
+    font-family: Roboto;
+    background: #D2E4F9;
+}

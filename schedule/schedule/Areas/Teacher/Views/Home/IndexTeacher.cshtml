@@ -1,4 +1,4 @@
-﻿@model IQueryable<Teacher>
+﻿@*@model IQueryable<Teacher>
 
 @{
     string strTitle = "Your Schedule, Teacher";
@@ -13,13 +13,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
     @await Html.PartialAsync("ScriptsPartial")
-    <link href="../css/lstyle.css" rel="stylesheet" type="text/css">
+    <link href="~/css/lstyle.css" rel="stylesheet" type="text/css">
     <title>studentSchedule</title>
 </head>
 <body>
     <div class="nav-item">
         <form asp-area="" asp-controller="Account" asp-action="Logout" class="nav-link contacts" method="post">
-            <a class="nav-link contacts logout buttonss" role="button" aria-pressed="true">
+            <a class="nav-link mcontacts mlogout mbuttonss" role="button" aria-pressed="true">
                 <input type="submit" value="Выход">
             </a>
         </form>
@@ -109,6 +109,88 @@
                 </tr>
             </tbody>
 
+        </table>
+    </div>
+</body>
+</html>*@
+
+
+@model IQueryable<Lesson>
+
+@{
+    string strTitle = "AdminPanel";
+    ViewBag.Title = strTitle;
+}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+    <link href="~/css/lstyle.css" rel="stylesheet" type="text/css">
+    <title>studentSchedule</title>
+</head>
+<body>
+    <form asp-area="" asp-controller="Account" asp-action="Logout" class="nav-link contacts" method="post">
+        <a class="nav-link mcontacts mlogout mbuttonss" role="button" aria-pressed="true">
+            <input type="submit" value="Выход">
+        </a>
+    </form>
+    <div class="container">
+        <p class="d-flex justify-content-center fio">Добрый день!</p>
+    </div>
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-11 colorweek">
+                <div class="d-flex flex-row weekday">
+                    <a class="block" href="#">Понедельник</a>
+                    <a class="block" href="#">Вторник</a>
+                    <a class="block" href="#">Среда</a>
+                    <a class="block" href="#">Четверг</a>
+                    <a class="block" href="#">Пятница</a>
+                    <a class="block" href="#">Суббота</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container tabmarg">
+        <table class="table">
+
+            <thead class="wrap-tr">
+
+                <tr>
+                    <th scope="col">№</th>
+                    <th scope="col">Время</th>
+                    <th scope="col">Дисциплина</th>
+                    <th scope="col">Преподаватель</th>
+                    <th scope="col">Аудитория</th>
+                    <th scope="col">Формат</th>
+                    <th scope="col"></th>
+                </tr>
+
+            </thead>
+            <tbody class="backgr">
+                @if (Model.Any())
+                {
+                    @foreach (Lesson entity in Model)
+                    {
+                <tr>
+                    <th scope="row">@($"{entity.numLesson}")</th>
+                    <td>@($"{entity.timeLesson}")</td>
+
+                    <td asp-area="Admin" asp-controller="Services" asp-action="Index" asp-route-id="@entity.Id">
+                        @($"{entity.nameLesson}")
+                    </td>
+                    <td asp-area="Admin" asp-controller="Services" asp-action="Index" asp-route-id="@entity.Id">@($"{entity.TName}")</td>
+                    <td>@($"{entity.lectureHall}")</td>
+                    <td>@($"{entity.Format}")</td>
+                    <td><a asp-area="Teacher" asp-controller="Note" asp-action="Edit" asp-route-id="@entity.Id"><img src="~/images/notes.png" alt="" width="31px" height="31px"></a></td>
+                </tr>
+                    }
+                }
+            </tbody>
         </table>
     </div>
 </body>

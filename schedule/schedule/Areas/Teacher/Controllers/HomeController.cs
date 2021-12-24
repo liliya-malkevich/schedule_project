@@ -17,7 +17,7 @@ namespace schedule.Areas.Teacher.Controllers
         }
         public IActionResult IndexTeacher()
         {
-            return View(dataManager.Teacher.GetTeachers());
+            return View(dataManager.Lesson.GetLessons());
         }
     }
 }

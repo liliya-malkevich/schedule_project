@@ -7,19 +7,21 @@ using System.Threading.Tasks;
 
 namespace Domain.Entities
 {
-    public class Lesson:EntityBase
+    public class Lesson : EntityBase
     {
-        [Required]
-        public String nameLesson { get; set; }
         public String numGroup { get; set; }
-
         public int numCourse { get; set; }
-
+        [Display(Name = "№")]
+        public int numLesson { get; set; }
+        [Display(Name = "Время пары")]
+        public String timeLesson { get; set; }
+        [Display(Name = "Дисциплина")]
+        public String nameLesson { get; set; }
+        [Display(Name = "Преподаватель")]
         public String TName { get; set; }
-
-        public String TSurname { get; set; }
-
-        public String TPatronimic { get; set; }
+        [Display(Name = "Аудитория")]
+        public int lectureHall { get; set; }
+        [Display(Name = "Формат")]
         public String Format { get; set; }
     }
 }
