@@ -48,6 +48,8 @@
                     <th scope="col">Преподаватель</th>
                     <th scope="col">Аудитория</th>
                     <th scope="col">Формат</th>
+
+                    <th scope="col">Заметки</th>
                     <th scope="col"></th>
                 </tr>
             </thead>
@@ -66,7 +68,8 @@
                     <td asp-area="Admin" asp-controller="Services" asp-action="Index" asp-route-id="@entity.Id">@($"{entity.TName}")</td>
                     <td>@($"{entity.lectureHall}")</td>
                     <td>@($"{entity.Format}")</td>
-                    <td><a asp-area="Student" asp-controller="Note" asp-action="Show" asp-route-id="@entity.Id"><img src="~/images/notes.png" alt="" width="31px" height="31px"></a></td>
+                    <td><img src="~/images/notes.png" alt="" width="31px" height="31px"></td>
+                    <td>@($"{entity.nameNote}")</td>
                 </tr>
                     }
                 }

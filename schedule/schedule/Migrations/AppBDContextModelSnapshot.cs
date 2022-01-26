@@ -133,7 +133,8 @@ namespace schedule.Migrations
                         {
                             Id = new Guid("1da60173-c1cc-500b-8847-68ef52c8c783"),
                             lectureHall = 0,
-                            numCourse = 0,
+                            numCourse = 3,
+                            numGroup = "5",
                             numLesson = 3,
                             timeLesson = "12:00-13:20"
                         },
@@ -141,7 +142,7 @@ namespace schedule.Migrations
                         {
                             Id = new Guid("1da60173-c1cc-500b-8847-68ef52c8c784"),
                             lectureHall = 0,
-                            numCourse = 3,
+                            numCourse = 4,
                             numGroup = "6+7 ПИ",
                             numLesson = 4,
                             timeLesson = "13:50-15:10"
@@ -150,7 +151,7 @@ namespace schedule.Migrations
                         {
                             Id = new Guid("1da60173-c1cc-500b-8847-68ef52c8c785"),
                             lectureHall = 0,
-                            numCourse = 4,
+                            numCourse = 0,
                             numGroup = "4+5 КБ",
                             numLesson = 5,
                             timeLesson = "15:20-16:40"
@@ -271,21 +272,21 @@ namespace schedule.Migrations
                         new
                         {
                             Id = "d297b366-b063-4ebf-b6c2-4d2a2c4a20d6",
-                            ConcurrencyStamp = "8e942ecd-33d5-4c8f-bb53-1e9c0f4cbdef",
+                            ConcurrencyStamp = "656d9fa0-6c64-45f2-aecc-d4a869a7969c",
                             Name = "admin",
                             NormalizedName = "ADMIN"
                         },
                         new
                         {
                             Id = "ab1d43f0-1ab6-4282-bb2f-d95cc94aef92",
-                            ConcurrencyStamp = "1125ce6d-9b42-428f-8646-206f79b79bf1",
+                            ConcurrencyStamp = "cc2697ae-91c7-44a5-a47f-19b46c8f2f70",
                             Name = "student",
                             NormalizedName = "STUDENT"
                         },
                         new
                         {
                             Id = "43fa553a-294d-4eaf-bfab-8c3ed913c486",
-                            ConcurrencyStamp = "3382460f-ff0c-44e5-8d8b-c60e6fdaba9a",
+                            ConcurrencyStamp = "8137f2cf-a22e-4546-8c39-5cafc12907b4",
                             Name = "teacher",
                             NormalizedName = "TEACHER"
                         });
@@ -384,11 +385,11 @@ namespace schedule.Migrations
                         {
                             Id = "f8bed4de-81b4-4ece-86bc-d84bf1b9e98b",
                             AccessFailedCount = 0,
-                            ConcurrencyStamp = "3fe3a637-62b4-4517-b851-522f3f7ae65c",
+                            ConcurrencyStamp = "72d0f9c1-75cb-48bc-b596-d330f512f3ff",
                             EmailConfirmed = false,
                             LockoutEnabled = false,
                             NormalizedUserName = "ADMIN",
-                            PasswordHash = "AQAAAAEAACcQAAAAENxulKtAESdIb/3SgpyYm47xLXD/74cU5LsvoQsi9oZV+BmOWNo06iWDrUEx3ApKUg==",
+                            PasswordHash = "AQAAAAEAACcQAAAAEAEAEuukVHYe19yk3WAVBwUcG0K9H0Kg5r2Kiubf/QMIWe4mGP8JTsqBHfrWerq6iw==",
                             PhoneNumberConfirmed = false,
                             SecurityStamp = "",
                             TwoFactorEnabled = false,
@@ -398,11 +399,11 @@ namespace schedule.Migrations
                         {
                             Id = "810ab629-9970-4f2a-9664-784024ce1744",
                             AccessFailedCount = 0,
-                            ConcurrencyStamp = "2ab2bb3e-abc1-4213-887d-967fd0d9fe37",
+                            ConcurrencyStamp = "b896b876-585d-49d5-bf90-9842aa4e6685",
                             EmailConfirmed = false,
                             LockoutEnabled = false,
                             NormalizedUserName = "STUDENT",
-                            PasswordHash = "AQAAAAEAACcQAAAAELmeF12kHUJDlUPd8ClG292eD09U90eqdkMy1YAFOOEyHVfAW88EBBlcFRAxD0xvhw==",
+                            PasswordHash = "AQAAAAEAACcQAAAAEFhmTuSKlawNzbOj5ZIH1ECbNdz5zUxpnANJPA/7E+EvDE2A5sHq72XCzvJILk4/dQ==",
                             PhoneNumberConfirmed = false,
                             SecurityStamp = "",
                             TwoFactorEnabled = false,
@@ -412,11 +413,11 @@ namespace schedule.Migrations
                         {
                             Id = "df589529-387e-46e1-9c49-1a9388f1aa9d",
                             AccessFailedCount = 0,
-                            ConcurrencyStamp = "843d553a-432d-455c-877a-f015628cb4bb",
+                            ConcurrencyStamp = "fe42b2f8-48bc-4070-970d-ebc61a3ff85b",
                             EmailConfirmed = false,
                             LockoutEnabled = false,
                             NormalizedUserName = "TEACHER",
-                            PasswordHash = "AQAAAAEAACcQAAAAEFhEuUzFCyC7TL15OjGj6ISGhx4j8sv8cs2LNyYF4JXN2OkQfxiODgTLS6RQOuEMUw==",
+                            PasswordHash = "AQAAAAEAACcQAAAAEIlNz5TWpt66Ifee4T5lUlVh9u6msNuGVZ17UDNCKnHDnjPwDYts7c5F3G2c/S8vzQ==",
                             PhoneNumberConfirmed = false,
                             SecurityStamp = "",
                             TwoFactorEnabled = false,
